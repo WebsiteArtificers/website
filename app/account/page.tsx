@@ -38,19 +38,33 @@ export default async function Account() {
 
   const updateName = async (formData: FormData) => {
     'use server';
-
-    const newName = formData.get('name') as string;
-    const supabase = createServerActionClient<Database>({ cookies });
-    const session = await getSession();
-    const user = session?.user;
-    const { error } = await supabase
-      .from('users')
-      .update({ full_name: newName })
-      .eq('id', user?.id);
-    if (error) {
-      console.log(error);
+  
+    try {
+      const newName = formData.get('name') as string;
+      const supabase = createServerActionClient<Database>({ cookies });
+      const session = await getSession();
+      
+      if (!session?.user || !session.user.id) {
+        console.log("User or user.id is undefined");
+        return; // Exit early if user or user.id is not available
+      }
+  
+      const { error } = await supabase
+        .from('users')
+        .update({ full_name: newName })
+        .eq('id', session.user.id);
+  
+      if (error) {
+        console.error(error);
+      } else {
+        console.log('Name updated successfully');
+      }
+  
+      // Assuming revalidatePath is an asynchronous operation, you might want to wait for it.
+      await revalidatePath('/account');
+    } catch (err) {
+      console.error('An error occurred:', err);
     }
-    revalidatePath('/account');
   };
 
   const updateEmail = async (formData: FormData) => {
