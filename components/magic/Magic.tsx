@@ -4,7 +4,7 @@ import { client, blog, urlFor } from '../.././sanity/client';
 import { useState, useEffect } from 'react'
 import { Logo } from '../../icons/icons'
 
-export default function Magic({ result }) {
+export default function Magic({ result }: {result: any}) {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
