@@ -1,0 +1,137 @@
+.account__container {
+    background: var(--darker-background);
+    color: var(--background);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.account__header--section {
+    text-align: center;
+}
+
+.account__header {
+    font-size: 4vw;
+    font-weight: 800;
+    
+}
+
+.account__description {
+    font-size: 2vw;
+    font-weight: 300;
+    color: var(--tertiary);
+}
+
+.account__description span {
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.account__card--section {
+    margin-top: 3vw;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5vw;
+    justify-content: center;
+}
+
+.card__container {
+    background: transparent;
+    border: solid .15vw var(--accent-background);
+    border-radius: .5vw;
+    cursor: pointer;
+    box-shadow: .1vw .1vw 1vw transparent;
+    transition: .5s;
+}
+
+.card__container:hover {
+    box-shadow: .1vw .1vw 1vw var(--accent-background);
+}
+
+.card__subcontainer--top {
+    padding: 1.5vw;
+    border-bottom: solid .15vw var(--accent-background);
+}
+
+.card__header {
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.card__paragraph {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-top: .5vw;
+    margin-bottom: 1.5vw;
+}
+
+.card__subcontainer--bottom {
+    padding: 1.5vw;
+    background: var(--accent-background);
+}
+
+.account__card--link {
+    font-size: 1vw;
+    color:  var(--accent-background);
+    transition: .5s;
+    border: var(--accent-background) solid .15vw;
+    font-weight: 800;
+    padding: .25vw;
+    border-radius: .25vw;
+    box-shadow: .1vw .1vw 1vw transparent;
+}
+
+.account__card--link:hover {
+    color: var(--primary);
+    border: var(--primary) solid .15vw;
+    box-shadow: .1vw .1vw 1vw var(--primary);
+}
+
+.account__card--subcontainer__form--input {
+    background: transparent;
+    border: var(--accent-background) solid .15vw;
+    padding: .25vw;
+    font-weight: 800;
+    border-radius: .25vw;
+    font-size: 1vw;
+    transition: .5s;
+    box-shadow: .1vw .1vw 1vw transparent;
+    outline: none;
+}
+
+.account__card--subcontainer__form--input:hover,
+.account__card--subcontainer__form--input:active,
+.account__card--subcontainer__form--input:focus {
+    color: var(--primary);
+    border: var(--primary) solid .15vw;
+    box-shadow: .1vw .1vw 1vw var(--primary);
+}
+
+.account__card--subcontainer--description {
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    font-weight: 300;
+}
+
+.account__card--subcontainer--button,
+.account__card--subcontainer--button:active,
+.account__card--subcontainer--button:focus {
+    transition: .5s;
+    background: var(--tertiary);
+    color: var(--darker-background);
+    font-size: 1vw;
+    padding: 1vw;
+    box-shadow: .1vw .1vw 1vw transparent;
+    font-weight: 800;
+    border-radius: .25vw;
+    border: none;
+    outline: none;
+}
+
+.account__card--subcontainer--button:hover {
+    background: var(--primary);
+    color: var(--darker-background);
+    border: none;
+    box-shadow: .1vw .1vw 1vw var(--primary);
+    outline: none;
+}

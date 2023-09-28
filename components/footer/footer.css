@@ -1,0 +1,99 @@
+.footer__container {
+    background: var(--background);
+    padding-top: 3vw;
+    border-top: .25vw solid var(--secondary);
+}
+
+.footer__flex--container {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.footer__subcontainer.logo {
+    width: 6vw;
+    margin: auto;
+    padding-bottom: 3vw;
+    cursor: pointer;
+}
+
+.footer__subcontainer--header {
+    font-size: 1.75vw;
+    font-weight: 800;
+    margin-bottom: 1vw;
+}
+
+.footer__subcontainer--header.product {
+    color: var(--text);
+}
+
+.footer__subcontainer--header.resources {
+    color: var(--primary);
+}
+
+.footer__subcontainer--header.company {
+    color: var(--secondary);
+}
+
+.footer__subcontainer--header.stay__connected {
+    color: var(--tertiary);
+}
+
+.footer__subcontainer--ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style: none;
+    margin-bottom: 3vw;
+}
+
+.footer__subcontainer--link {
+    all: unset;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 400;
+    transition: .5s;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: .5vw;
+}
+
+.footer__subcontainer--link:hover {
+    color: var(--darker-background);
+}
+
+.footer__subcontainer--link:hover > svg {
+    fill: var(--darker-background)
+}
+
+.footer__subcontainer--link svg {
+    width: 1.5vw;
+    transition: .5s;
+}
+.footer__bottom--container {
+    background: var(--secondary-accent);
+    text-align: center;
+    border-top: .25vw solid var(--primary);
+}
+
+.footer__bottom--header {
+    font-size: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    color: var(--text);
+    font-weight: 400;
+}
+
+.footer__bottom--header a {
+    all: unset;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--darker-background);
+    transition: .5s;
+}
+
+.footer__bottom--header a:hover {
+    color: var(--secondary);
+}

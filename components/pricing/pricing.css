@@ -1,0 +1,67 @@
+.pricing__container {
+    background: var(--secondary);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.pricing__subcontainer.logo {
+    width: 6vw;
+    margin: auto;
+}
+
+.pricing__header {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 800;
+    color: var(--text);
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+.pricing__subcontainer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    gap: 3vw;
+}
+
+.pricing__subcontainer--subheader {
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.pricing__subcontainer--subheader__span {
+    font-weight: 400;
+    color: var(--accent-background);
+}
+
+.pricing__subcontainer--paragraph {
+    color: var(--darker-background);
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+    line-height: 2.75vw;
+    margin-left: .5vw;
+}
+
+.pricing__subcontainer--paragraph__span {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pricing__subcontainer--button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    margin-left: .5vw;
+}
+
+.pricing__button {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-top: 1vw;
+}

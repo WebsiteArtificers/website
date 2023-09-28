@@ -1,0 +1,48 @@
+.hero__container {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    z-index: 50;
+}
+
+.hero__header {
+    margin-top: 8vw;
+    margin-bottom: -2vw;
+    font-size: 6vw;
+    font-weight: 300;
+    color: var(--text);
+}
+
+.hero__header--span {
+    transition: .5s ease-in-out;
+}
+
+.hero__subheader {
+    font-size: 6vw;
+    color: var(--text);
+    transition: .5s ease-in-out;
+    font-weight: 900;
+}
+
+.hero__paragraph {
+    padding-top: 2vw;
+    margin: auto;
+    font-size: 2vw;
+    width: 70vw;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.hero__button--container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    vertical-align: center;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.hero__button {
+    font-size: 1.5vw;
+    margin-bottom: 15vw;
+}

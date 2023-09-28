@@ -1,0 +1,100 @@
+.supercharge__container {
+    margin-top: 6vw;
+}
+
+.supercharge__header {
+    color: var(--text);
+    font-size: 2vw;
+    font-weight: 800;
+    margin-left: 12vw;
+    margin-bottom: -1vw;
+}
+
+.supercharge__subcontainer--subheader {
+    color: var(--text);
+    font-size: 4vw;
+    font-weight: 800;
+    margin-left: 12.5vw;
+}
+
+.supercharge__subcontainer--subheader__span {
+    color: var(--primary);
+    font-weight: 200;
+}
+
+.supercharge__subcontainer.button__container {
+    display: flex;
+    justify-content: flex-start;
+    background: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 12.5vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.supercharge__subcontainer--button {
+    color: var(--text);
+    font-size: 1vw; /* Adjust font size as needed */
+    background: transparent;
+    font-weight: 600;
+    border-radius: 2vw;
+    padding: .75vw; /* Adjust padding as needed */
+    transition: background-color 0.2s; /* Add a transition for background-color */
+    position: relative; /* Establish a stacking context */
+    z-index: 1;
+}
+
+.supercharge__subcontainer--button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--secondary-accent); /* Set the slider color */
+    top: 0;
+    transition: width .4s; /* Add a transition for width */
+    z-index: -1;
+    border-radius: 2vw;
+    width: 100%;
+    opacity: 0;
+}
+
+.supercharge__subcontainer--button.left::before {
+    right: 0;
+}
+
+.supercharge__subcontainer--button.right::before {
+    left: 0;
+}
+
+.supercharge__subcontainer--button.center::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.supercharge__subcontainer--button:hover::before {
+    width: 100%;
+    opacity: 1; /* Expand the slider to 100% width on hover */
+}
+
+
+.supercharge__subcontainer--button:not(:hover)::before {
+    width: 0;
+}
+
+.active::before {
+    background: var(--secondary);
+    transition: background-color .2s;
+    z-index: -1;
+    content: '';
+}
+
+.active {
+    background: var(--secondary);
+    transition: background-color .2s;
+    z-index: 3;
+}

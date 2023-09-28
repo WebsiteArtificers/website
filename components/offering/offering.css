@@ -1,0 +1,76 @@
+.offering__container {
+    background: var(--text);
+    display: grid;
+    grid-template-columns: auto 14vw auto;
+    grid-template-areas: 
+        ". illustration website"
+        "data illustration ."
+        ". illustration backend"
+    ;
+    padding-bottom: 2vw;
+}
+
+.offering__svg--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    grid-area: illustration;
+    vertical-align: center;
+    width: auto;
+}
+
+.offering__subcontainer {
+    width: 80%;
+    margin: auto;
+}
+
+.offering__subcontainer.data {
+    text-align: right;
+    margin: auto;
+}
+
+.website {
+    grid-area: website;
+}
+
+.data {
+    grid-area: data;
+}
+
+.backend {
+    grid-area: backend;
+}
+
+.offering__button {
+    background: var(--darker-background);
+    color: var(--background);
+    border-radius: 2vw;
+    padding: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    transition: 1s;
+}
+
+.offering__button:hover {
+    background: var(--accent);
+}
+
+.data__button {
+    
+}
+
+.offering__paragraph {
+    color: var(--background);
+    margin-left: 1vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.75vw;
+    width: 80%;
+}
+
+.offering__paragraph.data__paragraph {
+    margin-left: auto;
+    margin-right: 1vw;
+}

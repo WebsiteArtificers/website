@@ -1,0 +1,104 @@
+.login__container {
+    background: var(--darker-background);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.login__container svg {
+    width: 4vw;
+    margin: auto;
+}
+
+.authentication__container {
+    width: 15%;
+    margin: auto;
+}
+
+#auth-sign-in {
+
+}
+
+.supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-iwjZXY-color-default {
+    display: grid;
+    direction: row;
+    justify-content: center;
+    background: var(--accent-background);
+    color: var(--background);
+    transition: .5s;
+    border: .01vw solid var(--text);
+    padding: .5vw;
+    border-radius: .25vw;
+    font-size: .75vw;
+    font-weight: 600;
+}
+
+.authentication__subcontainer button svg {
+    fill: var(--background);
+}
+
+.supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-iwjZXY-color-default:hover {
+    background: var(--text);
+    border: .01vw solid var(--background);
+}
+
+/* Divider */
+.supabase-auth-ui_ui-divider.c-kbVGyA {
+    background: var(--text);
+}
+
+/* Label */
+.supabase-auth-ui_ui-label.c-bpexlo {
+    font-size: .75vw;
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: .25vw;
+}
+
+/* Input */
+.supabase-auth-ui_ui-input.c-dEnagJ {
+    background: var(--accent-background);
+    border: .01vw solid var(--text);
+    transition: .5s;
+    color: var(--background);
+    border-radius: .25vw;
+    padding: .5vw;
+    font-size: .75vw;
+}
+
+.supabase-auth-ui_ui-input.c-dEnagJ::placeholder {
+    color: var(--secondary-accent);
+    font-size: .75vw;
+}
+
+.supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-cmFMMs-color-primary {
+    background: var(--accent-background);
+    border: .01vw solid var(--text);
+    transition: .5s;
+    color: var(--background);
+    border-radius: .25vw;
+    padding: .5vw;
+    font-size: .75vw;
+    font-weight: 600;
+}
+
+.supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-cmFMMs-color-primary:hover {
+    background: var(--text);
+    border: .01vw solid var(--background);
+}
+
+/* Link Container */
+.supabase-auth-ui_ui-container.c-jTXIoq.c-jTXIoq-bsgKCL-direction-vertical.c-jTXIoq-jjTuOt-gap-small {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+/* Link */
+.supabase-auth-ui_ui-anchor.c-dumjqv {
+    color: var(--secondary-accent);
+    font-size: .75vw;
+}
+
+.supabase-auth-ui_ui-anchor.c-dumjqv:hover {
+    color: var(--background);
+}

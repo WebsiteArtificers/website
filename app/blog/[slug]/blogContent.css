@@ -1,0 +1,109 @@
+.blogPage__container {
+    background: var(--background);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 6vw;
+}
+
+.blogPage__subcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    gap: 1vw;
+}
+
+.blogPage__title--container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1vw;
+}
+
+.blogPage__title {
+    font-size: 3vw;
+    font-weight: 600;
+    color: var(--darker-background);
+}
+
+.blogPage__title--container p {
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: var(--text);
+}
+
+.blogPage__image {
+    object-fit: cover;
+    border-radius: .25vw;
+}
+
+.blogPage__content--container {
+    padding-top: 6vw;
+    width: 60%;
+    margin: auto;
+}
+
+.blogPage__content--container h1 {
+    font-size: 2.25vw;
+    margin-bottom: 1vw;
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+.blogPage__content--container h2 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+.blogPage__content--container h3 {
+    font-size: 1.75vw;
+    margin-bottom: 1vw;
+    color: var(--secondary);
+    font-weight: 650;
+}
+
+.blogPage__content--container h4 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.blogPage__content--container p {
+    font-size: 1.25vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    color: var(--text);
+    line-height: 2.5vw;
+    font-weight: 300;
+}
+
+.blogPage__content--container a {
+    all: unset;
+    font-size: 1.25vw;
+    color: var(--primary);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.blogPage__content--container a:hover {
+    color: var(--accent);
+}
+
+.blogPage__content--container ul,
+.blogPage__content--container ol {
+    font-size: 1.25vw;
+    margin-bottom: 1vw;
+    margin-left: 1.5vw;
+    list-style: none;
+    line-height: 2.5vw;
+}
+
+.blogPage__content--container li {
+    font-size: 1.25vw;
+    margin-bottom: .5vw;
+    color: var(--accent);
+    font-weight: 400;
+}

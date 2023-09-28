@@ -1,0 +1,79 @@
+.offeringDescription__container {
+    background: var(--text);
+    padding-top: 6vw;
+}
+
+.offeringDescription__button--container {
+    display: flex;
+    justify-content: center;
+    background: var(--darker-background);
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    border-radius: 2vw;
+    position: relative;
+    overflow: hidden; /* Hide the overflow for the slider effect */
+}
+
+.offeringDescription__button {
+    color: var(--background);
+    font-size: 1vw; /* Adjust font size as needed */
+    background: transparent;
+    font-weight: 600;
+    border-radius: 2vw;
+    padding: .75vw; /* Adjust padding as needed */
+    transition: background-color 0.2s; /* Add a transition for background-color */
+    position: relative; /* Establish a stacking context */
+    z-index: 1;
+}
+
+.offeringDescription__button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--accent-background); /* Set the slider color */
+    top: 0;
+    transition: width .4s; /* Add a transition for width */
+    z-index: -1;
+    border-radius: 2vw;
+    width: 100%;
+    opacity: 0;
+}
+
+.offeringDescription__button.left::before {
+    right: 0;
+}
+
+.offeringDescription__button.right::before {
+    left: 0;
+}
+
+.offeringDescription__button.center::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offeringDescription__button:hover::before {
+    width: 100%;
+    opacity: 1; /* Expand the slider to 100% width on hover */
+}
+
+
+.offeringDescription__button:not(:hover)::before {
+    width: 0;
+}
+
+.active::before {
+    background: var(--secondary);
+    transition: background-color .2s;
+    z-index: -1;
+    content: '';
+}
+
+.active {
+    background: var(--secondary);
+    transition: background-color .2s;
+    z-index: 3;
+}

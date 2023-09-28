@@ -1,0 +1,12 @@
+.text__box {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.text__box:hover {
+    fill: rgb(194, 194, 194);
+}
+
+.green__graph {
+    transition: .5s;
+}

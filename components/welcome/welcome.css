@@ -1,0 +1,68 @@
+.welcome__container {
+    background: var(--text);
+    padding-bottom: 6vw;
+}
+
+.welcome__header {
+    color: var(--background);
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    font-weight: 200;
+}
+
+.welcome__subcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 27vw);
+    justify-content: center;
+    gap: 2vw;
+    width: 80%;
+    margin: auto;
+}
+
+.welcome__subcontainer--subcontainer {
+    background: var(--darker-background);
+    border-radius: .25vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    transition: 2s;
+    border: .1vw solid transparent;
+}
+
+.welcome__subcontainer--subcontainer:hover {
+    background: var(--accent-background);
+    border: .1vw solid var(--secondary);
+}
+
+.welcome__subcontainer--header {
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+
+.one {
+    color: var(--secondary);
+}
+
+.two {
+    color: var(--primary);
+}
+
+.three {
+    color: var(--background);
+}
+
+.welcome__subcontainer--subheader {
+    color: var(--accent);
+    font-size: 1.75vw;
+    margin-bottom: 2vw;
+    font-weight: 400;
+}
+
+.welcome__subcontainer--paragraph {
+    color: var(--background);
+    font-size: 1.25vw;
+    font-weight: 500;
+}

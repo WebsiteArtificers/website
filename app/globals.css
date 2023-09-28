@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: inter, acumin-pro, sans-serif;
+
+  --text: #001234;
+  --accent-background: #2b3549;
+  --darker-background: #000818;
+  --background: #e6ecf4;
+  --primary: #6A8ABE;
+  --secondary: #ff6e61;
+  --tertiary: #ffa9a1;
+  --accent: #43669c;
+  --secondary-accent: #d0e1f6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+html {
+  background: var(--background);
+}
+
+a {
+  color: var(--accent);
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+button {
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: .25vw;
+  padding: .5vw;
+  transition: .5s ease-in-out;
+}
+
+.button__primary {
+  border: .15vw solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.button__primary:hover {
+  box-shadow: .1vw .1vw 1vw var(--primary);
+}
+
+.button__secondary {
+  color: var(--background);
+  background: var(--text);
+  border: .15vw solid var(--text);
+}
+
+.button__secondary:hover {
+  box-shadow: .1vw .1vw 1vw var(--text);
+}
+
+.button__tertiary {
+  color: var(--text);
+  background: var(--tertiary);
+  border: .15vw solid var(--tertiary);
+}
+
+.button__tertiary:hover {
+  box-shadow: .1vw .1vw 1vw var(--tertiary);
+}
+
+.formButtonPrimary {
+  background: red;
+}
