@@ -4,13 +4,13 @@ import { client, blog, urlFor } from '../.././sanity/client';
 import { useState, useEffect } from 'react'
 import { Logo } from '../../icons/icons'
 
-export default function Magic({ result }: {result: any}) {
+export default function Magic() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const result = await client.fetch(blog);
+        const result: any = await client.fetch(blog);
         setBlogs(result);
       } catch (error) {
         console.error('Error fetching the blogs:', error);
@@ -31,7 +31,7 @@ export default function Magic({ result }: {result: any}) {
       </div>
       <p className='magic__paragraph'>...or get to know us better.</p>
       <div className='magic__blog--container'>
-        {blogs?.map((blog, index) => {
+        {blogs?.map((blog: any, index: any) => {
           // Render only the first three elements
           if (index < 4) {
             return (
