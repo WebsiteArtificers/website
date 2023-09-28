@@ -46,7 +46,7 @@ export default function Page() {
               <h1 className="blog__container--header">Filter By Category</h1>
               <div className="blog__category--container">
                   <a onClick={() => setAllCategories(true)} className="blog__category--link">All</a>
-                {categories?.map((category, index) => (
+                {categories?.map((category: any, index: any) => (
                   <a key={index} onClick={()=> {
                     setAllCategories(false)
                     setVisibleCategory(category.title)
