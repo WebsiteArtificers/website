@@ -15,7 +15,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <div className='blogPage__container'>
       {
-        blogs?.map((blog) => (
+        blogs?.map((blog: any) => (
           blogSlug === blog.slug.current ?
           <div>
             <div className='blogPage__subcontainer'>
