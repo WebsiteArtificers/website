@@ -42,7 +42,7 @@ export async function POST(req: Request) {
           mode: 'subscription',
           allow_promotion_codes: true,
           subscription_data: {
-            //trial_from_plan: true as Boolean,
+            trial_from_plan: true as Boolean,
             metadata
           },
           success_url: `${getURL()}/account`,
