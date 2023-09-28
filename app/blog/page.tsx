@@ -61,15 +61,15 @@ export default function Page() {
   )
 }
 
-function BlogCovers({ blogs, allCategories, visibleCategory }) {
+function BlogCovers({ blogs, allCategories, visibleCategory }: {blogs:any, allCategories:any, visibleCategory:any}) {
   return (
       <Suspense fallback='Loading...'>
         <div className="blogCover__container">
         {blogs
-          ?.filter((blog) =>
-            allCategories ? true : blog.categories.some((category) => category.title === visibleCategory)
+          ?.filter((blog: any) =>
+            allCategories ? true : blog.categories.some((category: any) => category.title === visibleCategory)
           )
-          .map((blog, index) => (
+          .map((blog: any, index: any) => (
             <a className='blog__cover' href={"/blog/" + blog.slug.current} key={blog.slug.current}>
               <img className='blog__cover--image' src={urlFor(blog.mainImage).url()} alt={blog.title} />
               <div className='blog__cover--subcontainer'>
