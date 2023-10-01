@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { Navbar, Footer } from '../components/components'
 import SupabaseProvider from './supabase-provider';
 import { PropsWithChildren } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const meta = {
   title: 'The Website Artificers: Your Online Solution',
@@ -58,6 +59,7 @@ export default function RootLayout({
             </main>
           </Suspense>
         </SupabaseProvider>
+        <Analytics />
       </body>
     </html>
   )
