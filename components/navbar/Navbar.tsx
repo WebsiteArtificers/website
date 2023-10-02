@@ -136,7 +136,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <a className='navbar__button'>
+                <a className='navbar__button' href="/pricing">
                     Pricing
                 </a>
                 <a className='navbar__button' href="/sign-in">
