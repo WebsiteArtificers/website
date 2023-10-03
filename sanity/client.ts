@@ -6,7 +6,7 @@ export const client = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || process.env.SANITY_STUDIO_DATASET || process.env.SANITY_API_DATASET,
   apiVersion: '1',
   useCdn: false,
-  token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
+  token: process.env.SANITY_API_READ_TOKEN,
 })
 
 export const blog = `*[_type == "blog"]{
