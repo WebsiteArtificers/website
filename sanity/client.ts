@@ -2,11 +2,11 @@ import { createClient } from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 
 export const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || process.env.SANITY_STUDIO_PROJECT_ID || process.env.SANITY_API_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || process.env.SANITY_STUDIO_DATASET || process.env.SANITY_API_DATASET,
-  apiVersion: '1',
+  projectId: process.env.SANITY_API_PROJECT_ID,
+  dataset: process.env.SANITY_API_DATASET,
+  apiVersion: '2023-10-03',
   useCdn: false,
-  token: process.env.SANITY_API_WRITE_TOKEN || process.env.SANITY_API_READ_TOKEN,
+  token: process.env.SANITY_API_READ_TOKEN,
 })
 
 export const blog = `*[_type == "blog"]{
