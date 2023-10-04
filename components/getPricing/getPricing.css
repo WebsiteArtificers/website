@@ -1,7 +1,7 @@
 .getPricing__section {
-    background: var(--text);
+    background: var(--darker-background);
     display: flex;
-    color: var(--background-darker);
+    color: var(--background);
 }
 
 .getPricing__container {

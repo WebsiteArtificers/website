@@ -74,7 +74,3 @@ button {
 .button__tertiary:hover {
   box-shadow: .1vw .1vw 1vw var(--tertiary);
 }
-
-.formButtonPrimary {
-  background: red;
-}
