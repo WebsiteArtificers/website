@@ -244,7 +244,6 @@ export default function GetPricing({
                     )}
                   </p>
                   <Button
-                    variant="slim"
                     type="button"
                     disabled={!session}
                     loading={priceIdLoading === price.id}
