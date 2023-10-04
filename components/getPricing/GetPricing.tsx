@@ -30,7 +30,7 @@ interface Props {
   subscription: SubscriptionWithProduct | null;
 }
 
-type BillingInterval = 'lifetime' | 'year' | 'month';
+type BillingInterval = 'lifetime' | 'year' | 'month' | 'null';
 
 export default function GetPricing({
   session,
@@ -195,6 +195,19 @@ export default function GetPricing({
                 } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
               >
                 Yearly billing
+              </button>
+            )}
+            {intervals.includes(null) && (
+              <button
+                onClick={() => setBillingInterval('null')}
+                type="button"
+                className={`${
+                  billingInterval === 'null'
+                    ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+                    : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+                } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+              >
+                Custom Billing
               </button>
             )}
           </div>
