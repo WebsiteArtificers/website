@@ -1,0 +1,98 @@
+.getPricing__section {
+    background: var(--text);
+    display: flex;
+    color: var(--background);
+}
+
+.getPricing__container {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.getPricing__subcontainer {
+    text-align: center;
+}
+
+.getPricing__header {
+    font-size: 4vw;
+    color: var(--background);
+    font-weight: 800;
+    margin-bottom: 1vw;
+}
+
+.getPricing__paragraph {
+    color: var(--secondary-accent);
+    font-size: 2vw;
+    width: 60%;
+    margin: auto;
+    font-weight: 200;
+}
+
+.getPricing__paragraph--span {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.getPricing__link {
+    color: var(--tertiary);
+    font-size: 1.75vw;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.getPricing__link:hover {
+    color: var(--secondary);
+}
+
+.getPricing__name--container {
+
+}
+
+.getPricing__name--subcontainer {
+
+}
+
+.getPricing__name {
+
+}
+
+.getPricing__pricing--container {
+
+}
+
+.getPricing__pricing--subcontainer {
+
+}
+
+.getPricing__pricing--wrapper {
+
+}
+
+.getPricing__pricing--lettering {
+
+}
+
+.getPricing__pricing--priceString {
+
+}
+
+.getPricing__pricing--priceInterval {
+
+}
+
+.getPricing__pricing--priceDescription {
+
+}
+
+.getPricing__pricing--button {
+    
+}
+
+.getPricing__subscription--button {
+
+}

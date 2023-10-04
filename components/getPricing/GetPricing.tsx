@@ -8,6 +8,7 @@ import { Session, User } from '@supabase/supabase-js';
 import cn from 'classnames';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import './getPricing.css';
 
 type Subscription = Database['public']['Tables']['subscriptions']['Row'];
 type Product = Database['public']['Tables']['products']['Row'];
@@ -74,13 +75,13 @@ export default function GetPricing({
 
   if (!products.length)
     return (
-      <section className="bg-black">
-        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
-          <div className="sm:flex sm:flex-col sm:align-center"></div>
-          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+      <section className="getPricing__section">
+        <div className="getPricing__container">
+          <div className="getPricing__subcontainer"></div>
+          <p className="getPricing__paragraph">
             No subscription pricing plans found. Create them in your{' '}
             <a
-              className="text-pink-500 underline"
+              className="getPricing__link"
               href="https://dashboard.stripe.com/products"
               rel="noopener noreferrer"
               target="_blank"
@@ -95,24 +96,23 @@ export default function GetPricing({
 
   if (products.length === 1)
     return (
-      <section className="bg-black">
-        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
-          <div className="sm:flex sm:flex-col sm:align-center">
-            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+      <section className="getPricing__section">
+        <div className="getPricing__container">
+          <div className="getPricing__subcontainer">
+            <h1 className="getPricing__header">
               Pricing Plans
             </h1>
-            <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-              Start building for free, then add a site plan to go live. Account
-              plans unlock additional features.
+            <p className="getPricing__paragraph">
+              tailored plans. <span className="getPricing__paragraph--span">built for you.</span>
             </p>
-            <div className="relative flex self-center mt-12 border rounded-lg bg-zinc-900 border-zinc-800">
-              <div className="border border-pink-500 border-opacity-50 divide-y rounded-lg shadow-sm bg-zinc-900 divide-zinc-600">
-                <div className="p-6 py-2 m-1 text-2xl font-medium text-white rounded-md shadow-sm border-zinc-800 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8">
+            <div className="getPricing__name--container">
+              <div className="getPricing__name--subcontainer">
+                <div className="getPricing__name">
                   {products[0].name}
                 </div>
               </div>
             </div>
-            <div className="mt-6 space-y-4 sm:mt-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+            <div className="getPricing__pricing--container">
               {products[0].prices?.map((price) => {
                 const priceString =
                   price.unit_amount &&
@@ -125,25 +125,25 @@ export default function GetPricing({
                 return (
                   <div
                     key={price.interval}
-                    className="divide-y rounded-lg shadow-sm divide-zinc-600 bg-zinc-900"
+                    className="getPricing__pricing--subcontainer"
                   >
-                    <div className="p-6">
-                      <p>
-                        <span className="text-5xl font-extrabold white">
+                    <div className="getPricing__pricing--wrapper">
+                      <p className='getPricing__pricing--lettering'>
+                        <span className="getPricing__pricing--priceString">
                           {priceString}
                         </span>
-                        <span className="text-base font-medium text-zinc-100">
+                        <span className="getPricing__pricing--priceInterval">
                           /{price.interval}
                         </span>
                       </p>
-                      <p className="mt-4 text-zinc-300">{price.description}</p>
+                      <p className="getPricing__pricing--priceDescription">{price.description}</p>
                       <Button
                         variant="slim"
                         type="button"
                         disabled={false}
                         loading={priceIdLoading === price.id}
                         onClick={() => handleCheckout(price)}
-                        className="block w-full py-2 mt-12 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900 "
+                        className="getPricing__pricing--button"
                       >
                         {products[0].name ===
                         subscription?.prices?.products?.name
@@ -161,17 +161,16 @@ export default function GetPricing({
     );
 
   return (
-    <section className="bg-black">
-      <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
-        <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+    <section className="getPricing__section">
+      <div className="getPricing__container">
+        <div className="getPricing__subcontainer">
+          <h1 className="getPricing__header">
             Pricing Plans
           </h1>
-          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
+          <p className="getPricing__paragraph">
+              tailored plans. <span className="getPricing__paragraph--span">built for you.</span>
           </p>
-          <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+          <div className="getPricing__mainPricing--container">
             {intervals.includes('month') && (
               <button
                 onClick={() => setBillingInterval('month')}
@@ -200,7 +199,7 @@ export default function GetPricing({
             )}
           </div>
         </div>
-        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+        <div className="getPricing__product">
           {products.map((product) => {
             const price = product?.prices?.find(
               (price) => price.interval === billingInterval
@@ -242,7 +241,7 @@ export default function GetPricing({
                     disabled={!session}
                     loading={priceIdLoading === price.id}
                     onClick={() => handleCheckout(price)}
-                    className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
+                    className="getPricing__subscription--button button__primary"
                   >
                     {subscription ? 'Manage' : 'Subscribe'}
                   </Button>
