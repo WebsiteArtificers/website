@@ -63,9 +63,9 @@
 }
 
 .button__billingInterval {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: 600;
-    color: var(--secondary-accent);
+    color: var(--primary);
     margin-right: .25vw;
     margin-left: .25vw;
     transition: .25s;
@@ -73,14 +73,93 @@
 }
 
 .button__billingInterval--active {
-    color: var(--text);
-    background: var(--secondary);
-    border: .15vw solid var(--text);
+    color: var(--secondary-accent);
+    background: var(--text);
+    border: .1vw solid var(--secondary);
     border-radius: .25vw;
 }
 
 .button__billingInterval--inactive {
-    border: .15vw solid transparent;
+    border: .1vw solid transparent;
     border-radius: .25vw;
 }
 
+.getPricing__product {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vw;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    gap: 1.5vw;
+}
+
+.getPricing__product--container {
+    width: 30%;
+    background: var(--accent-background);
+    padding: 1vw;
+    border-radius: .25vw;
+    cursor: pointer;
+    box-shadow: .1vw .1vw 1vw .1vw transparent;
+    border: .1vw solid transparent;
+    transition: .5s;
+}
+
+.getPricing__product--container:hover {
+    border: .1vw solid var(--secondary);
+    box-shadow: .1vw .1vw 1vw .1vw var(--tertiary);
+}
+
+.getPricing__product--header {
+    font-size: 2vw;
+    font-weight: 800;
+    margin-bottom: 1vw;
+    color: var(--primary);
+}
+
+.getPricing__product--description {
+    font-size: 1vw;
+    font-weight: 200;
+    line-height: 1.75vw;
+    margin-bottom: .5vw;
+}
+
+.getPricing__product--pricing__container {
+    margin-bottom: .5vw;
+}
+
+.getPricing__product--pricing {
+    font-size: 4vw;
+    font-weight: 900;
+    color: var(--secondary);
+}
+
+.getPricing__product--billingInterval {
+    color: var(--tertiary);
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+.getPricing__subscription--button {
+    margin: auto;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: .25vw;
+    padding: .5vw;
+    transition: .5s ease-in-out;
+    border: .15vw solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    outline: none;
+}
+
+.getPricing__subscription--button:hover,
+.getPricing__subscription--button:active,
+.getPricing__subscription--button:focus {
+    box-shadow: .1vw .1vw 1vw var(--primary);
+    background: transparent;
+    border: .15vw solid var(--primary);
+    color: var(--primary);
+    outline: none;
+}

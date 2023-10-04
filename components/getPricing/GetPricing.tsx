@@ -226,26 +226,19 @@ export default function GetPricing({
             return (
               <div
                 key={product.id}
-                className={cn(
-                  'rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
-                  {
-                    'border border-pink-500': subscription
-                      ? product.name === subscription?.prices?.products?.name
-                      : product.name === 'Freelancer'
-                  }
-                )}
+                className="getPricing__product--container"
               >
-                <div className="p-6">
-                  <h2 className="text-2xl font-semibold leading-6 text-white">
+                <div className="getPricing__product--subcontainer">
+                  <h2 className="getPricing__product--header">
                     {product.name}
                   </h2>
-                  <p className="mt-4 text-zinc-300">{product.description}</p>
-                  <p className="mt-8">
-                    <span className="text-5xl font-extrabold white">
+                  <p className="getPricing__product--description">{product.description}</p>
+                  <p className="getPricing__product--pricing__container">
+                    <span className="getPricing__product--pricing">
                       {priceString}
                     </span>
                     {billingInterval != null && (
-                      <span className="text-base font-medium text-zinc-100">
+                      <span className="getPricing__product--billingInterval">
                       /{billingInterval}
                       </span>
                     )}
@@ -256,7 +249,7 @@ export default function GetPricing({
                     disabled={!session}
                     loading={priceIdLoading === price.id}
                     onClick={() => handleCheckout(price)}
-                    className="getPricing__subscription--button button__primary"
+                    className="getPricing__subscription--button"
                   >
                     {!billingInterval ? 'Schedule a Call' : subscription ? 'Manage' : 'Subscribe'}
                   </Button>
