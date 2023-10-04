@@ -29,6 +29,7 @@
     width: 60%;
     margin: auto;
     font-weight: 200;
+    margin-bottom: 2vw;
 }
 
 .getPricing__paragraph--span {
@@ -49,50 +50,37 @@
     color: var(--secondary);
 }
 
-.getPricing__name--container {
-
+.getPricing__mainPricing--container {
+    display: inline-block;
+    margin: auto;
+    background: var(--accent-background);
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding-right: .25vw;
+    padding-left: .25vw;
+    border-radius: .25vw;
+    border: .1vw solid var(--primary);
 }
 
-.getPricing__name--subcontainer {
-
+.button__billingInterval {
+    font-size: 1vw;
+    font-weight: 600;
+    color: var(--secondary-accent);
+    margin-right: .25vw;
+    margin-left: .25vw;
+    transition: .25s;
+    border-radius: .25vw;
 }
 
-.getPricing__name {
-
+.button__billingInterval--active {
+    color: var(--text);
+    background: var(--secondary);
+    border: .15vw solid var(--text);
+    border-radius: .25vw;
 }
 
-.getPricing__pricing--container {
-
+.button__billingInterval--inactive {
+    border: .15vw solid transparent;
+    border-radius: .25vw;
 }
 
-.getPricing__pricing--subcontainer {
-
-}
-
-.getPricing__pricing--wrapper {
-
-}
-
-.getPricing__pricing--lettering {
-
-}
-
-.getPricing__pricing--priceString {
-
-}
-
-.getPricing__pricing--priceInterval {
-
-}
-
-.getPricing__pricing--priceDescription {
-
-}
-
-.getPricing__pricing--button {
-    
-}
-
-.getPricing__subscription--button {
-
-}
