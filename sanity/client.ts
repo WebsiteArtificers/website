@@ -19,9 +19,9 @@ export const blog = `*[_type == "blog"]{
       url
     }
   },
+  preview,
   categories[]->,
   publishedAt,
-  preview,
   body,
 }`
 
