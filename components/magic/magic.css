@@ -70,7 +70,8 @@
 .magic__blog--image {
     width: 12vw;
     height: 8vw;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     border-top-right-radius: .25vw;
     border-top-left-radius: .25vw;
     border-bottom: .15vw solid var(--secondary);
