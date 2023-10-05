@@ -15,10 +15,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <div className='blogPage__container'>
       {
-        blogs?.map((blog: any) => (
+        blogs?.map((blog: any, index: any) => (
           blogSlug === blog.slug.current ?
           <div>
-            <div className='blogPage__subcontainer'>
+            <div className='blogPage__subcontainer' key={index}>
               <div className='blogPage__title--container'>
                 <h1 className='blogPage__title'>{blog.title}</h1>
                 <BlockContent blocks={blog.preview}/>
