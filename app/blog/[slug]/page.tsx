@@ -11,6 +11,8 @@ async function getBlogData() {
 export default async function Page({ params }: { params: { slug: any } }) {
   const blogs = await getBlogData()
   const blogSlug = params.slug
+  console.log(blogs)
+
   return (
     <div className='blogPage__container'>
       {
