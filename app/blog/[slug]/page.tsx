@@ -1,3 +1,4 @@
+"use client"
 import { client, blog, urlFor } from '../../../sanity/client'
 import Image from 'next/image'
 import SanityBlockContent from '@sanity/block-content-to-react'
@@ -11,7 +12,6 @@ async function getBlogData() {
 export default async function Page({ params }: { params: { slug: any } }) {
   const blogs = await getBlogData()
   const blogSlug = params.slug
-  console.log(blogs)
 
   return (
     <div className='blogPage__container'>
