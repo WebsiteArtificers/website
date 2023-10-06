@@ -83,8 +83,8 @@
 .blogPage__content--container code {
     font-size: 1.25vw;
     color: var(--accent-background);
-    margin-left: 1.5vw;
     font-weight: 600;
+    margin: auto;
 }
 
 .blogPage__content--container a {
@@ -114,8 +114,4 @@
     margin-bottom: .5vw;
     color: var(--accent);
     font-weight: 400;
-}
-
-.blogPage__content--container li code {
-    margin: auto;
 }
