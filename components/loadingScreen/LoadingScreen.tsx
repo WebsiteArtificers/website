@@ -1,4 +1,4 @@
-import './LoadingScreen.css';
+import './loadingScreen.css';
 import { LogoDark } from '@/icons/icons';
 
 const LoadingScreen = () => {
