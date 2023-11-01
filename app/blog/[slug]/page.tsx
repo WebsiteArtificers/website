@@ -1,19 +1,27 @@
 "use client"
-import { client, blog, urlFor } from '../../../sanity/client'
-import Image from 'next/image'
-import SanityBlockContent from '@sanity/block-content-to-react'
-import './blogContent.css'
-import { LoadingScreen } from '@/components/components'
-import { Suspense } from 'react' 
+import { useState, useEffect, Suspense } from 'react';
+import { client, blog, urlFor } from '../../../sanity/client';
+import Image from 'next/image';
+import SanityBlockContent from '@sanity/block-content-to-react';
+import './blogContent.css';
+import { LoadingScreen } from '@/components/components';
 
-async function getBlogData() {
-  const res = await client.fetch(blog)
-  return res
-}
+const getBlogData = async () => {
+  const res = await client.fetch(blog);
+  return res;
+};
 
-export default async function Page({ params }: { params: { slug: any } }) {
-  const blogs = await getBlogData()
-  const blogSlug = params.slug
+export default function Page({ params }: { params: { slug: any } }) {
+  const [blogs, setBlogs] = useState<any[]>([]);
+  const blogSlug = params.slug;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await getBlogData();
+      setBlogs(res);
+    };
+    fetchData();
+  }, []);
 
   return (
     <Suspense fallback={<LoadingScreen />}>
@@ -40,5 +48,5 @@ export default async function Page({ params }: { params: { slug: any } }) {
         }
       </div>
     </Suspense>
-  )
+  );
 }
