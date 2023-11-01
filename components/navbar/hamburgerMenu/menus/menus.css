@@ -1,0 +1,50 @@
+.hamburgerMenu__container {
+    background: var(--background);
+    padding: .5vw;
+    transition: .2s;
+    opacity: .90;
+    width: 90%;
+    margin: auto;
+    z-index: 1;
+}
+
+.hamburgerMenu__subcontainer--header {
+    font-size: 1rem;
+    color: var(--tertiary);
+    font-weight: 800;
+    padding: .5vw;
+}
+
+.hamburgerMenu__subcontainer--link {
+    all: unset;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+}
+
+.hamburgerMenu__subcontainer--subheader {
+    font-size: .90rem;
+    font-weight: 600;
+    color: var(--darker-background);
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: .25vw;
+    transition: .5s;
+}
+
+.hamburgerMenu__subcontainer--link:hover > .hamburgerMenu__subcontainer--description,
+.hamburgerMenu__subcontainer--link:hover > .hamburgerMenu__subcontainer--subheader {
+    background: var(--secondary-accent);
+}
+
+.hamburgerMenu__subcontainer--description {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: .5s;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0;
+}

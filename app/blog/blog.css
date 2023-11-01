@@ -8,8 +8,7 @@
     border-bottom: .15vw solid var(--darker-background);
     padding-bottom: 1vw;
     background: var(--secondary-accent);
-    position: sticky;
-    top: 7.70vw;
+    position: fixed;
     padding-top: 1vw;
     opacity: .98;
 }
@@ -55,7 +54,7 @@
     gap: 3vw;
     width: 80%;
     margin: auto;
-    padding-top: 3vw;
+    padding-top: 12vw;
 }
 
 .blog__cover {

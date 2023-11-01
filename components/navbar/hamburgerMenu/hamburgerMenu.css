@@ -1,0 +1,94 @@
+.hamburger__span svg path {
+    transition: .5s;
+    stroke: var(--background);
+}
+
+.smallScreenMenu__container {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.smallScreenMenu__top--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2vw;
+}
+
+.smallScreenMenu__top--container a {
+    width: 100%;
+}
+
+.smallScreenMenu__top--button {
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-weight: 800;
+    width: 100%;
+}
+
+.smallScreenMenu__subcontainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    padding: .5vw;
+    border-bottom: .1vw solid var(--secondary-accent);
+    transition: .5s;
+}
+
+.smallScreenMenu__subcontainer:hover {
+    background: var(--secondary-accent);
+}
+
+.smallScreenMenu__subcontainer div {
+    margin-left: auto;
+    transition: .5s;
+    width: .80rem;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.smallScreenMenu__subcontainer div svg {
+    stroke: var(--text);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.active__background {
+    background: var(--secondary-accent);
+    border-bottom: .1vw solid var(--accent);
+}
+
+.smallScreenMenu__button {
+    font-size: 1.5vw;
+    background: none;
+    outline: none;
+    border: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-weight: 800;
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    .smallScreenMenu__top--button {
+        font-size: 1rem;
+    }
+    .smallScreenMenu__button {
+        font-size: 1rem;
+    }
+
+    .smallScreenMenu__subcontainer svg {
+        width: .7rem;
+    }
+}

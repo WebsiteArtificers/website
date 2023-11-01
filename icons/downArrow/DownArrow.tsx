@@ -1,5 +1,3 @@
-import './downArrow.css'
-
 export default function DownArrow() {
   return (
     <svg viewBox="0 0 50 32.033" xmlns="http://www.w3.org/2000/svg" stroke="#e6ecf4">

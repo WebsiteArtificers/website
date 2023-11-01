@@ -14,6 +14,7 @@ import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
 import './account.css';
 import { Suspense } from 'react';
+import { LoadingScreen } from '@/components/components';
 
 export default async function Account() {
   const [session, userDetails, subscription] = await Promise.all([
@@ -80,7 +81,7 @@ export default async function Account() {
   };
 
   return (
-    <Suspense fallback='loading...'>
+    <Suspense fallback={<LoadingScreen />}>
       <section className="account__container">
         <div className="account__subcontainer">
           <div className="account__header--section">

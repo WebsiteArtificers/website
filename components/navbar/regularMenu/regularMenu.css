@@ -1,0 +1,53 @@
+.regular__link {
+    color: var(--background);
+    background: none;
+    border: none;
+    font-size: 1.25vw;
+    margin: auto;
+    font-weight: 800;
+}
+
+.separate__link {
+    font-size: 1.25vw;
+    font-weight: 800;
+}
+
+[data-separate] {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.regular__link--container {
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.regular__link--container svg {
+    width: .75vw;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin: auto
+}
+
+.regular__link--container:hover > .regular__link {
+    color: var(--tertiary);
+}
+
+.regular__link--container:hover > svg {
+    stroke: var(--tertiary);
+}
+
+.regular__link--container:hover > svg {
+    transform: rotateZ(180deg);
+    stroke: var(--tertiary);
+}
+
+.regular__link:hover + svg {
+    transform: rotateZ(180deg);
+    stroke: var(--tertiary);
+}

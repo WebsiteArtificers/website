@@ -3,7 +3,7 @@ import { getSession } from '@/app/supabase-server';
 import AuthUI from './AuthUI';
 import './sign-in.css'
 import { Suspense } from 'react';
-
+import { LoadingScreen } from '@/components/components';
 import { redirect } from 'next/navigation';
 
 export default async function SignIn() {
@@ -15,7 +15,7 @@ export default async function SignIn() {
   }
 
   return (
-    <Suspense fallback='Loading...'>
+    <Suspense fallback={<LoadingScreen />}>
       <div className="login__container">
         <Logo />
         <div className='authentication__container'>

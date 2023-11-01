@@ -4,6 +4,7 @@ import { client, blog, category, urlFor } from '../../sanity/client'
 import './blog.css'
 import { Logo } from '../.././icons/icons'
 import { Suspense } from 'react' 
+import { LoadingScreen } from '@/components/components'
 
 export default function Page() {
 
@@ -39,7 +40,7 @@ export default function Page() {
   }, [])
 
   return (
-    <Suspense fallback='loading...'>
+    <Suspense fallback={<LoadingScreen />}>
         <div className="blog__container">
           <div className='blog__border--bottom'>
             <div className='blog__subcontainer'>

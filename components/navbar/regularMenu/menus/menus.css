@@ -1,0 +1,67 @@
+.menu__container {
+    position: absolute;
+    top: 2.5vw;
+    display: flex;
+    left: .5vw;
+    gap: 3vw;
+    background: var(--background);
+    padding: .5vw;
+    border-radius: .25vw;
+    box-shadow: .05vw .05vw .25vw var(--text);
+    transition: .2s;
+    opacity: .90;
+    z-index: 100;
+    width: 40vw;
+    border-top: solid .25vw var(--secondary);
+}
+
+.menu__subcontainer--header {
+    font-size: 1.5vw;
+    color: var(--tertiary);
+    font-weight: 200;
+    padding: .5vw;
+}
+
+.menu__subcontainer--link {
+    all: unset;
+    margin-top: 1vw;
+    cursor: pointer;
+    background: none;
+    padding: .5vw;
+    transition: .5s;
+}
+
+.menu__subcontainer--subheader {
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: var(--darker-background);
+    padding-top: .5vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-bottom: .25vw;
+    transition: .5s;
+    border-top-right-radius: .25vw;
+    border-top-left-radius: .25vw;
+}
+
+.menu__subcontainer--link:hover > .menu__subcontainer--description,
+.menu__subcontainer--link:hover > .menu__subcontainer--subheader {
+    background: var(--secondary-accent);
+}
+
+.menu__subcontainer--description {
+    font-size: 1vw;
+    font-weight: 500;
+    color: var(--text);
+    transition: .5s;
+    padding-bottom: .5vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-top: 0;
+    border-bottom-right-radius: .25vw;
+    border-bottom-left-radius: .25vw;
+}
+
+.hidden {
+    display: none;
+}

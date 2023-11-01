@@ -72,6 +72,7 @@
     width: 1.5vw;
     transition: .5s;
 }
+
 .footer__bottom--container {
     background: var(--secondary-accent);
     text-align: center;

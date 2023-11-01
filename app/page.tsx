@@ -5,7 +5,7 @@ import
         { 
           Hero, Definition, Overview,
           Offering, OfferingDescription, Welcome,
-          Supercharge, Pricing, Community, Magic, 
+          Supercharge, Pricing, Community, Magic, LoadingScreen
         }
 from '../components/components'
 
@@ -19,7 +19,7 @@ export default async function Index() {
   } = await supabase.auth.getUser()
 
   return (
-    <Suspense fallback='loading...'>
+    <Suspense fallback={<LoadingScreen />}>
       <Hero />
       <Definition />
       <Overview />
