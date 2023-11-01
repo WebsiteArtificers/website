@@ -49,14 +49,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/images/website-artificer-logo.ico" />
-        <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-J0YKHG4LC0"></Script>
+        <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-BY6RR52CSJ"></Script>
         <Script strategy="afterInteractive">
           {
-            `window.dataLayer = window.dataLayer || [];
+            `  window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
           
-            gtag('config', 'G-J0YKHG4LC0');`
+            gtag('config', 'G-BY6RR52CSJ');`
           }
         </Script>
       </head>
