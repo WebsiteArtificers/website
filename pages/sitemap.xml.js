@@ -1,4 +1,4 @@
-//app/sitemap.xml.js
+//pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = process.env.NEXT_PUBLIC_SITE_URL + '/posts';
 
 function generateSiteMap(posts) {
