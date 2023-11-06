@@ -1,43 +1,36 @@
-//pages/sitemap.xml.js
-const EXTERNAL_DATA_URL = process.env.NEXT_PUBLIC_SITE_URL + '/posts';
+// pages/sitemap.xml.js
 
-function generateSiteMap(posts) {
+function generateSiteMap() {
+  const urls = [
+    process.env.NEXT_PUBLIC_SITE_URL,
+    `${process.env.NEXT_PUBLIC_SITE_URL}/blog`,
+    // Add more static URLs here
+  ];
+
   return `<?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <!--We manually set the two URLs we know already-->
-     <url>
-       <loc>${process.env.NEXT_PUBLIC_SITE_URL}</loc>
-     </url>
-     <url>
-       <loc>${process.env.NEXT_PUBLIC_SITE_URL}/guide</loc>
-     </url>
-     ${posts
-       .map(({ id }) => {
-         return `
-       <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
-       </url>
-     `;
-       })
-       .join('')}
-   </urlset>
- `;
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${urls
+        .map((url) => {
+          return `
+            <url>
+              <loc>${url}</loc>
+            </url>
+          `;
+        })
+        .join('')}
+    </urlset>
+  `;
 }
 
 function SiteMap() {
-  // getServerSideProps will do the heavy lifting
+  // Empty component, as we're just using getServerSideProps
 }
 
 export async function getServerSideProps({ res }) {
-  // We make an API call to gather the URLs for our site
-  const request = await fetch(EXTERNAL_DATA_URL);
-  const posts = await request.json();
-
-  // We generate the XML sitemap with the posts data
-  const sitemap = generateSiteMap(posts);
+  // We generate the XML sitemap
+  const sitemap = generateSiteMap();
 
   res.setHeader('Content-Type', 'text/xml');
-  // we send the XML to the browser
   res.write(sitemap);
   res.end();
 
