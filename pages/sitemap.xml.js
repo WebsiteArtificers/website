@@ -1,9 +1,11 @@
 // pages/sitemap.xml.js
 
+const WEBSITE_URL = process.env.NEXT_PUBLIC_SITE_URL
+
 function generateSiteMap() {
   const urls = [
-    process.env.NEXT_PUBLIC_SITE_URL,
-    `${process.env.NEXT_PUBLIC_SITE_URL}/blog`,
+    WEBSITE_URL,
+    WEBSITE_URL + '/blog',
     // Add more static URLs here
   ];
 
