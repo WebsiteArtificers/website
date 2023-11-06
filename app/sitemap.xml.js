@@ -1,15 +1,15 @@
 //app/sitemap.xml.js
-const EXTERNAL_DATA_URL = 'https://jsonplaceholder.typicode.com/posts';
+const EXTERNAL_DATA_URL = process.env.NEXT_PUBLIC_SITE_URL + '/posts';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
      <url>
-       <loc>${process.env.NEXT_PUBLIC_SITE_UR}</loc>
+       <loc>${process.env.NEXT_PUBLIC_SITE_URL}</loc>
      </url>
      <url>
-       <loc>${process.env.NEXT_PUBLIC_SITE_UR}/guide</loc>
+       <loc>${process.env.NEXT_PUBLIC_SITE_URL}/guide</loc>
      </url>
      ${posts
        .map(({ id }) => {
