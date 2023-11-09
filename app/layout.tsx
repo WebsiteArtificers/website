@@ -59,6 +59,7 @@ export default function RootLayout({
             gtag('config', 'G-BY6RR52CSJ');`
           }
         </Script>
+
       </head>
       <body>
         <SupabaseProvider>
