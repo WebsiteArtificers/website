@@ -48,6 +48,9 @@
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: .5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .definition__subcontainer--archaic {
@@ -74,4 +77,219 @@
     line-height: 3.5vw;
     font-weight: 400;
     color: var(--primary);
+}
+
+@media (max-width: 850px) {
+    .definition__container {
+        margin-bottom: 15rem;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 2rem;
+    }
+
+    .definition__right {
+        margin: auto;
+        width: 95%;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        border-left: none;
+        border-top: var(--secondary) .5rem solid;
+    }
+
+    .definition__left {
+        margin: auto;
+        width: 95%;
+        padding-bottom: 2rem;
+    }
+
+    .definition__header {
+        font-size: 8rem;
+    }
+
+    .definition__paragraph {
+        font-size: 4rem;
+    }
+
+    .definition__subcontainer {
+        gap: 1rem;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
+    .definition__subcontainer--noun {
+        font-size: 3rem;
+    }
+
+    .definition__archaic--container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: .5rem;
+    }
+
+    .definition__subcontainer--archaic {
+        font-size: 3rem;
+    }
+
+    .definition__definition {
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+
+    .definition__right--header {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .definition__right--paragraph {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .definition__header {
+        font-size: 6rem;
+    }
+
+    .definition__paragraph {
+        font-size: 3rem;
+    }
+
+    .definition__subcontainer--noun {
+        font-size: 2.5rem;
+    }
+
+    .definition__archaic--container {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
+    .definition__subcontainer--archaic {
+        font-size: 2.5rem;
+    }
+
+    .definition__definition {
+        margin-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .definition__right--header {
+        font-size: 4rem;
+    }
+    
+    .definition__right--paragraph {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .definition__header {
+        font-size: 5rem;
+    }
+
+    .definition__paragraph {
+        font-size: 2.5rem;
+    }
+
+    .definition__subcontainer--noun {
+        font-size: 2rem;
+    }
+
+    .definition__archaic--container {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .definition__subcontainer--archaic {
+        font-size: 2rem;
+    }
+
+    .definition__definition {
+        margin-left: .5rem;
+        font-size: 2rem;
+    }
+
+    .definition__right--header {
+        font-size: 3rem;
+    }
+    
+    .definition__right--paragraph {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .definition__header {
+        font-size: 4rem;
+    }
+
+    .definition__paragraph {
+        font-size: 2rem;
+    }
+
+    .definition__subcontainer--noun {
+        font-size: 1.5rem;
+    }
+
+    .definition__archaic--container {
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+
+    .definition__subcontainer--archaic {
+        font-size: 1.5rem;
+    }
+
+    .definition__definition {
+        margin-left: .25rem;
+        font-size: 1.5rem;
+    }
+
+    .definition__right--header {
+        font-size: 2.5rem;
+    }
+    
+    .definition__right--paragraph {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .definition__header {
+        font-size: 20vw;
+    }
+
+    .definition__paragraph {
+        font-size: 10vw;
+    }
+
+    .definition__subcontainer--noun {
+        font-size: 10vw;
+    }
+
+    .definition__archaic--container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .definition__subcontainer--archaic {
+        font-size: 10vw;
+    }
+
+    .definition__definition {
+        margin-left: 0;
+        font-size: 10vw;
+    }
+
+    .definition__right--header {
+        font-size: 12.5vw;
+    }
+    
+    .definition__right--paragraph {
+        font-size: 10vw;
+        line-height: 15vw;
+    }
 }

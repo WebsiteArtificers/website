@@ -40,9 +40,107 @@
     vertical-align: center;
     gap: 2vw;
     margin-top: 2vw;
+    margin-bottom: 15vw;
 }
 
 .hero__button {
     font-size: 1.5vw;
-    margin-bottom: 15vw;
+}
+
+@media (max-width: 1000px) {
+    .hero__header {
+        margin-top: 8rem;
+        margin-bottom: -1rem;
+        font-size: 4rem;
+    }
+
+    .hero__subheader {
+        font-size: 4rem;
+    }
+
+    .hero__paragraph {
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    .hero__button--container {
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+    }
+
+    .hero__button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero__header {
+        font-size: 3.5rem;
+    }
+    
+    .hero__subheader {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__container {
+        text-align: left;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .hero__header {
+        line-height: 4.5rem;
+    }
+
+    .hero__paragraph {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .hero__button--container {
+        gap: .5rem;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hero__button {
+        font-size: 1.5rem;
+        margin-bottom: 15rem;
+        margin: auto;
+        font-size: 1.25rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .hero__header {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 0;
+    }
+
+    .hero__subheader {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1rem;
+    }
+
+    .hero__button {
+        font-size: 1rem;
+    }
 }

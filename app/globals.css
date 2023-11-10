@@ -49,6 +49,7 @@ button {
   border: .15vw solid var(--primary);
   color: var(--primary);
   background: transparent;
+  box-shadow: .1vw .1vw 1vw transparent;
 }
 
 .button__primary:hover {
@@ -59,6 +60,7 @@ button {
   color: var(--background);
   background: var(--text);
   border: .15vw solid var(--text);
+  box-shadow: .1vw .1vw 1vw transparent;
 }
 
 .button__secondary:hover {
@@ -69,8 +71,43 @@ button {
   color: var(--text);
   background: var(--tertiary);
   border: .15vw solid var(--tertiary);
+  box-shadow: .1vw .1vw 1vw transparent;
 }
 
 .button__tertiary:hover {
   box-shadow: .1vw .1vw 1vw var(--tertiary);
+}
+
+@media (max-width: 1000px) {
+  button {
+    border-radius: .25rem;
+    padding: .5rem;
+  }
+
+  .button__primary {
+    border: .15rem solid var(--primary);
+    box-shadow: .1rem .1rem 1rem transparent;
+  }
+  
+  .button__primary:hover {
+    box-shadow: .1rem .1rem 1rem var(--primary);
+  }
+  
+  .button__secondary {
+    border: .15rem solid var(--text);
+    box-shadow: .1rem .1rem 1rem transparent;
+  }
+  
+  .button__secondary:hover {
+    box-shadow: .1rem .1rem 1rem var(--text);
+  }
+  
+  .button__tertiary {
+    border: .15rem solid var(--tertiary);
+    box-shadow: .1rem .1rem 1rem transparent;
+  }
+  
+  .button__tertiary:hover {
+    box-shadow: .1rem .1rem 1rem var(--tertiary);
+  }
 }
