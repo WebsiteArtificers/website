@@ -16,3 +16,28 @@
     font-size: 4vw;
     font-weight: 200;
 }
+
+@media (max-width: 1000px) {
+    .overview__container {
+        padding-bottom: 1rem;
+    }
+    
+    .overview__subheader {
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    .overview__header {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .overview__subheader {
+        font-size: 1.5rem;
+    }
+    
+    .overview__header {
+        font-size: 3.5rem;
+    }
+}
