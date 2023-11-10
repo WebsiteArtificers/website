@@ -68,3 +68,7 @@
     border-radius: .25vw;
     box-shadow: 3vw 3vw var(--darker-background);
 }
+
+@media (max-width: 1000px) {
+    
+}
