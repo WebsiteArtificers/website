@@ -138,3 +138,34 @@
         padding: .75rem;
     }
 }
+
+@media (max-width: 375px) {
+    .websiteOffering__header {
+        font-size: 2rem;
+    }
+    
+    .websiteOffering__subcontainer {
+        width: 95%;
+        gap: 1rem;
+    }
+    
+    .websiteOffering__left--paragraph {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .websiteOffering__left--li {
+        font-size: 1rem;
+        gap: 1rem;
+        margin-bottom: .25rem;
+    }
+
+    
+    .websiteOffering__left--button {
+        font-size: 1rem;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+        padding: .5rem;
+    }
+}

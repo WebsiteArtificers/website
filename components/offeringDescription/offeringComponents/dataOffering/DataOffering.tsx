@@ -26,7 +26,7 @@ export default function DataOffering() {
                     <button className='websiteOffering__left--button button__primary'>Explore Data and APIs</button>
                 </div>
                 <div className='websiteOffering__subcontainer--right'>
-                    <Image width={2000} height={2300} src='/images/data.JPG' alt='Picture of the various data opportunities presented by Website Artificers' className='websiteOffering__right--image' />
+                    <Image width={2000} height={2300} src='/images/data.jpg' alt='Picture of the various data opportunities presented by Website Artificers' className='websiteOffering__right--image' />
                 </div>
             </div>
         </div>
