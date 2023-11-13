@@ -40,3 +40,110 @@
     font-size: 1.25vw;
     font-weight: 400;
 }
+
+@media (max-width: 1000px) {
+    .supercharge__content--container {
+        width: 90%;
+        gap: 2rem;
+        margin-bottom: 6rem;
+    }
+    
+    .supercharge__content--subcontainer__image {
+        border-radius: .25rem;
+    }
+    
+    .supercharge__content--subcontainer__paragraph {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .supercharge__content--subcontainer__list {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+    
+    .supercharge__content--subcontainer__button {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .supercharge__content--container {
+        width: 95%;
+        gap: 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    .supercharge__content--subcontainer__paragraph {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .supercharge__content--subcontainer__list {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .supercharge__content--subcontainer__button {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .supercharge__content--container {
+        width: 95%;
+        gap: 1rem;
+        margin-bottom: 6rem;
+        flex-direction: column;
+    }
+    
+    .supercharge__content--subcontainer__paragraph {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .supercharge__content--subcontainer__list {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .supercharge__content--subcontainer__button {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .supercharge__content--container {
+        width: 95%;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .supercharge__content--container {
+        gap: .5rem;
+    }
+    
+    .supercharge__content--subcontainer__paragraph {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        font-size: 1rem
+    }
+    
+    .supercharge__content--subcontainer__list {
+        margin-bottom: .5rem;
+        font-size: .9rem;
+    }
+
+    .supercharge__content--subcontainer__button {
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+}

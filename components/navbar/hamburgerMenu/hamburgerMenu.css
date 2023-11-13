@@ -13,6 +13,7 @@
     width: 100%;
     top: 100;
     z-index: 99;
+    box-shadow: 0rem .15rem .5rem  var(--primary);
 }
 
 .smallScreenMenu__top--container {

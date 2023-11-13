@@ -98,3 +98,112 @@
     transition: background-color .2s;
     z-index: 3;
 }
+
+@media (max-width: 1000px) {
+    .supercharge__container {
+        padding-top: 6rem;
+    }
+    
+    .supercharge__header {
+        font-size: 2rem;
+        margin-left: 8rem;
+        margin-bottom: -1rem;
+    }
+    
+    .supercharge__subcontainer--subheader {
+        font-size: 4rem;
+        margin-left: 9rem;
+    }
+    
+    .supercharge__subcontainer.button__container {
+        margin-left: 9rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+    }
+    
+    .supercharge__subcontainer--button {
+        font-size: 1rem; /* Adjust font size as needed */
+        border-radius: 2rem;
+        padding: .75rem; /* Adjust padding as needed */
+    }
+    
+    .supercharge__subcontainer--button::before {
+        border-radius: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .supercharge__header {
+        font-size: 1.5rem;
+        margin-left: 5rem;
+        margin-bottom: -1rem;
+    }
+    
+    .supercharge__subcontainer--subheader {
+        font-size: 3rem;
+        margin-left: 6rem;
+    }
+    
+    .supercharge__subcontainer.button__container {
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .supercharge__container {
+        padding-top: 6rem;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .supercharge__header {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+        margin-bottom: auto;
+    }
+    
+    .supercharge__subcontainer--subheader {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+    }
+    
+    .supercharge__subcontainer.button__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .supercharge__subcontainer--button {
+        font-size: .8rem; /* Adjust font size as needed */
+        border-radius: 2rem;
+        padding: .5rem; /* Adjust padding as needed */
+    }
+}
+
+@media (max-width: 450px) {
+    .supercharge__container {
+        padding-top: 3rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .supercharge__header {
+        font-size: 1rem;
+    }
+    
+    .supercharge__subcontainer--subheader {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .supercharge__subcontainer--button {
+        font-size: .70rem; /* Adjust font size as needed */
+        border-radius: 8rem;
+        padding: .35rem; /* Adjust padding as needed */
+    }
+}
