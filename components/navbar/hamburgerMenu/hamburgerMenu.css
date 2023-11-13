@@ -9,6 +9,10 @@
     background: var(--primary);
     padding-top: 6vw;
     padding-bottom: 6vw;
+    position: fixed;
+    width: 100%;
+    top: 100;
+    z-index: 99;
 }
 
 .smallScreenMenu__top--container {
