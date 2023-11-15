@@ -1,0 +1,48 @@
+.error__container {
+    background: var(--background);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.error__error--header {
+    text-align: center;
+    font-size: 15rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: -2rem;
+}
+
+.error__header {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--text);
+    width: 60%;
+    margin: auto;
+    line-height: 7.5rem;
+}
+
+.error__paragraph {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.error__subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1.5rem;
+}
+
+.error__button {
+    font-size: 2rem;
+}

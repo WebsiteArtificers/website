@@ -13,12 +13,16 @@ export default function Hero() {
                 Your website is a crucial part of your business. Let us make your website functional and scalable. Let yourself have peace of mind.
             </motion.p>
             <div className='hero__button--container'>
-                <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__primary'>
-                    Contact Sales
-                </motion.button>
-                <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__secondary'>
-                    Our Expertise
-                </motion.button>
+                <a>
+                    <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__primary'>
+                        Contact Sales
+                    </motion.button>
+                </a>
+                <a href='/expertise'>
+                    <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__secondary'>
+                        Our Expertise
+                    </motion.button>
+                </a>
             </div>
         </div>
     )

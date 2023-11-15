@@ -52,19 +52,23 @@ export default function Pricing() {
             <h1 className='pricing__header'>Need website assistance?</h1>
             <div className='pricing__subcontainer'>
                 <div className='pricing__subcontainer--subcontainer__right'>
-                    <h2 className='pricing__subcontainer--subheader'>| Schedule a call <span className='pricing__subcontainer--subheader__span'>for just $50</span></h2>
-                    <p className='pricing__subcontainer--paragraph'>Discuss our unique business model without breaking the bank, <span className='pricing__subcontainer--paragraph__span'>or contact us free of charge.</span></p>
+                    <h2 className='pricing__subcontainer--subheader'>| Schedule a call <span className='pricing__subcontainer--subheader__span'>free of charge.</span></h2>
+                    <p className='pricing__subcontainer--paragraph'>Discuss our unique business model for free, <span className='pricing__subcontainer--paragraph__span'>or contact us, all without breaking the bank.</span></p>
                     <div className='pricing__subcontainer--button'>
-                        <button className='pricing__button button__secondary'>Schedule Call</button>
-                        <button className='pricing__button button__tertiary'>Contact Us</button>
+                        <a>
+                            <button className='pricing__button button__secondary'>Schedule Call</button>
+                        </a>
+                        <a>
+                            <button className='pricing__button button__tertiary'>Contact Us</button>
+                        </a>
                     </div>
                 </div>
                 <div className='pricing__subcontainer--subcontainer__left'>
                     <h2 className='pricing__subcontainer--subheader'>| Pricing built <span className='pricing__subcontainer--subheader__span'>for every {currentWord}</span></h2>
                     <p className='pricing__subcontainer--paragraph'>Website Artificers has offerings for every kind of business, <span className='pricing__subcontainer--paragraph__span'>regardless of size and scale.</span></p>
-                    <div className='pricing__subcontainer--button'>
+                    <a className='pricing__subcontainer--button' href='/pricing'>
                         <button className='pricing__button button__secondary'>Get Pricing</button>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

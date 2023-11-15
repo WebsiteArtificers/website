@@ -86,7 +86,7 @@
 .blog__cover--image {
     width: 20vw;
     height: 12vw;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     border-top-right-radius: .25vw;
     border-top-left-radius: .25vw;
