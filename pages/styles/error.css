@@ -46,3 +46,127 @@
 .error__button {
     font-size: 2rem;
 }
+
+@media (max-width: 1250px) {
+    .error__container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .error__error--header {
+        font-size: 12rem;
+    }
+    
+    .error__header {
+        text-align: center;
+        font-size: 4rem;
+        width: 65%;
+        margin: auto;
+        line-height: 6rem;
+    }
+    
+    .error__paragraph {
+        font-size: 1.75rem;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        line-height: 2.75rem;
+    }
+    
+    .error__subcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        gap: 1.5rem;
+    }
+    
+    .error__button {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .error__header {
+        font-size: 4rem;
+        width: 75%;
+        line-height: 6rem;
+    }
+    
+    .error__paragraph {
+        font-size: 1.75rem;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        line-height: 2.75rem;
+    }
+
+    .error__button {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .error__header {
+        font-size: 3rem;
+        width: 95%;
+        line-height: 4rem;
+    }
+    
+    .error__paragraph {
+        font-size: 1.5rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        line-height: 2.75rem;
+    }
+
+    .error__button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .error__error--header {
+        text-align: left;
+        font-size: 7rem;
+    }
+
+    .error__header {
+        text-align: left;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .error__paragraph {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .error__subcontainer {
+        flex-direction: column;
+        width: 95%;
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .error__link {
+        width: 100%;
+        margin: auto;
+    }
+
+    .error__button {
+        width: 100%;
+        margin: auto;
+        font-size: 1rem;
+    }
+}
