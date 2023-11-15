@@ -163,3 +163,187 @@
     color: var(--primary);
     outline: none;
 }
+
+@media (max-width: 1200px) {
+    .getPricing__section {
+        display: flex;
+    }
+    
+    .getPricing__container {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        width: 100%;
+    }
+    
+    .getPricing__header {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .getPricing__paragraph {
+        font-size: 2rem;
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+    
+    .getPricing__paragraph--span {
+        font-size: 2rem;
+    }
+    
+    .getPricing__link {
+        font-size: 1.75rem;
+    }
+    
+    .getPricing__mainPricing--container {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-right: .25rem;
+        padding-left: .25rem;
+        border-radius: .25rem;
+        border: .1rem solid var(--primary);
+    }
+    
+    .button__billingInterval {
+        font-size: 1.15rem;
+        margin-right: .25rem;
+        margin-left: .25rem;
+        border-radius: .25rem;
+    }
+    
+    .button__billingInterval--active {
+        border: .1rem solid var(--secondary);
+        border-radius: .25rem;
+    }
+    
+    .button__billingInterval--inactive {
+        border: .1rem solid transparent;
+        border-radius: .25rem;
+    }
+    
+    .getPricing__product {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        width: 80%;
+        gap: 1.5rem;
+    }
+    
+    .getPricing__product--container {
+        width: 60%;
+        padding: 1rem;
+        border-radius: .25rem;
+        box-shadow: .1rem .1rem 1rem .1rem transparent;
+        border: .1rem solid transparent;
+    }
+    
+    .getPricing__product--container:hover {
+        border: .1rem solid var(--secondary);
+        box-shadow: .1rem .1rem 1rem .1rem var(--tertiary);
+    }
+    
+    .getPricing__product--header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .getPricing__product--description {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-bottom: .5rem;
+    }
+    
+    .getPricing__product--pricing__container {
+        margin-bottom: .5rem;
+    }
+    
+    .getPricing__product--pricing {
+        font-size: 4rem;
+    }
+    
+    .getPricing__product--billingInterval {
+        font-size: 2rem;
+    }
+    
+    .getPricing__subscription--button {
+        width: 100%;
+        border-radius: .25rem;
+        padding: .5rem;
+        border: .15rem solid var(--primary);
+    }
+    
+    .getPricing__subscription--button:hover,
+    .getPricing__subscription--button:active,
+    .getPricing__subscription--button:focus {
+        box-shadow: .1rem .1rem 1rem var(--primary);
+        border: .15rem solid var(--primary);
+    }
+}
+
+@media (max-width: 775px) {
+    .getPricing__product--container {
+        width: 95%;
+        padding: .5rem;
+        border-radius: .25rem;
+        box-shadow: .1rem .1rem 1rem .1rem transparent;
+        border: .1rem solid transparent;
+    }
+
+    .getPricing__product {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        width: 95%;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .getPricing__product--container {
+        margin: auto;
+    }
+
+    .getPricing__product {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3rem;
+        width: 95%;
+        gap: 1rem;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .getPricing__header {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        margin: auto;
+        width: 95%;
+    }
+    
+    .getPricing__paragraph {
+        font-size: 2rem;
+        width: 95%;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .getPricing__mainPricing--container {
+        text-align: left;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .getPricing__product--pricing {
+        font-size: 3rem;
+    }
+    
+    .getPricing__product--billingInterval {
+        font-size: 1.5rem;
+    }
+}
