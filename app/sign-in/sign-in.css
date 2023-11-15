@@ -14,10 +14,6 @@
     margin: auto;
 }
 
-#auth-sign-in {
-
-}
-
 .supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-iwjZXY-color-default {
     display: grid;
     direction: row;
@@ -101,4 +97,94 @@
 
 .supabase-auth-ui_ui-anchor.c-dumjqv:hover {
     color: var(--background);
+}
+
+@media (max-width: 1900px) {
+    .login__container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    
+    .login__container svg {
+        width: 5rem;
+        margin: auto;
+    }
+    
+    .authentication__container {
+        width: 30%;
+        margin: auto;
+    }
+    
+    .supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-iwjZXY-color-default {
+        display: grid;
+        direction: row;
+        justify-content: center;
+        border: .01rem solid var(--text);
+        padding: .5rem;
+        border-radius: .25rem;
+        font-size: 1rem;
+    }
+    
+    .supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-iwjZXY-color-default:hover {
+        border: .01rem solid var(--background);
+    }
+    
+    /* Label */
+    .supabase-auth-ui_ui-label.c-bpexlo {
+        font-size: 1rem;
+        margin-bottom: .25rem;
+    }
+    
+    /* Input */
+    .supabase-auth-ui_ui-input.c-dEnagJ {
+        border: .01rem solid var(--text);
+        border-radius: .25rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    
+    .supabase-auth-ui_ui-input.c-dEnagJ::placeholder {
+        font-size: 1rem;
+    }
+    
+    .supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-cmFMMs-color-primary {
+        border: .01rem solid var(--text);
+        border-radius: .25rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    
+    .supabase-auth-ui_ui-button.c-bOcPnF.c-bOcPnF-cmFMMs-color-primary:hover {
+        border: .01rem solid var(--background);
+    }
+    
+    /* Link Container */
+    .supabase-auth-ui_ui-container.c-jTXIoq.c-jTXIoq-bsgKCL-direction-vertical.c-jTXIoq-jjTuOt-gap-small {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    /* Link */
+    .supabase-auth-ui_ui-anchor.c-dumjqv {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .authentication__container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    .authentication__container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .authentication__container {
+        width: 95%;
+    }
 }
