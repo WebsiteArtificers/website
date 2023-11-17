@@ -36,8 +36,4 @@ export const metadata = {
   }
 };
 
-export default function Page() {
-  return (
-    <ExpertisePage />
-  )
-}
+export default function Page() { return <ExpertisePage /> }

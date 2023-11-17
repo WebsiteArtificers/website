@@ -22,7 +22,7 @@ export default function SmallScreenMenu() {
                     <button className='smallScreenMenu__top--button button__tertiary'>Get Started</button>
                 </a>
             </div>
-            <a className='smallScreenMenu__subcontainer'>
+            <a className='smallScreenMenu__subcontainer' href='/contact/sales'>
                 <button className='smallScreenMenu__button'>Contact Sales</button>
             </a>
             <div onClick={() => {

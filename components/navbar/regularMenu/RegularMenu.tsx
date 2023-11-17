@@ -41,7 +41,7 @@ export default function Regular() {
                 <DownArrow />
                 { showResources && <Resources /> }
             </div>
-            <a className='regular__link--container' href='/contact-sales'>
+            <a className='regular__link--container' href='/contact/sales'>
                 <button className='regular__link'>Contact Sales</button>
             </a>
             <div data-separate>

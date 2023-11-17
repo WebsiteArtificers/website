@@ -1,0 +1,323 @@
+.salesLeft__container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.salesRight__container {
+    width: 50%;
+}
+
+.salesLeft__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.salesLeft__list {
+    color: var(--text);
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.salesLeft__subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5vw;
+    gap: 1.5vw;
+}
+
+.salesLeft__link {
+    all: unset;
+    text-align: left;
+    font-family: var(--font-family);
+    background: var(--secondary-accent);
+    padding: 1vw;
+    border-radius: .25vw;
+    cursor: pointer;
+    transition: .5s;
+    width: 95%;
+}
+
+.salesLeft__link:hover {
+    background: var(--primary);
+}
+
+.salesLeft__link--subheader {
+    font-size: 1.5vw;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.salesLeft__link--paragraph {
+    font-size: 1.25vw;
+    color: var(--text);
+}
+
+.salesRight__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    flex-grow: 1;
+    background: var(--secondary-accent);
+    padding: 1.5vw;
+    border-radius: .15vw;
+}
+
+.salesRight__subcontainer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    vertical-align: center;
+}
+
+.salesRight__subcontainer--subcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    vertical-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.salesRight__subcontainer--subcontainer.textarea__container {
+    width: 100%;
+    margin: auto;
+}
+
+.salesRight__subcontainer--subcontainer:nth-child(2) {
+    margin-left: auto;
+}
+
+.salesRight__subcontainer--container__label {
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: .5vw;
+    color: var(--text);
+}
+
+.salesRight__subcontainer--container__label span {
+    font-weight: 200;
+}
+
+.salesRight__subcontainer--container__input {
+    outline: none;
+    background: var(--background);
+    border: .1vw solid var(--accent);
+    border-radius: .25vw;
+    font-size: 1vw;
+    padding: .5vw;
+    font-weight: 400;
+    cursor: text;
+    transition: .5s;
+}
+
+.salesRight__subcontainer--container__input::placeholder {
+    color: var(--text);
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.salesRight__subcontainer--container__input:hover,
+.salesRight__subcontainer--container__input:focus,
+.salesRight__subcontainer--container__input:active {
+    border: .1vw solid var(--tertiary);
+}
+
+#size {
+    cursor: pointer;
+}
+
+.salesRight__subcontainer--subcontainer__textarea {
+    outline: none;
+    background: var(--background);
+    border: .1vw solid var(--accent);
+    border-radius: .25vw;
+    font-size: 1vw;
+    padding: .5vw;
+    font-weight: 400;
+    cursor: text;
+    transition: .5s;
+    height: 15vw;
+}
+
+.salesRight__subcontainer--subcontainer__textarea::placeholder {
+    color: var(--text);
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.salesRight__subcontainer--subcontainer__textarea:hover,
+.salesRight__subcontainer--subcontainer__textarea:focus,
+.salesRight__subcontainer--subcontainer__textarea:active {
+    border: .1vw solid var(--tertiary);
+}
+
+.salesRight__subcontainer--subcontainer__button {
+    margin-top: auto;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .salesLeft__container {
+        width: 100%;
+    }
+    
+    .salesRight__container {
+        width: 100%;
+    }
+    
+    .salesLeft__ul {
+        gap: 1rem;
+    }
+    
+    .salesLeft__list {
+        font-size: 1.25rem;
+    }
+    
+    .salesLeft__subcontainer {
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .salesLeft__link {
+        padding: 1rem;
+        border-radius: .25rem;
+        width: 95%;
+    }
+    
+    .salesLeft__link--subheader {
+        font-size: 1.5rem;
+    }
+    
+    .salesLeft__link--paragraph {
+        font-size: 1.25rem;
+    }
+    
+    .salesRight__form {
+        gap: 2rem;
+        padding: 1.5rem;
+        border-radius: .15rem;
+    }
+    
+    .salesRight__subcontainer--subcontainer.textarea__container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .salesRight__subcontainer--container__label {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .salesRight__subcontainer--container__input {
+        border: .1rem solid var(--accent);
+        border-radius: .25rem;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    
+    .salesRight__subcontainer--container__input::placeholder {
+        font-size: 1rem;
+    }
+    
+    .salesRight__subcontainer--container__input:hover,
+    .salesRight__subcontainer--container__input:focus,
+    .salesRight__subcontainer--container__input:active {
+        border: .1rem solid var(--tertiary);
+    }
+    
+    .salesRight__subcontainer--subcontainer__textarea {
+        border: .1rem solid var(--accent);
+        border-radius: .25rem;
+        font-size: 1rem;
+        padding: .5rem;
+        height: 15rem;
+    }
+    
+    .salesRight__subcontainer--subcontainer__textarea::placeholder {
+        font-size: 1rem;
+    }
+    
+    .salesRight__subcontainer--subcontainer__textarea:hover,
+    .salesRight__subcontainer--subcontainer__textarea:focus,
+    .salesRight__subcontainer--subcontainer__textarea:active {
+        border: .1rem solid var(--tertiary);
+    }
+    
+    .salesRight__subcontainer--subcontainer__button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .salesRight__subcontainer--subcontainer {
+        width: 100%;
+    }
+
+    .salesRight__subcontainer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .salesRight__form {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .salesLeft__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    
+    .salesLeft__list {
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .salesLeft__link--subheader {
+        font-size: 1.25rem;
+    }
+    
+    .salesLeft__link--paragraph {
+        font-size: 1rem;
+    }
+
+    .salesRight__subcontainer {
+        gap: .5rem;
+    }
+
+    .salesRight__form {
+        gap: .5rem;
+    }
+
+    .salesRight__subcontainer--container__label {
+        font-size: .9rem;
+    }
+    
+    .salesRight__subcontainer--container__input {
+        font-size: .9rem;
+    }
+    
+    .salesRight__subcontainer--container__input::placeholder {
+        font-size: .9rem;
+    }
+    
+    .salesRight__subcontainer--subcontainer__textarea::placeholder {
+        font-size: .9rem;
+    }
+    
+    .salesRight__subcontainer--subcontainer__button {
+        font-size: .9rem;
+    }
+}

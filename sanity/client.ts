@@ -30,6 +30,17 @@ export const category = `*[_type == 'category']{
   description,
   id,
 }`
+
+export const contactSalesForm = `*[_type == "salesForm"]{
+  fullname,
+  id,
+  email,
+  company,
+  companySize,
+  message,
+  connection,
+  publishedAt,
+}`
   
 const builder = imageUrlBuilder(client)
   
