@@ -5,9 +5,17 @@ export const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',
-  useCdn: false,
-  token: process.env.NEXT_PUBLIC_SANITY_API_ALL_TOKEN
+  useCdn: true,
+  token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN
 })
+
+export const serverClient = createClient({
+  projectId: 'dqm6dps0',
+  dataset: process.env.SANITY_DATASET,
+  apiVersion: '2023-10-03',
+  token: process.env.SANITY_API_WRITE_TOKEN, // Server-only token
+  useCdn: false,
+});
 
 export const blog = `*[_type == "blog"]{
   title,

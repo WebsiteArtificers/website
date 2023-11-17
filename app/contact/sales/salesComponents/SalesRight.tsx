@@ -32,18 +32,24 @@ export default function SalesRight() {
         }
         
         try {
-            await client.create({_type: 'salesForm', ...formData});
+            await fetch('/api/submitForm', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)
         }
 
-        setFullname('')
-        setEmail('')
-        setCompany('')
-        setCompanySize('1-100')
-        setMessage('')
-        setConnection('')
+        //setFullname('')
+        //setEmail('')
+        //setCompany('')
+        //setCompanySize('1-100')
+        //setMessage('')
+        //setConnection('')
 
         //handleLocationChange('/thank-you');
     }
