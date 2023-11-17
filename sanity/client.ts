@@ -1,4 +1,4 @@
-import { createClient } from '@sanity/client'
+import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url'
 
 export const client = createClient({
@@ -6,7 +6,7 @@ export const client = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',
   useCdn: true,
-  token: process.env.SANITY_API_READ_TOKEN,
+  token: process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
 })
 
 export const blog = `*[_type == "blog"]{
@@ -31,7 +31,7 @@ export const category = `*[_type == 'category']{
   id,
 }`
 
-export const contactSalesForm = `*[_type == "salesForm"]{
+export const contactSalesForm = `*[_type == 'salesForm']{
   fullname,
   id,
   email,
