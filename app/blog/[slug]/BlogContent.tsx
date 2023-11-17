@@ -4,7 +4,7 @@ import Image from 'next/image';
 import SanityBlockContent from '@sanity/block-content-to-react';
 import './blogContent.css';
 import { LoadingScreen } from '@/components/components';
-import { readClient, urlFor } from '../../../sanity/client';
+import { client, urlFor } from '../../../sanity/client';
 
 interface BlogPost {
   slug: { current: string };
@@ -26,7 +26,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
       try {
         const query = `*[slug.current == $slug][0]`;
         const params = { slug };
-        const data = await readClient.fetch(query, params);
+        const data = await client.fetch(query, params);
         setBlogPost(data);
       } catch (error) {
         console.error('Error fetching blog post:', error);

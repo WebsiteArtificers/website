@@ -2,7 +2,7 @@
 import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { writeClient } from '@/sanity/client'
+import { client } from '@/sanity/client'
 
 export default function SalesRight() {
 
@@ -32,7 +32,7 @@ export default function SalesRight() {
         }
         
         try {
-            await writeClient.create({_type: 'salesForm', ...formData});
+            await client.create({_type: 'salesForm', ...formData});
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)

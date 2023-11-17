@@ -1,6 +1,6 @@
 "use client";
 import './magic.css';
-import { readClient, blog, urlFor } from '../.././sanity/client';
+import { client, blog, urlFor } from '../.././sanity/client';
 import { useState, useEffect } from 'react'
 import { Logo } from '../../icons/icons'
 
@@ -10,7 +10,7 @@ export default function Magic() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const result: any = await readClient.fetch(blog);
+        const result: any = await client.fetch(blog);
         setBlogs(result);
       } catch (error) {
         console.error('Error fetching the blogs:', error);

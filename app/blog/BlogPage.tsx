@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react"
-import { readClient, blog, category, urlFor } from '../../sanity/client'
+import { client, blog, category, urlFor } from '../../sanity/client'
 import './blog.css'
 import { Logo } from '../../icons/icons'
 import { Suspense } from 'react' 
@@ -15,7 +15,7 @@ export default function BlogPage() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const categoryResult = await readClient.fetch(blog)
+        const categoryResult = await client.fetch(blog)
         setBlogs(categoryResult)
       } catch (error) {
         console.error('Error fetching the blogs:', error)
@@ -28,7 +28,7 @@ export default function BlogPage() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const blogResult = await readClient.fetch(category)
+        const blogResult = await client.fetch(category)
         setCategories(blogResult)
       } catch (error) {
         console.error('Error fetching the categories:', error)
