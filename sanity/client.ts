@@ -39,7 +39,7 @@ export const category = `*[_type == 'category']{
   id,
 }`
 
-export const contactSalesForm = `*[_type == 'salesForm']{
+export const contactSalesForm = `*[_type == 'contactSalesForm']{
   fullname,
   id,
   email,

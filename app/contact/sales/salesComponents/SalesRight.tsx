@@ -32,7 +32,7 @@ export default function SalesRight() {
         }
         
         try {
-            await fetch('/api/contact-sales', {
+            const response = await fetch('/api/contact-sales', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
