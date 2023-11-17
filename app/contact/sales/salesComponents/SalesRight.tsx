@@ -32,7 +32,7 @@ export default function SalesRight() {
         }
         
         try {
-            await fetch('/api/submitForm', {
+            await fetch('/api/submit-form', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
