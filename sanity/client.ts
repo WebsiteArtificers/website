@@ -1,12 +1,20 @@
 import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url'
 
-export const client = createClient({
+export const readClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',
-  useCdn: true,
-  token: process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
+  useCdn: false,
+  token: process.env.SANITY_API_READ_TOKEN
+})
+
+export const writeClient = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  apiVersion: '2023-10-03',
+  useCdn: false,
+  token: process.env.SANITY_API_WRITE_TOKEN
 })
 
 export const blog = `*[_type == "blog"]{
@@ -42,6 +50,6 @@ export const contactSalesForm = `*[_type == 'salesForm']{
   publishedAt,
 }`
   
-const builder = imageUrlBuilder(client)
+const builder = imageUrlBuilder(readClient)
   
 export const urlFor = (source: any) => builder.image(source)
