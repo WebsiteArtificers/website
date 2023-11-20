@@ -2,7 +2,8 @@
 import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import axios from 'axios';
+import { serverClient } from '@/sanity/client';
+//import axios from 'axios';
 
 export default function SalesRight() {
 
@@ -32,7 +33,8 @@ export default function SalesRight() {
         }
         
         try {
-            await axios.post('/api/contact-sales', { ...formData });
+            await serverClient.create({_type: 'contactSalesForm', ...formData});
+            //await axios.post('/api/contact-sales', { ...formData });
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)

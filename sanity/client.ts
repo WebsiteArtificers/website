@@ -12,9 +12,9 @@ export const client = createClient({
 
 export const serverClient = createClient({
   projectId: 'dqm6dps0',
-  dataset: process.env.SANITY_DATASET,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',
-  token: process.env.SANITY_API_WRITE_TOKEN, // Server-only token
+  token: process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN, // Server-only token
   useCdn: false,
   ignoreBrowserTokenWarning: true
 });
