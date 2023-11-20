@@ -2,6 +2,9 @@
 import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
+const fetch = require("node-fetch");
+
+let myHeaders = new fetch.Headers();
 
 export default function SalesRight() {
 
@@ -18,7 +21,7 @@ export default function SalesRight() {
         const uniqueId = uuid().toString();
 
         const timestamp = new Date().toISOString();
-
+        
         const formData: Object = {
             fullname,
             id: uniqueId,
@@ -33,9 +36,9 @@ export default function SalesRight() {
         try {
             await fetch('/api/contact-sales', {
                 method: 'POST',
-                headers: {
+                headers: myHeaders({
                 'Content-Type': 'application/json',
-                },
+                }),
                 body: JSON.stringify(formData),
             });
             //await supabase.from('SalesForm').insert([formData]);
