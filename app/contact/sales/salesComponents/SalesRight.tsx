@@ -2,8 +2,7 @@
 import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { Suspense } from 'react'
-import { LoadingScreen } from '@/components/components'
+import fetch from 'node-fetch'
 
 export default function SalesRight() {
 
@@ -60,7 +59,6 @@ export default function SalesRight() {
     }
 
     return (
-        <Suspense fallback={<LoadingScreen />}>
             <div className='salesRight__container'>
                 <form className='salesRight__form' onSubmit={handleSubmit}>
                     <div className='salesRight__subcontainer'>
@@ -137,6 +135,5 @@ export default function SalesRight() {
                     </div>
                 </form>
             </div>
-        </Suspense>
     )
 }

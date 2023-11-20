@@ -1,6 +1,8 @@
 import './sales.css'
 import SalesLeft from './salesComponents/SalesLeft'
 import SalesRight from './salesComponents/SalesRight'
+import { Suspense } from 'react'
+import { LoadingScreen } from '@/components/components'
 
 export default function SalesPage() {
     return (
@@ -18,7 +20,9 @@ export default function SalesPage() {
             <p className='sales__paragraph'>Find out how the Website Artificers can help your company through our productized service plans. We'll be in touch shortly to answer your questions!</p>
             <div className="sales__components--subcontainer">
                 <SalesLeft />
-                <SalesRight />
+                <Suspense fallback={<LoadingScreen />}>
+                    <SalesRight />
+                </Suspense>
             </div>
         </div>
     )
