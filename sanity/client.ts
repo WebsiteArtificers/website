@@ -6,7 +6,8 @@ export const client = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',
   useCdn: true,
-  token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN
+  token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN,
+  ignoreBrowserTokenWarning: true
 })
 
 export const serverClient = createClient({
@@ -15,6 +16,7 @@ export const serverClient = createClient({
   apiVersion: '2023-10-03',
   token: process.env.SANITY_API_WRITE_TOKEN, // Server-only token
   useCdn: false,
+  ignoreBrowserTokenWarning: true
 });
 
 export const blog = `*[_type == "blog"]{
