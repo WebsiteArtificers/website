@@ -19,6 +19,7 @@
     width: 95%;
     margin: auto;
     gap: 1.5vw;
+    margin-bottom: 6vw;
 }
 
 .contact__link {
@@ -37,6 +38,10 @@
     transition: .5s;
 }
 
+.partner__link {
+    border: .1vw solid var(--primary);
+}
+
 .contact__link:hover {
     border: .1vw solid var(--secondary-accent);
 }
@@ -45,9 +50,18 @@
     height: 2vw;
 }
 
+.partner__svg--container {
+    height: 2vw;
+}
+
 .contact__svg--container svg {
     height: 100%;
     fill: var(--secondary);
+}
+
+.partner__svg--container svg {
+    height: 100%;
+    fill: var(--primary);
 }
 
 .contact__svg--container svg path {
@@ -72,6 +86,50 @@
     color: var(--text);
 }
 
+.contact__bottom--container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    align-items: top;
+    width: 95%;
+    margin: auto;
+    gap: 1.5vw;
+}
+
+.contact__bottom--subcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.contact__bottom--header {
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+
+.contact__bottom--paragraph {
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: var(--darker-background);
+    line-height: 2vw;
+}
+
+.contact__bottom--paragraph a {
+    all: unset;
+    font-weight: 800;
+    color: var(--darker-background);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact__bottom--paragraph a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
 @media (max-width: 1000px) {
     .contact__container {
         padding-top: 6rem;
@@ -92,6 +150,7 @@
         row-gap: 1rem;
         column-gap: 1rem;
         margin: auto;
+        padding-bottom: 3rem;
     }
     
     .contact__link {
@@ -101,12 +160,20 @@
         padding: 1rem;
         height: 85%;
     }
+
+    .partner__link {
+        border: .1rem solid var(--primary);
+    }
     
     .contact__link:hover {
         border: .1rem solid var(--secondary-accent);
     }
     
     .contact__svg--container {
+        height: 2rem;
+    }
+
+    .partner__svg--container {
         height: 2rem;
     }
     
@@ -120,6 +187,25 @@
     
     .contact__link--subheader {
         font-size: 1rem;
+    }
+
+    .contact__bottom--container {
+        grid-template-columns: repeat(2, auto);
+        row-gap: 2rem;
+        column-gap: 1rem
+    }
+    
+    .contact__bottom--subcontainer {
+        gap: .75rem;
+    }
+    
+    .contact__bottom--header {
+        font-size: 1.2rem;
+    }
+    
+    .contact__bottom--paragraph {
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 
@@ -156,6 +242,39 @@
     .contact__link--subheader {
         font-size: 1.25rem;
     }
+    
+    .contact__bottom--subcontainer {
+        gap: .5rem;
+    }
+    
+    .contact__bottom--header {
+        font-size: 1.1rem;
+    }
+    
+    .contact__bottom--paragraph {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact__bottom--container {
+        grid-template-columns: repeat(1, auto);
+        column-gap: 1rem
+    }
+    
+    .contact__bottom--subcontainer {
+        gap: .25rem;
+    }
+    
+    .contact__bottom--header {
+        font-size: 1rem;
+    }
+    
+    .contact__bottom--paragraph {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -178,10 +297,28 @@
     .contact__link--subheader {
         font-size: 1rem;
     }
+    
+    .contact__bottom--header {
+        font-size: .9rem;
+    }
+    
+    .contact__bottom--paragraph {
+        font-size: .8rem;
+        line-height: 1.35rem;
+    }
 }
 
 @media (max-width: 275px) {
     .contact__header {
         font-size: 2rem;
+    }
+
+    .contact__bottom--header {
+        font-size: .9rem;
+    }
+    
+    .contact__bottom--paragraph {
+        font-size: .75rem;
+        line-height: 1.25rem;
     }
 }

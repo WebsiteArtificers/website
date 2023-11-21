@@ -47,8 +47,8 @@ export default function ContactPage() {
                     Submit a request
                 </h3>
             </a>
-            <a className='contact__link'>
-                <div className='contact__svg--container'>
+            <a className='contact__link partner__link'>
+                <div className='partner__svg--container'>
                     <Partner />
                 </div>
                 <h2 className='contact__link--header'>
@@ -61,6 +61,28 @@ export default function ContactPage() {
                     Submit an application
                 </h3>
             </a>
+        </div>
+        <div className='contact__bottom--container'>
+            <div className='contact__bottom--subcontainer'>
+                <h3 className='contact__bottom--header'>Follow us on Facebook</h3>
+                <p className='contact__bottom--paragraph'>Get the latest Artificer news, product updates and media resources at <a href='https://www.facebook.com/websiteartificers' target="_blank" rel="noopener noreferrer">www.facebook.com/websiteartificers</a>.</p>
+            </div>
+            <div className='contact__bottom--subcontainer'>
+                <h3 className='contact__bottom--header'>Follow us on LinkedIn</h3>
+                <p className='contact__bottom--paragraph'>See what we're up to, who we're working with, and our weekly journey at <a href='https://www.linkedin.com/company/website-artificers' target="_blank" rel="noopener noreferrer">www.linkedin.com/company/website-artificers</a>.</p>
+            </div>
+            <div className='contact__bottom--subcontainer'>
+                <h3 className='contact__bottom--header'>Privacy, Security, and Service Terms</h3>
+                <p className='contact__bottom--paragraph'>
+                    Questions? email us at <a href='mailto:contact@websiteartificers.com' target="_blank" rel="noopener noreferrer">contact@websiteartificers.com</a>.
+                </p>
+                <p className='contact__bottom--paragraph'>
+                    See overview of <a href='/privacy-policy' target="_blank" rel="noopener noreferrer">Security and Privacy Compliance</a>.
+                </p>
+                <p className='contact__bottom--paragraph'>
+                    See overview of our <a href='/terms-of-service' target="_blank" rel="noopener noreferrer">Terms of Service Policy</a>.
+                </p>
+            </div>
         </div>
     </div>
 }
