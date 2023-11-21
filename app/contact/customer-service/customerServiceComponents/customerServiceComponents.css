@@ -1,4 +1,4 @@
-.salesLeft__container {
+.customerServiceLeft__container {
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -6,24 +6,24 @@
     flex-grow: 1;
 }
 
-.salesRight__container {
+.customerServiceRight__container {
     width: 50%;
 }
 
-.salesLeft__ul {
+.customerServiceLeft__ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1vw;
 }
 
-.salesLeft__list {
+.customerServiceLeft__list {
     color: var(--text);
     font-size: 1.5vw;
     font-weight: 300;
 }
 
-.salesLeft__subcontainer {
+.customerServiceLeft__subcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     gap: 1.5vw;
 }
 
-.salesLeft__link {
+.customerServiceLeft__link {
     all: unset;
     text-align: left;
     font-family: var(--font-family);
@@ -44,22 +44,22 @@
     width: 95%;
 }
 
-.salesLeft__link:hover {
+.customerServiceLeft__link:hover {
     background: var(--primary);
 }
 
-.salesLeft__link--subheader {
+.customerServiceLeft__link--subheader {
     font-size: 1.5vw;
     color: var(--text);
     font-weight: 800;
 }
 
-.salesLeft__link--paragraph {
+.customerServiceLeft__link--paragraph {
     font-size: 1.25vw;
     color: var(--text);
 }
 
-.salesRight__form {
+.customerServiceRight__form {
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -69,14 +69,14 @@
     border-radius: .15vw;
 }
 
-.salesRight__subcontainer {
+.customerServiceRight__subcontainer {
     display: flex;
     flex-grow: 1;
     justify-content: flex-start;
     vertical-align: center;
 }
 
-.salesRight__subcontainer--subcontainer {
+.customerServiceRight__subcontainer--subcontainer {
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -85,27 +85,33 @@
     text-decoration: none;
 }
 
-.salesRight__subcontainer--subcontainer.textarea__container {
+.customerServiceRight__subcontainer--subcontainer.textarea__container {
     width: 100%;
     margin: auto;
 }
 
-.salesRight__subcontainer--subcontainer:nth-child(2) {
+.customerServiceRight__subcontainer--subcontainer:nth-child(2) {
     margin-left: auto;
 }
 
-.salesRight__subcontainer--container__label {
+.customerServiceRight__subcontainer--container__label {
     font-weight: 400;
     font-size: 1vw;
     margin-bottom: .5vw;
     color: var(--text);
 }
 
-.salesRight__subcontainer--container__label span {
+.customerServiceRight__subcontainer--container__label p {
+    font-size: .9vw;
+    font-weight: 200;
+    margin-top: .25vw;
+}
+
+.customerServiceRight__subcontainer--container__label span {
     font-weight: 200;
 }
 
-.salesRight__subcontainer--container__input {
+.customerServiceRight__subcontainer--container__input {
     outline: none;
     background: var(--background);
     border: .1vw solid var(--accent);
@@ -117,15 +123,15 @@
     transition: .5s;
 }
 
-.salesRight__subcontainer--container__input::placeholder {
+.customerServiceRight__subcontainer--container__input::placeholder {
     color: var(--text);
     font-weight: 200;
     font-size: 1vw;
 }
 
-.salesRight__subcontainer--container__input:hover,
-.salesRight__subcontainer--container__input:focus,
-.salesRight__subcontainer--container__input:active {
+.customerServiceRight__subcontainer--container__input:hover,
+.customerServiceRight__subcontainer--container__input:focus,
+.customerServiceRight__subcontainer--container__input:active {
     border: .1vw solid var(--tertiary);
 }
 
@@ -133,7 +139,7 @@
     cursor: pointer;
 }
 
-.salesRight__subcontainer--subcontainer__textarea {
+.customerServiceRight__subcontainer--subcontainer__textarea {
     outline: none;
     background: var(--background);
     border: .1vw solid var(--accent);
@@ -146,100 +152,105 @@
     height: 15vw;
 }
 
-.salesRight__subcontainer--subcontainer__textarea::placeholder {
+.customerServiceRight__subcontainer--subcontainer__textarea::placeholder {
     color: var(--text);
     font-weight: 200;
     font-size: 1vw;
 }
 
-.salesRight__subcontainer--subcontainer__textarea:hover,
-.salesRight__subcontainer--subcontainer__textarea:focus,
-.salesRight__subcontainer--subcontainer__textarea:active {
+.customerServiceRight__subcontainer--subcontainer__textarea:hover,
+.customerServiceRight__subcontainer--subcontainer__textarea:focus,
+.customerServiceRight__subcontainer--subcontainer__textarea:active {
     border: .1vw solid var(--tertiary);
 }
 
-.salesRight__subcontainer--subcontainer__button {
+.customerServiceRight__subcontainer--subcontainer__button {
     margin-top: auto;
     font-size: 1vw;
     font-weight: 400;
 }
 
-.salesRight__disclaimer--paragraph {
+.customerServiceRight__disclaimer--paragraph {
     margin-top: 1rem;
     font-size: .75rem;
     text-align: center;
 }
 
 @media (max-width: 1200px) {
-    .salesLeft__container {
+    .customerServiceLeft__container {
         width: 100%;
     }
     
-    .salesRight__container {
+    .customerServiceRight__container {
         width: 100%;
     }
     
-    .salesLeft__ul {
+    .customerServiceLeft__ul {
         gap: 1rem;
     }
     
-    .salesLeft__list {
+    .customerServiceLeft__list {
         font-size: 1.25rem;
     }
     
-    .salesLeft__subcontainer {
+    .customerServiceLeft__subcontainer {
         margin-top: 1.5rem;
         gap: 1.5rem;
     }
     
-    .salesLeft__link {
+    .customerServiceLeft__link {
         padding: 1rem;
         border-radius: .25rem;
         width: 95%;
     }
     
-    .salesLeft__link--subheader {
+    .customerServiceLeft__link--subheader {
         font-size: 1.5rem;
     }
     
-    .salesLeft__link--paragraph {
+    .customerServiceLeft__link--paragraph {
         font-size: 1.25rem;
     }
     
-    .salesRight__form {
+    .customerServiceRight__form {
         gap: 2rem;
         padding: 1.5rem;
         border-radius: .15rem;
     }
     
-    .salesRight__subcontainer--subcontainer.textarea__container {
+    .customerServiceRight__subcontainer--subcontainer.textarea__container {
         width: 100%;
         margin: auto;
     }
     
-    .salesRight__subcontainer--container__label {
+    .customerServiceRight__subcontainer--container__label {
         font-size: 1rem;
         margin-bottom: .5rem;
     }
+
+    .customerServiceRight__subcontainer--container__label p {
+        font-size: .9rem;
+        margin-top: .25rem;
+    }
     
-    .salesRight__subcontainer--container__input {
+    .customerServiceRight__subcontainer--container__input {
         border: .1rem solid var(--accent);
         border-radius: .25rem;
         font-size: 1rem;
         padding: .5rem;
     }
     
-    .salesRight__subcontainer--container__input::placeholder {
+    .customerServiceRight__subcontainer--container__input::placeholder {
         font-size: 1rem;
     }
     
-    .salesRight__subcontainer--container__input:hover,
-    .salesRight__subcontainer--container__input:focus,
-    .salesRight__subcontainer--container__input:active {
+    .customerServiceRight__subcontainer--container__input:hover,
+    .customerServiceRight__subcontainer--container__input:focus,
+    .customerServiceRight__subcontainer--container__input:active {
         border: .1rem solid var(--tertiary);
     }
     
-    .salesRight__subcontainer--subcontainer__textarea {
+    .customerServiceRight__subcontainer--subcontainer__textarea {
         border: .1rem solid var(--accent);
         border-radius: .25rem;
         font-size: 1rem;
@@ -247,83 +258,88 @@
         height: 15rem;
     }
     
-    .salesRight__subcontainer--subcontainer__textarea::placeholder {
+    .customerServiceRight__subcontainer--subcontainer__textarea::placeholder {
         font-size: 1rem;
     }
     
-    .salesRight__subcontainer--subcontainer__textarea:hover,
-    .salesRight__subcontainer--subcontainer__textarea:focus,
-    .salesRight__subcontainer--subcontainer__textarea:active {
+    .customerServiceRight__subcontainer--subcontainer__textarea:hover,
+    .customerServiceRight__subcontainer--subcontainer__textarea:focus,
+    .customerServiceRight__subcontainer--subcontainer__textarea:active {
         border: .1rem solid var(--tertiary);
     }
     
-    .salesRight__subcontainer--subcontainer__button {
+    .customerServiceRight__subcontainer--subcontainer__button {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 750px) {
-    .salesRight__subcontainer--subcontainer {
+    .customerServiceRight__subcontainer--subcontainer {
         width: 100%;
     }
 
-    .salesRight__subcontainer {
+    .customerServiceRight__subcontainer {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .salesRight__form {
+    .customerServiceRight__form {
         gap: 1rem;
     }
 }
 
 @media (max-width: 500px) {
-    .salesLeft__ul {
+    .customerServiceLeft__ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: .5rem;
     }
     
-    .salesLeft__list {
+    .customerServiceLeft__list {
         color: var(--text);
         font-size: 1rem;
         font-weight: 300;
     }
 
-    .salesLeft__link--subheader {
+    .customerServiceLeft__link--subheader {
         font-size: 1.25rem;
     }
     
-    .salesLeft__link--paragraph {
+    .customerServiceLeft__link--paragraph {
         font-size: 1rem;
     }
 
-    .salesRight__subcontainer {
+    .customerServiceRight__subcontainer {
         gap: .5rem;
     }
 
-    .salesRight__form {
+    .customerServiceRight__form {
         gap: .5rem;
     }
 
-    .salesRight__subcontainer--container__label {
+    .customerServiceRight__subcontainer--container__label {
+        font-size: .9rem;
+    }
+
+
+    .customerServiceRight__subcontainer--container__label p {
+        font-size: .8rem;
+    }
+    
+    .customerServiceRight__subcontainer--container__input {
         font-size: .9rem;
     }
     
-    .salesRight__subcontainer--container__input {
+    .customerServiceRight__subcontainer--container__input::placeholder {
         font-size: .9rem;
     }
     
-    .salesRight__subcontainer--container__input::placeholder {
+    .customerServiceRight__subcontainer--subcontainer__textarea::placeholder {
         font-size: .9rem;
     }
     
-    .salesRight__subcontainer--subcontainer__textarea::placeholder {
-        font-size: .9rem;
-    }
-    
-    .salesRight__subcontainer--subcontainer__button {
+    .customerServiceRight__subcontainer--subcontainer__button {
         font-size: .9rem;
     }
 }

@@ -3,7 +3,6 @@ import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { writeClient } from '@/sanity/client';
-//import axios from 'axios';
 
 export default function SalesRight() {
 
@@ -128,6 +127,9 @@ export default function SalesRight() {
                             <button type='submit' className='salesRight__subcontainer--subcontainer__button button__secondary'>Contact Sales</button>
                         </div>
                     </div>
+                    <p className='salesRight__disclaimer--paragraph'>
+                        By submitting this form, you confirm that you have read and understood <a href='/privacy-policy'>Website Artificers' Privacy Policy</a>. This site is protected by reCAPTCHA and the <a href='https://policies.google.com/privacy' target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href='https://policies.google.com/terms' target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+                    </p>
                 </form>
             </div>
     )

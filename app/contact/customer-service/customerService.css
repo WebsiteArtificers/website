@@ -1,0 +1,159 @@
+.customerService__container {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.customerService__title--subcontainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.customerService__components--subcontainer {
+    display: flex;
+    align-items: flex-start;
+    vertical-align: flex-start;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.customerService__route--container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: .50vw;
+}
+
+.customerService__route--link {
+    all: unset;
+    font-family: var(--font-family);
+    font-size: 1vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--text);
+}
+
+.customerService__route--link:hover {
+    color: var(--primary);
+}
+
+.customerService__route--slash {
+    font-size: 1vw;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.customerService__route--page {
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.customerService__header {
+    font-size: 4vw;
+    font-weight: 200;
+    color: var(--secondary);
+    text-align: left;
+}
+
+.customerService__paragraph {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.75vw;
+    color: var(--text);
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .customerService__container {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    
+    .customerService__title--subcontainer {
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .customerService__components--subcontainer {
+        gap: 1.5rem;
+        flex-direction: column-reverse;
+    }
+    
+    .customerService__route--container {
+        gap: .50rem;
+    }
+    
+    .customerService__route--link {
+        font-size: 1rem;
+    }
+    
+    .customerService__route--slash {
+        font-size: 1rem;
+    }
+    
+    .customerService__route--page {
+        font-size: 1rem;
+    }
+    
+    .customerService__header {
+        font-size: 4rem;
+    }
+
+    .customerService__paragraph {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .customerService__title--subcontainer {
+        margin-bottom: 1rem;
+    }
+
+    .customerService__route--container {
+        justify-content: flex-start;
+    }
+
+    .customerService__paragraph {
+        margin-top: 0rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .customerService__header {
+        font-size: 3rem;
+    }
+
+    .customerService__paragraph {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .customerService__container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .customerService__header {
+        font-size: 2rem;
+    }
+
+    .customerService__paragraph {
+        font-size: 1rem;
+    }
+}
