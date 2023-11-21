@@ -1,4 +1,4 @@
-import './customerSupport.css'
+import './customerService.css'
 
 export default function CustomerServicePage() {
     return <div>
