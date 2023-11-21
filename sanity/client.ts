@@ -10,7 +10,7 @@ export const client = createClient({
   ignoreBrowserTokenWarning: true
 })
 
-export const serverClient = createClient({
+export const writeClient = createClient({
   projectId: 'dqm6dps0',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: '2023-10-03',

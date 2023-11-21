@@ -1,12 +1,12 @@
-import SalesPage from './SalesPage';
+import TechSupportPage from './TechSupportPage';
 
 const meta = {
-    title: 'The Website Artificers: Contact Sales',
-    description: "Connect with Website Artificers in Nashville for expert web development and online solutions. Reach out on our sales contact page to transform your online presence with our skilled team.",
+    title: 'The Website Artificers: Contact Technical Support',
+    description: "Connect with Website Artificers in Nashville for expert web development and online solutions. Get in contact with one of our computer nerds on our technical support team to help work through any technical issues you may be having.",
     cardImage: '/images/website-artificer-logo.ico',
     robots: 'follow, index',
     favicon: '/images/website-artificer-logo.ico',
-    url: process.env.NEXT_PUBLIC_SITE_URL + '/contact/sales',
+    url: process.env.NEXT_PUBLIC_SITE_URL + '/contact/tech-support',
     type: 'website'
 };
   
@@ -36,4 +36,4 @@ export const metadata = {
     }
 };
 
-export default function Page() { return <SalesPage /> }
+export default function Page() { return <TechSupportPage /> }

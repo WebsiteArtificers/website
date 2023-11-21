@@ -2,7 +2,7 @@
 import './salesComponents.css'
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { serverClient } from '@/sanity/client';
+import { writeClient } from '@/sanity/client';
 //import axios from 'axios';
 
 export default function SalesRight() {
@@ -33,21 +33,20 @@ export default function SalesRight() {
         }
         
         try {
-            await serverClient.create({_type: 'contactSalesForm', ...formData});
-            //await axios.post('/api/contact-sales', { ...formData });
+            await writeClient.create({_type: 'contactSalesForm', ...formData});
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)
         }
 
-        //setFullname('')
-        //setEmail('')
-        //setCompany('')
-        //setCompanySize('1-100')
-        //setMessage('')
-        //setConnection('')
+        setFullname('')
+        setEmail('')
+        setCompany('')
+        setCompanySize('1-100')
+        setMessage('')
+        setConnection('')
 
-        //handleLocationChange('/thank-you');
+        handleLocationChange('/thank-you');
     }
 
     function handleLocationChange(url: string) {

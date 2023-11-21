@@ -1,12 +1,12 @@
-import SalesPage from './SalesPage';
+import AffiliatesPage from './AffiliatesPage';
 
 const meta = {
-    title: 'The Website Artificers: Contact Sales',
-    description: "Connect with Website Artificers in Nashville for expert web development and online solutions. Reach out on our sales contact page to transform your online presence with our skilled team.",
+    title: 'The Website Artificers: Become an Affiliate',
+    description: "Connect with Website Artificers in Nashville for expert web development and online solutions. Interested in working with us and making some money? Contact us to see if you qualify to be an affiliate.",
     cardImage: '/images/website-artificer-logo.ico',
     robots: 'follow, index',
     favicon: '/images/website-artificer-logo.ico',
-    url: process.env.NEXT_PUBLIC_SITE_URL + '/contact/sales',
+    url: process.env.NEXT_PUBLIC_SITE_URL + '/contact/affiliates',
     type: 'website'
 };
   
@@ -36,4 +36,4 @@ export const metadata = {
     }
 };
 
-export default function Page() { return <SalesPage /> }
+export default function Page() { return <AffiliatesPage /> }
