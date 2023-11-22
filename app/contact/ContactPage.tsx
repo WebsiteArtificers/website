@@ -5,7 +5,7 @@ export default function ContactPage() {
     return <div className='contact__container'>
         <h1 className='contact__header'>Contact Us</h1>
         <div className='contact__subcontainer'>
-            <a className='contact__link'>
+            <a className='contact__link' href='/contact/tech-support'>
                 <div className='contact__svg--container'>
                     <Question />
                 </div>
@@ -33,7 +33,7 @@ export default function ContactPage() {
                     Talk to a representative
                 </h3>
             </a>
-            <a className='contact__link'>
+            <a className='contact__link' href='/contact/customer-service'>
                 <div className='contact__svg--container'>
                     <Account />
                 </div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
                     Submit a request
                 </h3>
             </a>
-            <a className='contact__link partner__link'>
+            <a className='contact__link partner__link' href='/contact/affiliates'>
                 <div className='partner__svg--container'>
                     <Partner />
                 </div>

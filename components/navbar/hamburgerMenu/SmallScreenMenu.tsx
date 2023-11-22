@@ -21,10 +21,10 @@ export default function SmallScreenMenu() {
                 <a>
                     <button className='smallScreenMenu__top--button button__tertiary'>Get Started</button>
                 </a>
+                <a href='/contact/sales'>
+                    <button className='smallScreenMenu__top--button button__quaternary'>Contact Sales</button>
+                </a>
             </div>
-            <a className='smallScreenMenu__subcontainer' href='/contact/sales'>
-                <button className='smallScreenMenu__button'>Contact Sales</button>
-            </a>
             <div onClick={() => {
                 setShowResources(!showResources)
                 setShowSolution(false)
