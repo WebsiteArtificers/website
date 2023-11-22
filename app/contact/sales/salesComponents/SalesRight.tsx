@@ -119,7 +119,7 @@ export default function SalesRight() {
                             className='salesRight__subcontainer--container__input'
                             id='connection'
                             name='connection'
-                            placeholder='How did you hear about DAV?'
+                            placeholder='How did you hear about Website Artificers?'
                             value={connection}
                             onChange={(e) => setConnection(e.target.value)}/>
                         </div>

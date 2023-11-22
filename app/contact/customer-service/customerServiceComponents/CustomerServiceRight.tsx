@@ -26,7 +26,7 @@ export default function CustomerServiceRight() {
         }
         
         try {
-            await writeClient.create({_type: 'contactCustomerSupportForm', ...formData});
+            //await writeClient.create({_type: 'contactCustomerSupportForm', ...formData});
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)
@@ -35,6 +35,7 @@ export default function CustomerServiceRight() {
         setFullname('')
         setEmail('')
         setMessage('')
+        setCurrentPlan('')
 
         handleLocationChange('/thank-you');
     }
@@ -83,13 +84,13 @@ export default function CustomerServiceRight() {
                 </div>
                 <div className='customerServiceRight__subcontainer'>
                     <div className='customerServiceRight__subcontainer--subcontainer'>
-                        <label className='customerServiceRight__subcontainer--container__label' htmlFor='connection'>What is your current plan? <span>(Optional)</span>
+                        <label className='customerServiceRight__subcontainer--container__label' htmlFor='plan'>What is your current plan? <span>(Optional)</span>
                         <p>Can be found at <a href='/account' target="_blank" rel="noopener noreferrer">websiteartificers.com/account</a></p>
                         </label>
                         <input
                         className='customerServiceRight__subcontainer--container__input'
-                        id='connection'
-                        name='connection'
+                        id='plan'
+                        name='plan'
                         placeholder='Standard or Professional?'
                         value={currentPlan}
                         onChange={(e) => setCurrentPlan(e.target.value)}/>
