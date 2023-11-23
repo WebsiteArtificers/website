@@ -49,16 +49,16 @@ export default function Pricing() {
             <div className='pricing__subcontainer logo'>
                 <Logo />
             </div>
-            <h1 className='pricing__header'>Need website assistance?</h1>
+            <h1 className='pricing__header'>Need our assistance?</h1>
             <div className='pricing__subcontainer'>
                 <div className='pricing__subcontainer--subcontainer__right'>
                     <h2 className='pricing__subcontainer--subheader'>| Schedule a call <span className='pricing__subcontainer--subheader__span'>free of charge.</span></h2>
                     <p className='pricing__subcontainer--paragraph'>Discuss our unique business model for free, <span className='pricing__subcontainer--paragraph__span'>or contact us, all without breaking the bank.</span></p>
                     <div className='pricing__subcontainer--button'>
-                        <a>
+                        <a href='https://calendly.com/websiteartificers' target="_blank" rel="noopener noreferrer">
                             <button className='pricing__button button__secondary'>Schedule Call</button>
                         </a>
-                        <a>
+                        <a href='/contact/sales'>
                             <button className='pricing__button button__tertiary'>Contact Us</button>
                         </a>
                     </div>

@@ -26,8 +26,12 @@ export default function Magic() {
       <h2 className='magic__subheader'>magic</h2>
       <p className='magic__paragraph'>When you remove technology bottlenecks, you’ll be amazed at the possibilities you create.</p>
       <div className='magic__subcontainer'>
-        <button className='magic__subcontainer--button button__tertiary'>Contact Sales</button>
-        <button className='magic__subcontainer--button button__primary'>Get Pricing</button>
+        <a href='/contact/sales'>
+          <button className='magic__subcontainer--button button__tertiary'>Contact Sales</button>
+        </a>
+        <a href='/pricing'>
+          <button className='magic__subcontainer--button button__primary'>Get Pricing</button>
+        </a>
       </div>
       <p className='magic__paragraph'>...or get to know us better.</p>
       <div className='magic__blog--container'>

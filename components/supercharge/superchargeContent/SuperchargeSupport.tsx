@@ -14,7 +14,9 @@ export default function Support() {
                     <li className='supercharge__content--subcontainer__list'><span>✓</span> Rapid customer assistance to fix any issues that arise</li>
                     <li className='supercharge__content--subcontainer__list'><span>✓</span> We handle the code so that you don't have to</li>
                 </ul>
-                <button className='supercharge__content--subcontainer__button button__secondary'>Learn More About Our Support Team</button>
+                <a href='/contact'>
+                    <button className='supercharge__content--subcontainer__button button__secondary'>Learn More About Our Support Team</button>
+                </a>
             </div>
         </div>
     )

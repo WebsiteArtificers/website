@@ -13,6 +13,7 @@
   --secondary: #ff6e61;
   --tertiary: #ffa9a1;
   --quaternary: #6973ff;
+  --quinary: #a1d8ff;
   --accent: #435f9c;
   --secondary-accent: #d0e1f6;
 }
@@ -26,6 +27,16 @@
 
 html {
   background: var(--background);
+}
+
+::-webkit-scrollbar {
+  background: var(--background);
+  width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 1rem;
 }
 
 a {
@@ -88,6 +99,17 @@ button {
 
 .button__quaternary:hover {
   box-shadow: .1vw .1vw 1vw var(--quaternary);
+}
+
+.button__quinary {
+  color: var(--text);
+  background: var(--quinary);
+  border: .15vw solid var(--quinary);
+  box-shadow: .1vw .1vw 1vw transparent;
+}
+
+.button__quaternary:hover {
+  box-shadow: .1vw .1vw 1vw var(--quinary);
 }
 
 @media (max-width: 1000px) {

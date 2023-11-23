@@ -113,7 +113,7 @@ export default function AffiliatesPage() {
                     className='affiliates__subcontainer--subcontainer__textarea'
                     id='message'
                     name='message'
-                    placeholder='Tell us about your projects, timelines, needs, etc'
+                    placeholder='Any additional information about your application that we should know'
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}/>
                 </div>
@@ -155,7 +155,7 @@ export default function AffiliatesPage() {
                     onChange={(e) => setLocation(e.target.value)}/>
                 </div>
                 <div className='affiliates__subcontainer--subcontainer'>
-                    <button type='submit' className='affiliates__subcontainer--subcontainer__button button__primary'>Contact Sales</button>
+                    <button type='submit' className='affiliates__subcontainer--subcontainer__button button__primary'>Send Application</button>
                 </div>
             </div>
             <p className='affiliates__disclaimer--paragraph'>

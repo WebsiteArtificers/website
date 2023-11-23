@@ -44,6 +44,9 @@ export default function Regular() {
             <a className='regular__link--container' href='/contact/sales'>
                 <button className='regular__link'>Contact Sales</button>
             </a>
+            <a className='regular__link--container' href='/pricing'>
+                <button className='regular__link'>Pricing</button>
+            </a>
             <div data-separate>
                 <a className='regular__link--container' href='/sign-in'>
                     <button className='separate__link button__secondary'>Sign in</button>
