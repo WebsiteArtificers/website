@@ -41,6 +41,27 @@ export const category = `*[_type == 'category']{
   id,
 }`
 
+export const contactAffiliatesForm = `*[_type == 'contactAffiliatesForm']{
+  fullname,
+  id,
+  email,
+  company,
+  companySize,
+  message,
+  jobTitle,
+  website,
+  location,
+  publishedAt,
+}`
+
+export const contactCustomerServiceForm = `*[_type == 'contactCustomerServiceForm']{
+  fullname,
+  id,
+  email,
+  message,
+  publishedAt,
+}`
+
 export const contactSalesForm = `*[_type == 'contactSalesForm']{
   fullname,
   id,
@@ -49,6 +70,15 @@ export const contactSalesForm = `*[_type == 'contactSalesForm']{
   companySize,
   message,
   connection,
+  publishedAt,
+}`
+
+export const contactTechSupportForm = `*[_type == 'contactTechSupportForm']{
+  fullname,
+  id,
+  email,
+  message,
+  phone,
   publishedAt,
 }`
   

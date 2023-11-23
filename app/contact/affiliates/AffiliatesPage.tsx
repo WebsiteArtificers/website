@@ -35,7 +35,7 @@ export default function AffiliatesPage() {
         }
         
         try {
-            //await writeClient.create({_type: 'contactSalesForm', ...formData});
+            await writeClient.create({_type: 'contactAffiliatesForm', ...formData});
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)
@@ -60,7 +60,7 @@ export default function AffiliatesPage() {
     return <div className='affiliates__container'>
         <h1 className='affiliates__header'>Become a partner</h1>
         <p className='affiliates__paragraph'>Are you looking to grow your business with us? Send us your details and we'll be in touch!</p>
-        <form className='affiliates__form'>
+        <form className='affiliates__form' onSubmit={handleSubmit}>
             <div className='affiliates__subcontainer'>
                 <div className='affiliates__subcontainer--subcontainer'>
                     <label className='affiliates__subcontainer--container__label' htmlFor='fullname'>Full Name</label>

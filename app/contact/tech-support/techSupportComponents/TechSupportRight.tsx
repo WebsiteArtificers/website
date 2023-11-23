@@ -28,7 +28,7 @@ export default function TechSupportRight() {
         }
         
         try {
-            //await writeClient.create({_type: 'contacttechSupportForm', ...formData});
+            await writeClient.create({_type: 'contactTechSupportForm', ...formData});
             //await supabase.from('techSupportForm').insert([formData]);
         } catch (error) {
             console.error(error)
@@ -74,8 +74,9 @@ export default function TechSupportRight() {
                     </div>
                     <div className='techSupportRight__subcontainer'>
                         <div className='techSupportRight__subcontainer--subcontainer textarea__container'>
-                            <label className='techSupportRight__subcontainer--container__label' htmlFor='message'>Message <span>(Optional)</span></label>
+                            <label className='techSupportRight__subcontainer--container__label' htmlFor='message'>Message</label>
                             <textarea
+                            required
                             className='techSupportRight__subcontainer--subcontainer__textarea'
                             id='message'
                             name='message'
@@ -88,6 +89,7 @@ export default function TechSupportRight() {
                         <div className='techSupportRight__subcontainer--subcontainer'>
                             <label className='techSupportRight__subcontainer--container__label' htmlFor='phone'>Phone Number <span>(Optional)</span></label>
                             <input
+                            required
                             className='techSupportRight__subcontainer--container__input'
                             id='phone'
                             name='phone'

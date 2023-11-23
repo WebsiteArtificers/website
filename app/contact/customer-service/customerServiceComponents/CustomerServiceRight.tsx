@@ -26,7 +26,7 @@ export default function CustomerServiceRight() {
         }
         
         try {
-            //await writeClient.create({_type: 'contactCustomerSupportForm', ...formData});
+            await writeClient.create({_type: 'contactCustomerServiceForm', ...formData});
             //await supabase.from('SalesForm').insert([formData]);
         } catch (error) {
             console.error(error)
@@ -72,8 +72,9 @@ export default function CustomerServiceRight() {
                 </div>
                 <div className='customerServiceRight__subcontainer'>
                     <div className='customerServiceRight__subcontainer--subcontainer textarea__container'>
-                        <label className='customerServiceRight__subcontainer--container__label' htmlFor='message'>Message <span>(Optional)</span></label>
+                        <label className='customerServiceRight__subcontainer--container__label' htmlFor='message'>Message</label>
                         <textarea
+                        required
                         className='customerServiceRight__subcontainer--subcontainer__textarea'
                         id='message'
                         name='message'
@@ -96,7 +97,7 @@ export default function CustomerServiceRight() {
                         onChange={(e) => setCurrentPlan(e.target.value)}/>
                     </div>
                     <div className='customerServiceRight__subcontainer--subcontainer'>
-                        <button type='submit' className='customerServiceRight__subcontainer--subcontainer__button button__secondary'>Contact customerService</button>
+                        <button type='submit' className='customerServiceRight__subcontainer--subcontainer__button button__secondary'>Contact Customer Service</button>
                     </div>
                 </div>
                 <p className='customerServiceRight__disclaimer--paragraph'>
