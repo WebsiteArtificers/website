@@ -81,6 +81,14 @@ export const contactTechSupportForm = `*[_type == 'contactTechSupportForm']{
   phone,
   publishedAt,
 }`
+
+export const newsletterSignUp = `*[_type == 'newsletterSignUp']{
+  fullname,
+  id,
+  email,
+  frequency,
+  publishedAt,
+}`
   
 const builder = imageUrlBuilder(client)
   

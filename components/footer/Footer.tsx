@@ -64,7 +64,7 @@ export default function Footer() {
                         </li>
                         <li className='footer__subcontainer--li'>
                             <a className='footer__subcontainer--link' href='/contact/sales'>
-                                Contect Sales
+                                Contact Sales
                             </a>
                         </li>
                     </ul>
@@ -113,7 +113,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='/newsletter'>
                                 <Email />Newsletter
                             </a>
                         </li>
