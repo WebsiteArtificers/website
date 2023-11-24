@@ -13,7 +13,7 @@ export default function Resources() {
                     <h2 className='menu__subcontainer--subheader'>Affiliates</h2>
                     <p className='menu__subcontainer--description'>Who we work with and trust</p>
                 </a>
-                <a className='menu__subcontainer--link'>
+                <a className='menu__subcontainer--link' href='/newsletter'>
                     <h2 className='menu__subcontainer--subheader'>Newsletter Sign-Up</h2>
                     <p className='menu__subcontainer--description'>Never miss out on a blog</p>
                 </a>
