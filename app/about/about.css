@@ -1,0 +1,517 @@
+.about__container {
+    padding-top: 6vw;
+}
+
+.about__top--container {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    gap: 1vw;
+    width: 95%;
+    margin: auto;
+}
+
+.about__left--header {
+    font-size: 4vw;
+    font-weight: 200;
+    color: var(--primary);
+    line-height: 4.5vw;
+}
+
+.about__left--header span {
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+.about__left--paragraph {
+    font-size: 2vw;
+    margin-top: 3vw;
+    color: var(--text);
+    line-height: 3.25vw;
+    width: 80%;
+    font-weight: 400;
+}
+
+.about__left--button__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1.5vw;
+}
+
+.about__left--button {
+    font-size: 1.5vw;
+}
+
+.about__right--image__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1vw;
+}
+
+.about__right--image__subcontainer a {
+    position: relative;
+}
+
+.about__right--image {
+    border-radius: .25vw;
+    border: .15vw solid transparent;
+    transition: .5s;
+    width: 20vw;
+}
+
+.about__right--image:hover {
+    border: .15vw solid var(--accent-background);
+    opacity: .8;
+}
+
+.about__right--button {
+    all: unset;
+    padding: .5vw;
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    font-size: 1.25vw;
+    border-radius: .25vw;
+    transition: .5s;
+}
+
+.about__button--one {
+    background: var(--primary);
+    color: var(--background);
+    font-weight: 800;
+}
+
+.about__container--one a:hover > .about__button--one {
+    background: var(--quaternary);
+    color: var(--background);
+}
+
+.about__button--two {
+    background: var(--tertiary);
+    color: var(--text);
+    font-weight: 400;
+}
+
+.about__container--two a:hover > .about__button--two {
+    background: var(--quinary);
+    color: var(--text);
+}
+
+.about__button--three {
+    background: var(--secondary-accent);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.about__container--three a:hover > .about__button--three {
+    background: var(--tertiary);
+    color: var(--accent);
+}
+
+.about__button--four {
+    background: var(--quinary);
+    color: var(--darker-background);
+    font-weight: 200;
+}
+
+.about__container--four a:hover > .about__button--four {
+    background: var(--primary);
+    color: var(--darker-background);
+}
+
+.about__right--link {
+    width: 100%;
+}
+
+.about__right--link__button {
+    font-size: 1.5vw;
+    width: 100%;
+    margin-top: 1.5vw;
+}
+
+.mission__container {
+    margin-top: 6vw;
+}
+
+.mission__container--header {
+    font-size: 3vw;
+    font-weight: 200;
+    color: var(--text);
+    width: 95%;
+    margin: auto;
+}
+
+.mission__container--header span {
+    color: var(--text);
+    font-weight: 800;
+}
+
+.mission__container--paragraph {
+    font-size: 2vw;
+    color: var(--text);
+    width: 95%;
+    line-height: 3.25vw;
+    font-weight: 400;
+    margin: auto;
+    padding-top: 2vw;
+    margin-bottom: 6vw;
+}
+
+.mission__container--paragraph span {
+    font-weight: 800;
+}
+
+.values__container {
+    padding-bottom: 6vw;
+    width: 95%;
+    margin: auto;
+}
+
+.values__container--header {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 400;
+    color: var(--tertiary);
+}
+
+.values__container--header span {
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+.values__container--subcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1vw;
+    margin-top: 2vw;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.values__subcontainer--subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5vw;
+    border-left: solid .25vw var(--secondary);
+    padding: 1vw;
+}
+
+.values__container--subcontainer__header {
+    font-size: 2vw;
+    font-weight: 800;
+    color: var(--darker-background);
+}
+
+.values__container--subcontainer__paragraph {
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 2.25vw;
+}
+
+@media (max-width: 1000px) {
+    .about__container {
+        padding-top: 6rem;
+    }
+    
+    .about__left--header {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+    .about__left--paragraph {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        line-height: 2.5rem;
+        width: 100%;
+    }
+    
+    .about__left--button__container {
+        margin-top: 1rem;
+    }
+    
+    .about__left--button {
+        font-size: 1.5rem;
+    }
+    
+    .about__right--image__container {
+        gap: 1rem;
+    }
+    
+    .about__right--image {
+        border-radius: .25rem;
+        border: .15rem solid transparent;
+        width: 20rem;
+    }
+    
+    .about__right--image:hover {
+        border: .15rem solid var(--accent-background);
+    }
+    
+    .about__right--button {
+        padding: .5rem;
+        font-size: 1.25rem;
+        border-radius: .25rem;
+    }
+    
+    .about__right--link__button {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .mission__container {
+        margin-top: 6rem;
+    }
+    
+    .mission__container--header {
+        font-size: 2.5rem;
+    }
+    
+    .mission__container--paragraph {
+        font-size: 1.5rem;
+        line-height: 3.25rem;
+        padding-top: 2rem;
+        margin-bottom: 6rem;
+    }
+    
+    .values__container {
+        padding-bottom: 6rem;
+    }
+    
+    .values__container--header {
+        font-size: 6rem;
+    }
+    
+    .values__container--subcontainer {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .values__subcontainer--subcontainer {
+        gap: .5rem;
+        border-left: solid .25rem var(--secondary);
+        padding: 1rem;
+    }
+    
+    .values__container--subcontainer__header {
+        font-size: 2rem;
+    }
+    
+    .values__container--subcontainer__paragraph {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .about__right--image {
+        border-radius: .25rem;
+        border: .15rem solid transparent;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .about__container {
+        padding-top: 3rem;
+    }
+
+    .about__top--container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .about__left--header {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+    .about__left--paragraph {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        line-height: 3rem;
+    }
+    
+    .about__left--button__container {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about__left--button__container a {
+        width: 100%;
+    }
+    
+    .about__left--button {
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .about__right--image__container {
+        gap: 2rem;
+    }
+    
+    .about__right--button {
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: .25rem;
+    }
+    
+    .about__right--link__button {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .mission__container {
+        margin-top: 3rem;
+    }
+    
+    .mission__container--header {
+        font-size: 3rem;
+    }
+    
+    .mission__container--paragraph {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .values__container {
+        padding-bottom: 3rem;
+    }
+    
+    .values__container--header {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__left--header {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    .about__left--paragraph {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        line-height: 2.5rem;
+    }
+    
+    .about__left--button__container {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    
+    .about__left--button {
+        font-size: 1.5rem;
+    }
+    
+    .about__right--image__container {
+        gap: 3rem;
+        grid-template-columns: repeat(1, auto)
+    }
+
+    .about__right--image {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .about__right--button {
+        font-size: 1.5rem;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    
+    .about__right--link__button {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    
+    .mission__container--header {
+        font-size: 2rem;
+    }
+    
+    .mission__container--paragraph {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .values__container {
+        padding-bottom: 3rem;
+    }
+
+    .values__container--subcontainer {
+        grid-template-columns: repeat(1, auto);
+    }
+    
+    .values__container--header {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__left--header {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .about__left--paragraph {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    
+    .about__left--button {
+        font-size: 1.25rem;
+    }
+    
+    .about__right--image__container {
+        gap: 1rem;
+        grid-template-columns: repeat(1, auto)
+    }
+    
+    .about__right--button {
+        font-size: 1.5rem;
+    }
+    
+    .about__right--link__button {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .mission__container--header {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    
+    .mission__container--paragraph {
+        font-size: 1.15rem;
+        line-height: 2.15rem;
+        padding-top: 1.5rem;
+    }
+    
+    .values__container {
+        padding-bottom: 3rem;
+    }
+
+    .values__container--subcontainer {
+        grid-template-columns: repeat(1, auto);
+    }
+    
+    .values__container--header {
+        font-size: 4rem;
+        text-align: left;
+    }
+}
