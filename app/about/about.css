@@ -481,6 +481,10 @@
         gap: 1rem;
         grid-template-columns: repeat(1, auto)
     }
+
+    .about__right--image {
+        border: .15rem solid var(--primary);
+    }
     
     .about__right--button {
         font-size: 1.5rem;
