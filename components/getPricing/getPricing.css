@@ -279,27 +279,14 @@
     }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 1000px) {
     .getPricing__product--container {
-        width: 95%;
         padding: .5rem;
         border-radius: .25rem;
         box-shadow: .1rem .1rem 1rem .1rem transparent;
         border: .1rem solid transparent;
-    }
-
-    .getPricing__product {
-        display: flex;
-        justify-content: center;
-        padding-top: 3rem;
-        width: 95%;
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 550px) {
-    .getPricing__product--container {
         margin: auto;
+        width: auto;
     }
 
     .getPricing__product {
