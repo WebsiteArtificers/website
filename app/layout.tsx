@@ -59,7 +59,7 @@ export default function RootLayout({
             gtag('config', 'G-BY6RR52CSJ');`
           }
         </Script>
-
+        <script async src="https://tag.clearbitscripts.com/v1/pk_3ac8e757d785ce4a8c4e9e6c7b8b1516/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
       </head>
       <body>
         <SupabaseProvider>
