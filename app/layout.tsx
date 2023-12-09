@@ -59,7 +59,6 @@ export default function RootLayout({
             gtag('config', 'G-BY6RR52CSJ');`
           }
         </Script>
-        <!-- Facebook Pixel Code -->
         <Script>
         {`
             !function(f,b,e,v,n,t,s)
@@ -91,7 +90,6 @@ export default function RootLayout({
             <img height="1" width="1" style="display:none" 
             src="https://www.facebook.com/tr?id={198998089938990}&ev=PageView&noscript=1"/>
         </noscript>
-        <!-- End Facebook Pixel Code -->
         <Script async src="https://tag.clearbitscripts.com/v1/pk_3ac8e757d785ce4a8c4e9e6c7b8b1516/tags.js" referrerPolicy="strict-origin-when-cross-origin"></Script>
       </head>
       <body>
