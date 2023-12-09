@@ -18,7 +18,7 @@ export default function Hero() {
                         Contact Us
                     </motion.button>
                 </a>
-                <a href='/expertise'>
+                <a href='/pricing'>
                     <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__secondary'>
                         Subscription Plans
                     </motion.button>

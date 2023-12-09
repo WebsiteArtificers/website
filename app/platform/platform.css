@@ -1,1 +1,68 @@
 /*This is the platform.css style page*/
+
+.platform__container {
+    background: var(--text);
+    padding-bottom: 12vw;
+}
+
+.platform__header {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 200;
+    color: var(--background);
+    text-align: center;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.platform__subcontainer {
+   display: flex;
+   justify-content: center;
+   width: 95%;
+   margin: auto;
+   gap: 3vw;
+   flex-grow: 1;
+}
+
+.platform__subcontainer--subcontainer {
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    border: .15vw solid var(--background);
+    border-radius: .25vw;
+    height: 32vw;
+    cursor: pointer;
+    transition: .5s;
+}
+.platform__subcontainer--subcontainer:hover {
+    border: .15vw solid var(--tertiary);
+} 
+
+.platform__icon--container {
+    width: 7.5vw;
+}
+
+.platform__subcontainer--header {
+    text-align: left;
+    font-size: 1.75vw;
+    font-weight: 800;
+    color: var(--background);
+}
+
+.platform__subcontainer--paragraph {
+    text-align: left;
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: var(--background);
+    line-height: 2.25vw;
+}
+
+.platform__subcontainer--subheader {
+    text-align: left;
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: var(--background);
+}

@@ -15,6 +15,9 @@
 
 .hero__header--span {
     transition: .5s ease-in-out;
+    color: var(--background);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .hero__subheader {
@@ -100,6 +103,11 @@
 
     .hero__header {
         line-height: 4.5rem;
+    }
+
+    .hero__header--span {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .hero__paragraph {

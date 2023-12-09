@@ -25,8 +25,8 @@ export default function Solutions() {
                     <p className='menu__subcontainer--description'>All of our integrations used for programming</p>
                 </a>
                 <a className='menu__subcontainer--link'>
-                    <h2 className='menu__subcontainer--subheader'>Design</h2>
-                    <p className='menu__subcontainer--description'>All of our tools used for design</p>
+                    <h2 className='menu__subcontainer--subheader'>Virtual Presence</h2>
+                    <p className='menu__subcontainer--description'>All of our tools used for design and marketing</p>
                 </a>
                 <a className='menu__subcontainer--link'>
                     <h2 className='menu__subcontainer--subheader'>Much More</h2>
