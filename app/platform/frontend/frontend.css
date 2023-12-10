@@ -39,10 +39,6 @@
     gap: 1.5vw;
 }
 
-.frontend__button--link {
-
-}
-
 .frontend__button {
     font-size: 1.25vw;
 }
@@ -88,3 +84,156 @@
     line-height: 2.15vw;
 }
 
+@media (max-width: 1000px) {
+    .frontend__container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .frontend__header {
+        font-size: 1.5rem;
+    }
+
+    .frontend__subheader {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+
+    .frontend__paragraph {
+        font-size: 1.5rem;
+        width: 80%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    .frontend__button--container {
+        gap: 1.5rem;
+    }
+
+    .frontend__button {
+        font-size: 1.25rem;
+    }
+
+    .frontend__image {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 80%;
+        border-radius: .25rem;
+    }
+
+    .frontend__columns--container {
+        gap: 1rem;
+        padding-top: 3rem;
+        width: 95%;
+    }
+
+    .frontend__columns--subcontainer {
+        gap: .25rem;
+    }
+
+    .frontend__columns--header {
+        font-size: 1.75rem;
+    }
+
+    .frontend__columns--paragraph {
+        font-size: 1.15rem;
+        line-height: 2.15rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .frontend__columns--header {
+        font-size: 1.5rem;
+    }
+
+    .frontend__columns--paragraph {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .frontend__columns--container {
+        padding-top: 1.5rem;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .frontend__image {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 95%;
+    }
+    
+    .frontend__subheader {
+        font-size: 2.25rem;
+        width: 95%;
+    }
+
+    .frontend__paragraph {
+        font-size: 1.25rem;
+        width: 95%;
+        line-height: 2.25rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .frontend__columns--header {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .frontend__columns--paragraph {
+        line-height: 1.75rem;
+        text-align: left;
+    }
+
+    .frontend__header {
+        font-size: 1.25rem;
+        text-align: left;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .frontend__subheader {
+        font-size: 2rem;
+        text-align: left;
+        width: 95%;
+        margin: auto;
+    }
+
+    .frontend__paragraph {
+        font-size: 1rem;
+        width: 95%;
+        line-height: 2.25rem;
+        text-align: left;
+        width: 95%;
+        margin: auto;
+    }
+
+    .frontend__button--container {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .frontend__button--link {
+        width: 95%;
+        margin: auto;
+    }
+
+    .frontend__button {
+        font-size: 1rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .frontend__container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .frontend__subheader {
+        font-size: 1.5rem;
+    }
+}
