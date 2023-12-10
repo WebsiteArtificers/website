@@ -46,7 +46,7 @@ export default function RootLayout({
   children,
 }: PropsWithChildren) {
   return (
-    <>
+    <html lang='en'>
       <head>
         <link rel="icon" href="/images/website-artificer-logo.ico" />
         <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-BY6RR52CSJ"></Script>
@@ -100,6 +100,6 @@ export default function RootLayout({
         </SupabaseProvider>
         <Analytics />
       </body>
-    </>
+    </html>
   )
 }

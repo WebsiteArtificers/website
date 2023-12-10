@@ -1,0 +1,90 @@
+.frontend__container {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.frontend__header {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--primary);
+    text-align: center;
+}
+
+.frontend__subheader {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: var(--text);
+    width: 50%;
+    margin: auto;
+}
+
+.frontend__paragraph {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 2.75vw;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.frontend__button--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.frontend__button--link {
+
+}
+
+.frontend__button {
+    font-size: 1.25vw;
+}
+
+.frontend__image {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    obejct-fit: cover;
+    object-position: center;
+    border-radius: .25vw;
+}
+
+.frontend__columns--container {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 3vw;
+    width: 80%;
+    margin: auto;
+}
+
+.frontend__columns--subcontainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: .25vw;
+    flex-direction: column;
+}
+
+.frontend__columns--header {
+    font-size: 1.75vw;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.frontend__columns--paragraph {
+    font-size: 1.15vw;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 2.15vw;
+}
+
