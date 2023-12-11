@@ -20,7 +20,7 @@ export default function FrontendPage() {
                     <button className='frontend__button button__primary'>Pricing</button>
                 </a>
             </div>
-            <Image alt='Picture of a beautiful website designed by the Website Artificers.' height={400} width={400} src='/images/websiteMainHomePage.png' className='frontend__image' />
+            <Image alt='Picture of a beautiful website designed by the Website Artificers.' height={400} width={400} src='/images/websiteMainHomePage.jpg' className='frontend__image' />
             <div className='frontend__columns--container'>
                 <div className='frontend__columns--subcontainer'>
                     <h3 className='frontend__columns--header'>
