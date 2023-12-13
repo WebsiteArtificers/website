@@ -1,9 +1,9 @@
-.frontend__container {
+.data__container {
     padding-top: 6vw;
     padding-bottom: 6vw;
 }
 
-.frontend__header {
+.data__header {
     text-align: center;
     font-size: 1.5vw;
     font-weight: 600;
@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.frontend__subheader {
+.data__subheader {
     text-align: center;
     font-size: 2.5vw;
     font-weight: 800;
@@ -20,7 +20,7 @@
     margin: auto;
 }
 
-.frontend__paragraph {
+.data__paragraph {
     font-size: 1.5vw;
     font-weight: 400;
     color: var(--primary);
@@ -32,18 +32,18 @@
     padding-bottom: 1.5vw;
 }
 
-.frontend__button--container {
+.data__button--container {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 1.5vw;
 }
 
-.frontend__button {
+.data__button {
     font-size: 1.25vw;
 }
 
-.frontend__image {
+.data__image {
     margin-top: 3vw;
     margin-bottom: 3vw;
     margin-left: auto;
@@ -55,7 +55,7 @@
     border-radius: .25vw;
 }
 
-.frontend__columns--container {
+.data__columns--container {
     display: flex;
     justify-content: center;
     gap: 2vw;
@@ -64,20 +64,20 @@
     margin: auto;
 }
 
-.frontend__columns--subcontainer {
+.data__columns--subcontainer {
     display: flex;
     justify-content: flex-start;
     gap: .25vw;
     flex-direction: column;
 }
 
-.frontend__columns--header {
+.data__columns--header {
     font-size: 1.75vw;
     font-weight: 800;
     color: var(--text);
 }
 
-.frontend__columns--paragraph {
+.data__columns--paragraph {
     font-size: 1.15vw;
     font-weight: 400;
     color: var(--text);
@@ -85,21 +85,21 @@
 }
 
 @media (max-width: 1000px) {
-    .frontend__container {
+    .data__container {
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
 
-    .frontend__header {
+    .data__header {
         font-size: 1.5rem;
     }
 
-    .frontend__subheader {
+    .data__subheader {
         font-size: 2.5rem;
         width: 80%;
     }
 
-    .frontend__paragraph {
+    .data__paragraph {
         font-size: 1.5rem;
         width: 80%;
         padding-top: 1.5rem;
@@ -107,69 +107,69 @@
         line-height: 2.25rem;
     }
 
-    .frontend__button--container {
+    .data__button--container {
         gap: 1.5rem;
     }
 
-    .frontend__button {
+    .data__button {
         font-size: 1.25rem;
     }
 
-    .frontend__image {
+    .data__image {
         margin-top: 3rem;
         margin-bottom: 3rem;
         width: 80%;
         border-radius: .25rem;
     }
 
-    .frontend__columns--container {
+    .data__columns--container {
         gap: 1rem;
         padding-top: 3rem;
         width: 95%;
     }
 
-    .frontend__columns--subcontainer {
+    .data__columns--subcontainer {
         gap: .25rem;
     }
 
-    .frontend__columns--header {
+    .data__columns--header {
         font-size: 1.75rem;
     }
 
-    .frontend__columns--paragraph {
+    .data__columns--paragraph {
         font-size: 1.15rem;
         line-height: 2.15rem;
     }
 }
 
 @media (max-width: 850px) {
-    .frontend__columns--header {
+    .data__columns--header {
         font-size: 1.5rem;
     }
 
-    .frontend__columns--paragraph {
+    .data__columns--paragraph {
         font-size: 1rem;
         line-height: 2rem;
     }
 
-    .frontend__columns--container {
+    .data__columns--container {
         padding-top: 1.5rem;
         width: 95%;
         flex-direction: column;
     }
 
-    .frontend__image {
+    .data__image {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         width: 95%;
     }
     
-    .frontend__subheader {
+    .data__subheader {
         font-size: 2.25rem;
         width: 95%;
     }
 
-    .frontend__paragraph {
+    .data__paragraph {
         font-size: 1.25rem;
         width: 95%;
         line-height: 2.25rem;
@@ -177,31 +177,31 @@
 }
 
 @media (max-width: 550px) {
-    .frontend__columns--header {
+    .data__columns--header {
         font-size: 1.25rem;
         text-align: left;
     }
 
-    .frontend__columns--paragraph {
+    .data__columns--paragraph {
         line-height: 1.75rem;
         text-align: left;
     }
 
-    .frontend__header {
+    .data__header {
         font-size: 1.25rem;
         text-align: left;
         width: 95%;
         margin: auto;
     }
     
-    .frontend__subheader {
+    .data__subheader {
         font-size: 2rem;
         text-align: left;
         width: 95%;
         margin: auto;
     }
 
-    .frontend__paragraph {
+    .data__paragraph {
         font-size: 1rem;
         width: 95%;
         line-height: 2.25rem;
@@ -210,30 +210,30 @@
         margin: auto;
     }
 
-    .frontend__button--container {
+    .data__button--container {
         flex-direction: column;
         gap: .5rem;
     }
 
-    .frontend__button--link {
+    .data__button--link {
         width: 95%;
         margin: auto;
     }
 
-    .frontend__button {
+    .data__button {
         font-size: 1rem;
         width: 100%;
         margin: auto;
     }
 
-    .frontend__container {
+    .data__container {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
 }
 
 @media (max-width: 350px) {
-    .frontend__subheader {
+    .data__subheader {
         font-size: 1.5rem;
     }
 }
