@@ -1,0 +1,93 @@
+.pricingComparison__container {
+    background: var(--darker-background);
+    color: var(--background);
+    padding-bottom: 6rem;
+}
+
+.pricingComparison__header {
+    text-align: center;
+    padding-bottom: 3rem;
+    color: var(--background);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.pricingComparison__subcontainer {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    row-gap: 3rem;
+
+}
+
+[data-left-column] {
+    text-align: left;
+}
+
+.pricingComparison__plan--header {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--background);
+    border-bottom: .05rem solid var(--primary);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.pricingComparison__plan--subheader {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--secondary-accent);
+    border-bottom: .05rem solid var(--primary);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.pricingComparison__plan--subheader span {
+    font-weight: 800;
+    color: var(--tertiary);
+    font-size: 1rem;
+}
+
+.top__row--header {
+    color: var(--tertiary)
+}
+
+@media (max-width: 1000px) {
+    .pricingComparison__container {
+        padding-bottom: 6rem;
+        overflow-x: scroll;
+    }
+
+    .pricingComparison__header {
+        padding-bottom: 3rem;
+        font-size: 4rem;
+        text-align: left;
+        width: 95%;
+        margin: auto;
+    }
+
+    .pricingComparison__subcontainer {
+        row-gap: 3rem;
+
+    }
+
+    .pricingComparison__plan--header {
+        font-size: 2rem;
+        border-bottom: .05rem solid var(--primary);
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .pricingComparison__plan--subheader {
+        font-size: 1.5rem;
+        border-bottom: .05rem solid var(--primary);
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .pricingComparison__plan--subheader span {
+        font-size: 1rem;
+    }
+}

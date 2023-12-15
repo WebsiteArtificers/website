@@ -1,11 +1,10 @@
-import { GetPricing } from '@/components/components';
 import {
   getSession,
   getSubscription,
   getActiveProductsWithPrices
 } from '@/app/supabase-server';
 import { Suspense } from 'react';
-import { LoadingScreen } from '@/components/components';
+import { LoadingScreen, PricingComparison, GetPricing } from '@/components/components';
 
 const meta = {
   title: 'The Website Artificers: Value-Driven Pricing',
@@ -58,6 +57,7 @@ export default async function Page() {
             products={products}
             subscription={subscription}
           />
+          <PricingComparison />
       </Suspense>
   );
 }
