@@ -23,7 +23,9 @@ export default function DataOffering() {
                         ✓ Store your data with a large variety of storage options
                         </li>
                     </ul>
-                    <button className='websiteOffering__left--button button__primary'>Explore Data and APIs</button>
+                    <a href='/platform'>
+                        <button className='websiteOffering__left--button button__primary'>Explore Data and APIs</button>
+                    </a>
                 </div>
                 <div className='websiteOffering__subcontainer--right'>
                     <Image width={2000} height={2300} src='/images/dataStream.jpg' alt='Picture of the various data opportunities presented by Website Artificers' className='websiteOffering__right--image' />

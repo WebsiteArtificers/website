@@ -21,7 +21,9 @@ export default function WebsiteOffering() {
                         ✓ Grows and scales with your business
                         </li>
                     </ul>
-                    <button className='websiteOffering__left--button button__primary'>Explore Website Platforms</button>
+                    <a href='/platform'>
+                        <button className='websiteOffering__left--button button__primary'>Explore Website Platforms</button>
+                    </a>
                 </div>
                 <div className='websiteOffering__subcontainer--right'>
                     <Image width={2000} height={2300} src='/images/website.png' alt='Picture of a website designed by Website Artificers' className='websiteOffering__right--image' />

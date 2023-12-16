@@ -16,7 +16,7 @@ export default function Offering() {
                 </div>
             </div>
             <div className='offering__subcontainer website'>
-                <a href='/website'>
+                <a href='/platform/frontend'>
                     <button className='offering__button website__button'>Website</button>
                 </a>
                 <p className='offering__paragraph website__paragraph'>
@@ -25,7 +25,7 @@ export default function Offering() {
                 </p>
             </div>
             <div className='offering__subcontainer data'>
-                <a href='/data'>
+                <a href='/platform/data'>
                     <button className='offering__button data__button'>Data</button>
                 </a>
                 <p className='offering__paragraph data__paragraph'>
@@ -34,7 +34,7 @@ export default function Offering() {
                 </p>
             </div>
             <div className='offering__subcontainer backend'>
-                <a href='/backend'>
+                <a href='/platform/backend'>
                     <button className='offering__button backend__button'>Backend</button>
                 </a>
                 <p className='offering__paragraph backend__paragraph'>

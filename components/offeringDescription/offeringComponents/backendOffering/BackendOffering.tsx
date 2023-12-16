@@ -23,7 +23,9 @@ export default function BackendOffering() {
                         ✓ Visualize areas of potential growth and competitive opportunity
                         </li>
                     </ul>
-                    <button className='websiteOffering__left--button button__primary'>Explore Backend Dashboard</button>
+                    <a href='/platform'>
+                        <button className='websiteOffering__left--button button__primary'>Explore Backend Dashboard</button>
+                    </a>
                 </div>
                 <div className='websiteOffering__subcontainer--right'>
                     <Image width={2000} height={2300} src='/images/backend-picture.png' alt='Picture of a backend dashboard provided by Website Artificers' className='websiteOffering__right--image' />
