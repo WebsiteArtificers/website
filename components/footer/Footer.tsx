@@ -78,17 +78,17 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link' href='terms'>
+                            <a className='footer__subcontainer--link' href='/terms'>
                                 Terms of Service
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link' href='privacy-policy'>
+                            <a className='footer__subcontainer--link' href='/privacy-policy'>
                                 Privacy Policy
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link' href='terms'>
+                            <a className='footer__subcontainer--link' href='/terms'>
                                 Accessibility Statement
                             </a>
                         </li>
