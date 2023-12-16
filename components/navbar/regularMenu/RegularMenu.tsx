@@ -1,6 +1,6 @@
 import './regularMenu.css'
 import { DownArrow } from "@/icons/icons"
-import { Product, Solutions, Resources } from './menus/menus'
+import { Product, Resources } from './menus/menus'
 import { useState } from 'react'
 
 export default function Regular() {
@@ -20,16 +20,6 @@ export default function Regular() {
                 <button className='regular__link'>Product</button>
                 <DownArrow />
                 { showProduct && <Product /> }
-            </div>
-            <div
-                className='regular__link--container'
-                onMouseEnter={() => setShowSolution(true)}
-                onMouseLeave={() => setShowSolution(false)}
-                onClick={() => setShowSolution(!showSolution)}
-            >
-                <button className='regular__link'>Solutions</button>
-                <DownArrow />
-                { showSolution && <Solutions /> }
             </div>
             <div
                 className='regular__link--container'

@@ -1,6 +1,6 @@
 import './hamburgerMenu.css'
 import { DownArrow } from "@/icons/icons"
-import { Resources, Product, Solutions } from './menus/menus';
+import { Resources, Product } from './menus/menus';
 import { useState } from 'react'
 
 export default function SmallScreenMenu() {
@@ -43,22 +43,6 @@ export default function SmallScreenMenu() {
                     </div>
                 </div>
                 { showResources && <Resources /> }
-            </div>
-            <div onClick={() => {
-                setShowSolution(!showSolution)
-                setShowResources(false)
-                setShowProduct(false)
-                setIsRotatedSolution(!isRotatedSolution);
-                setIsRotatedResources(false);
-                setIsRotatedProduct(false);
-            }} className='smallScreenMenu__outer--container'>
-                <div className={`smallScreenMenu__subcontainer ${isRotatedSolution ? 'active__background' : ''}`}>
-                    <button className='smallScreenMenu__button'>Solutions</button>
-                    <div className={isRotatedSolution ? 'rotate' : ''}>
-                        <DownArrow />
-                    </div>
-                </div>
-                { showSolution && <Solutions /> }
             </div>
             <div onClick={() => {
                 setShowProduct(!showProduct)
