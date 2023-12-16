@@ -1,0 +1,53 @@
+.pricingButton__container {
+    display: flex;
+    padding-bottom: 6vw;
+    background: var(--darker-background);
+    justify-content: center;
+    gap: 3vw;
+}
+
+.pricingButton__subcontainer {
+    width: 47.5%;
+    border: .15vw solid var(--primary);
+    border-radius: .25vw;
+    padding: 1vw;
+    background: var(--text);
+}
+
+.pricingButton__paragraph {
+    font-size: 1.5vw;
+    color: var(--background);
+    font-weight: 200;
+    margin-bottom: 1vw;
+}
+
+.pricingButton__button {
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+    .pricingButton__container {
+        padding-bottom: 6rem;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .pricingButton__subcontainer {
+        width: 95%;
+        margin: auto;
+        border: .15rem solid var(--primary);
+        border-radius: .25rem;
+        padding: 1rem;
+    }
+
+    .pricingButton__paragraph {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .pricingButton__button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}

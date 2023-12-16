@@ -5,6 +5,7 @@ import {
 } from '@/app/supabase-server';
 import { Suspense } from 'react';
 import { LoadingScreen, PricingComparison, GetPricing } from '@/components/components';
+import './pricingButton.css';
 
 const meta = {
   title: 'The Website Artificers: Value-Driven Pricing',
@@ -58,6 +59,20 @@ export default async function Page() {
             subscription={subscription}
           />
           <PricingComparison />
+          <div className='pricingButton__container'>
+            <div className='pricingButton__subcontainer'>
+                <p className='pricingButton__paragraph'>Would a custom plan better suit the needs of your company? We'd love to talk.</p>
+                <a href='/contact/sales'>
+                    <button className='pricingButton__button button__quaternary'>Contact Sales</button>    
+                </a>
+            </div>
+            <div className='pricingButton__subcontainer'>
+                <p className='pricingButton__paragraph'>Want to earn a 5% percent commission on every client you refer to us?</p>
+                <a href='/contact/affiliates'>
+                   <button className='pricingButton__button button__tertiary'>Become an Affiliate</button> 
+                </a> 
+            </div>
+          </div>
       </Suspense>
   );
 }

@@ -54,9 +54,19 @@
 
 @media (max-width: 1000px) {
     .pricingComparison__container {
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
         overflow-x: scroll;
     }
+
+    .pricingComparison__container::-webkit-scrollbar {
+        background: transparent;
+        height: .5rem;
+    }
+
+    .pricingComparison__container::-webkit-scrollbar-thumb {
+        background: var(--darker-background);
+        border-radius: 1rem;
+    } 
 
     .pricingComparison__header {
         padding-bottom: 3rem;
@@ -68,7 +78,6 @@
 
     .pricingComparison__subcontainer {
         row-gap: 3rem;
-
     }
 
     .pricingComparison__plan--header {
