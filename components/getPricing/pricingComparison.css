@@ -1,14 +1,14 @@
 .pricingComparison__container {
     background: var(--darker-background);
     color: var(--background);
-    padding-bottom: 6rem;
+    padding-bottom: 6vw;
 }
 
 .pricingComparison__header {
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 3vw;
     color: var(--background);
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 800;
 }
 
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     text-align: center;
-    row-gap: 3rem;
+    row-gap: 3vw;
 
 }
 
@@ -27,27 +27,25 @@
 }
 
 .pricingComparison__plan--header {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 800;
     color: var(--background);
-    border-bottom: .05rem solid var(--primary);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    border-bottom: .05vw solid var(--primary);
+    padding: 1vw;
 }
 
 .pricingComparison__plan--subheader {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 200;
     color: var(--secondary-accent);
-    border-bottom: .05rem solid var(--primary);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    border-bottom: .05vw solid var(--primary);
+    padding: 1vw;
 }
 
 .pricingComparison__plan--subheader span {
     font-weight: 800;
     color: var(--tertiary);
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 .top__row--header {
@@ -76,15 +74,13 @@
     .pricingComparison__plan--header {
         font-size: 2rem;
         border-bottom: .05rem solid var(--primary);
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding: 1rem;
     }
 
     .pricingComparison__plan--subheader {
         font-size: 1.5rem;
         border-bottom: .05rem solid var(--primary);
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding: 1rem;
     }
 
     .pricingComparison__plan--subheader span {
