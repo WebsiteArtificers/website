@@ -13,23 +13,23 @@ export default function Footer() {
                     <h1 className='footer__subcontainer--header product'>Product</h1>
                     <ul className='footer__subcontainer--ul'>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='/platform/frontend'>
                                 Front End
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='/platform/data'>
                                 Data
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='/platform/backend'>
                                 Backend
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
-                                SEO
+                            <a className='footer__subcontainer--link' href='/platform'>
+                                Platform
                             </a>
                         </li>
                     </ul>
@@ -38,8 +38,8 @@ export default function Footer() {
                     <h1 className='footer__subcontainer--header resources'>Resources</h1>
                     <ul className='footer__subcontainer--ul'>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
-                                Documentation
+                            <a className='footer__subcontainer--link' href='sign-up'>
+                                Sign Up
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
@@ -48,8 +48,8 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
-                                Partners
+                            <a className='footer__subcontainer--link' href='/contact/affiliates'>
+                                Affiliates
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
@@ -78,17 +78,17 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='terms'>
                                 Terms of Service
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='privacy-policy'>
                                 Privacy Policy
                             </a>
                         </li>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link'>
+                            <a className='footer__subcontainer--link' href='terms'>
                                 Accessibility Statement
                             </a>
                         </li>
