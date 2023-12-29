@@ -2,7 +2,7 @@ import './privacyPolicy.css'
 
 const meta = {
   title: 'The Website Artificers: Our Privacy Policy',
-  description: 'Come here to learn more about how we safely manage your privacy and data.'
+  description: 'Come here to learn more about how we safely manage your privacy and data.',
   cardImage: '/images/website-artificer-logo.ico',
   robots: 'follow, index',
   favicon: '/images/website-artificer-logo.ico',
