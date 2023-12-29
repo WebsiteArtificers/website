@@ -1,6 +1,6 @@
 import './footer.css'
 import { Logo } from '../../icons/icons'
-import { Email, Facebook, Github, LinkedIn } from '../../icons/icons'
+import { Email, Facebook, Github, LinkedIn, Youtube, Instagram } from '../../icons/icons'
 
 export default function Footer() {
     return (
@@ -112,6 +112,16 @@ export default function Footer() {
                                 <LinkedIn />LinkedIn
                             </a>
                         </li>
+                        <li className='footer__subcontainer--li'>
+                            <a className='footer__subcontainer--link' href='https://www.instagram.com/websiteartificers/' target="_blank" rel="noopener noreferrer">
+                                <Instagram />Instagram
+                            </a>
+                        </li>
+                       <li className='footer__subcontainer--li'>
+                            <a className='footer__subcontainer--link' href='https://www.youtube.com/@SamTeigland' target="_blank" rel="noopener noreferrer">
+                                <Youtube />Youtube
+                            </a>
+                        </li> 
                         <li className='footer__subcontainer--li'>
                             <a className='footer__subcontainer--link' href='/newsletter'>
                                 <Email />Newsletter
