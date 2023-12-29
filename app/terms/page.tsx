@@ -2,7 +2,7 @@ import './terms.css';
 
 const meta = {
   title: 'The Website Artificers: Our Terms of Service',
-  description: 'Come here to learn more about our terms of service policies.'
+  description: 'Come here to learn more about our terms of service policies.',
   cardImage: '/images/website-artificer-logo.ico',
   robots: 'follow, index',
   favicon: '/images/website-artificer-logo.ico',
