@@ -25,7 +25,7 @@ export default function PricingComparison() {
                     <h3 className='pricingComparison__plan--subheader'>36 <span>hours</span></h3>
                     <h3 className='pricingComparison__plan--subheader'>24 <span>hours</span></h3>
 
-                    <h2 className='pricingComparison__plan--header' data-left-column >Website Size Limited</h2>
+                    <h2 className='pricingComparison__plan--header' data-left-column >Max Website Size</h2>
                     <h3 className='pricingComparison__plan--subheader'>10 <span>pages</span></h3>
                     <h3 className='pricingComparison__plan--subheader'>20 <span>pages</span></h3>
                     <h3 className='pricingComparison__plan--subheader'>Unlimited</h3>
