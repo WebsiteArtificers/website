@@ -11,9 +11,9 @@ export default function PricingComparison() {
                     <h2 className='pricingComparison__plan--header top__row--header'>Professional</h2>
 
                     <h2 className='pricingComparison__plan--header' data-left-column >Pricing</h2>
-                    <h3 className='pricingComparison__plan--subheader'>$250<span>/per month</span></h3>
-                    <h3 className='pricingComparison__plan--subheader'>$500<span>/per month</span></h3>
-                    <h3 className='pricingComparison__plan--subheader'>$800<span>/per month</span></h3>
+                    <h3 className='pricingComparison__plan--subheader'>$400<span>/per month</span></h3>
+                    <h3 className='pricingComparison__plan--subheader'>$700<span>/per month</span></h3>
+                    <h3 className='pricingComparison__plan--subheader'>$1,500<span>/per month</span></h3>
 
                     <h2 className='pricingComparison__plan--header' data-left-column >Requests at a Time</h2>
                     <h3 className='pricingComparison__plan--subheader'>1</h3>

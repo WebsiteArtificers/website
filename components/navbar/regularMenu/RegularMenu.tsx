@@ -6,7 +6,6 @@ import { useState } from 'react'
 export default function Regular() {
 
     const [showProduct, setShowProduct] = useState(false);
-    const [showSolution, setShowSolution] = useState(false);
     const [showResources, setShowResources] = useState(false);
 
     return (
