@@ -38,7 +38,7 @@ export default function Footer() {
                     <h1 className='footer__subcontainer--header resources'>Resources</h1>
                     <ul className='footer__subcontainer--ul'>
                         <li className='footer__subcontainer--li'>
-                            <a className='footer__subcontainer--link' href='sign-up'>
+                            <a className='footer__subcontainer--link' href='/sign-in'>
                                 Sign Up
                             </a>
                         </li>
