@@ -18,7 +18,7 @@ export default function SmallScreenMenu() {
                 <a href='/sign-in'>
                     <button className='smallScreenMenu__top--button button__secondary'>Sign in</button>
                 </a>
-                <a href='/sign-in>
+                <a href='/sign-in'>
                     <button className='smallScreenMenu__top--button button__tertiary'>Get Started</button>
                 </a>
                 <a href='/contact/sales'>
