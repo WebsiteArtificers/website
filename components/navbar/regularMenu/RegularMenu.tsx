@@ -40,7 +40,7 @@ export default function Regular() {
                 <a className='regular__link--container' href='/sign-in'>
                     <button className='separate__link button__secondary'>Sign in</button>
                 </a>
-                <a className='regular__link--container'>
+                <a className='regular__link--container' href='/sign-in'>
                     <button className='separate__link button__tertiary'>Get Started</button>
                 </a>
             </div>

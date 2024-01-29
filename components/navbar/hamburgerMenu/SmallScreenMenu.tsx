@@ -15,10 +15,10 @@ export default function SmallScreenMenu() {
     return (
         <div className='smallScreenMenu__container'>
             <div className='smallScreenMenu__top--container'>
-                <a href='sign-in'>
+                <a href='/sign-in'>
                     <button className='smallScreenMenu__top--button button__secondary'>Sign in</button>
                 </a>
-                <a>
+                <a href='/sign-in>
                     <button className='smallScreenMenu__top--button button__tertiary'>Get Started</button>
                 </a>
                 <a href='/contact/sales'>
