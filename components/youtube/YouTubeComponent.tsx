@@ -1,7 +1,7 @@
 "use client"
 import './youTubeComponent.css'
 import { useEffect, useState } from 'react';
-import { fetchVideos } from '@/youtube/FetchYouTube';
+import { fetchVideos } from '@/youtube/fetchYouTube';
 import type { NextPage } from 'next';
 
 interface VideoSnippetThumbnail {

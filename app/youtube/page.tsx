@@ -1,7 +1,6 @@
 import './youTube.css'
-import { YouTubeComponent } from '@/components/components'
+import { YouTubeComponent, LoadingScreen } from '@/components/components'
 import { Suspense } from 'react'
-import { LoadingScreen } from '@/components/components'
 
 const meta = {
     title: 'The Website Artificers: Learn to Code with Sam Teigland!',
