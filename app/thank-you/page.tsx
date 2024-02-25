@@ -3,8 +3,8 @@ import { Suspense } from 'react'
 import { LoadingScreen } from '@/components/components'
 
 const meta = {
-    title: 'The Website Artificers: Value-Driven Pricing',
-    description: "Explore transparent pricing for Website Artificers' web development services. Find tailored packages to suit your business needs and budget. Get value-driven solutions for your online presence today.",
+    title: 'The Website Artificers: Thank you for contacting us!',
+    description: "Thank you for taking the time to contact us! We will do our best to get back to you in a timely manner!",
     cardImage: '/images/website-artificer-logo.ico',
     robots: 'follow, index',
     favicon: '/images/website-artificer-logo.ico',
