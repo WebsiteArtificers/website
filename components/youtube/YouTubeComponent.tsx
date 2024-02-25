@@ -34,14 +34,14 @@ const YouTubeComponent: NextPage = () => {
         loadVideos();
     }, []);
 
-    function decodeHtml(html) {
-        var txt = document.createElement("textarea");
+    function decodeHtml(html: string): string {
+        const txt = document.createElement("textarea");
         txt.innerHTML = html;
 
         return txt.value;
     }
 
-    function truncateString(str, num) {
+    function truncateString(str: string, num: number): string {
         if (str.length > num) return str.slice(0, num) + "...";
         else return str;
     }
