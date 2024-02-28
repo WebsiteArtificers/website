@@ -9,6 +9,10 @@ export default function Resources() {
                     <h2 className='hamburgerMenu__subcontainer--subheader'>Blog</h2>
                     <p className='hamburgerMenu__subcontainer--description'>Our weekly journey</p>
                 </a>
+                <a className='hamburgerMenu__subcontainer--link' href='/youtube'>
+                    <h2 className='hamburgerMenu__subcontainer--subheader'>Learn to Code</h2>
+                    <p className='hamburgerMenu__subcontainer--description'>Become an Artificer</p>
+                </a>
                 <a className='hamburgerMenu__subcontainer--link' href='/contact/affiliates'>
                     <h2 className='hamburgerMenu__subcontainer--subheader'>Affiliates</h2>
                     <p className='hamburgerMenu__subcontainer--description'>Who we work with and trust</p>
