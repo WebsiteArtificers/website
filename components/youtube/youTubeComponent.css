@@ -17,6 +17,7 @@
     background: var(--text);
     border-radius: .25rem;
     width: 40vw;
+    transition: .5s ease-in-out;
     height: auto;
 }
 
@@ -41,6 +42,10 @@
     font-size: 2vw;
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
+}
+
+.youTubeVideo__link:hover {
+    background: var(--darker-background);
 }
 
 @media (max-width: 800px) {
