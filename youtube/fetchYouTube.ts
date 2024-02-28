@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-const YOUTUBE_API_KEY: string = process.env.YOUTUBE_API_KEY as string; // Replace with your actual API key
-const CHANNEL_ID: string = process.env.CHANNEL_ID as string; // Replace with your channel ID
-
+const YOUTUBE_API_KEY: string = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY as string; // Replace with your actual API key
+const CHANNEL_ID: string = process.env.NEXT_PUBLIC_CHANNEL_ID as string; // Replace with your channel ID
 const BASE_URL: string = 'https://www.googleapis.com/youtube/v3';
 
 interface VideoSnippetThumbnail {
