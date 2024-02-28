@@ -60,6 +60,9 @@ export default function AffiliatesPage() {
     return <div className='affiliates__container'>
         <h1 className='affiliates__header'>Become a partner</h1>
         <p className='affiliates__paragraph'>Are you looking to grow your business with us? Send us your details and we'll be in touch!</p>
+        <p className='affiliates__paragraph affiliates__subparagraph'>
+            Receive a <span>5% monthly comission</span> on all sales generated from your referrals!
+        </p>
         <form className='affiliates__form' onSubmit={handleSubmit}>
             <div className='affiliates__subcontainer'>
                 <div className='affiliates__subcontainer--subcontainer'>

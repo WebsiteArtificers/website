@@ -21,6 +21,16 @@
     margin: auto;
 }
 
+.affiliates__paragraph.affiliates__subparagraph {
+    color: var(--secondary-accent);
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+.affiliates__paragraph.affiliates__subparagraph span {
+    color: var(--tertiary);
+}
+
 .affiliates__form {
     display: flex;
     flex-direction: column;
@@ -156,6 +166,10 @@ select::placeholder {
         font-size: 1.25rem;
         width: 50%;
     }
+
+    .affiliates__paragraph.affiliates__subparagraph {
+        font-size: 1rem;
+    }
     
     .affiliates__form {
         gap: 2rem;
@@ -261,6 +275,11 @@ select::placeholder {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .affiliates__paragraph.affiliates__subparagraph {
+        font-size: .80rem;
+    }
+
 
     .affiliates__form {
         gap: .5rem;
