@@ -32,6 +32,7 @@ const YouTubeComponent: NextPage = () => {
         };
 
         loadVideos();
+
     }, []);
 
     function decodeHtml(html: string): string {
@@ -55,9 +56,9 @@ const YouTubeComponent: NextPage = () => {
                         className='youTubeVideo__video'
                         src={`https://www.youtube.com/embed/${video.id.videoId}`}
                         title={decodeHtml(video.snippet.title)}
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen></iframe>
+                        allowFullScreen>
+                    </iframe>
                     <h2 className='youTubeVideo__header'>{truncateString(decodeHtml(video.snippet.title), 10)}</h2>
                 </a>
                 ))}
