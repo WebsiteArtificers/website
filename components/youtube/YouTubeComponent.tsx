@@ -59,7 +59,7 @@ const YouTubeComponent: NextPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>
                     </iframe>
-                    <h2 className='youTubeVideo__header'>{truncateString(decodeHtml(video.snippet.title), 10)}</h2>
+                    <h2 className='youTubeVideo__header'>{truncateString(decodeHtml(video.snippet.title), 30)}</h2>
                 </a>
                 ))}
             </div>

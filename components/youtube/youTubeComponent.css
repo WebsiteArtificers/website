@@ -16,7 +16,8 @@
 .youTubeVideo__link {
     background: var(--text);
     border-radius: .25rem;
-    height: 35vw;
+    width: 40vw;
+    height: auto;
 }
 
 .youTubeVideo__video {
@@ -38,6 +39,92 @@
     color: var(--background);
     font-weight: 800;
     font-size: 2vw;
-    margin-top: 1.5vw;
-    margin-bottom: 1.5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+@media (max-width: 800px) {
+    .youTubeVideo__subcontainer {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .youTubeVideo__link {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .youTubeVideo__video {
+        height: 27.5rem;
+    }
+
+    .youTubeVideo__header {
+        font-size: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+}
+
+@media (max-width: 675px) {
+    .youTubeVideo__link {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .youTubeVideo__video {
+        height: 17.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .youTubeVideo__subcontainer {
+        gap: 3rem;
+    }
+
+    .youTubeVideo__link {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .youTubeVideo__video {
+        height: 12.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .youTubeVideo__link {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .youTubeVideo__video {
+        height: 7.5rem;
+    }
+
+    .youTubeVideo__header {
+        font-size: .80rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .youTubeVideo__subcontainer {
+        gap: 2rem;
+    }
+
+    .youTubeVideo__link {
+        width: 10rem;
+        height: 7.5rem;
+    }
+
+    .youTubeVideo__video {
+        height: 5rem;
+    }
+
+    .youTubeVideo__header {
+        font-size: .60rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+    }
 }
