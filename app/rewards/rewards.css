@@ -183,7 +183,10 @@
     font-weight: 400;
     color: var(--text);
     text-align: left;
-    margin-top: 3vw;
+    padding-top: 3vw;
+    margin: auto;
+    width: 90%;
+
 }
 
 .rewards__tiers--disclaimer span {
@@ -351,11 +354,14 @@
 
     .rewards__tiers--disclaimer {
         font-size: 1rem;
+        text-align: left;
+        margin: auto;
+        width: 90%;
     }
 
     .rewards__tiers--chain {
         font-size: 2rem;
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
 
     .rewards__faq--header {
