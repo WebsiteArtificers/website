@@ -182,7 +182,7 @@
     font-size: 3vw;
     font-weight: 400;
     color: var(--text);
-    text-align: center;
+    text-align: left;
     margin-top: 3vw;
 }
 
@@ -354,7 +354,7 @@
     }
 
     .rewards__tiers--chain {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 3rem;
     }
 
