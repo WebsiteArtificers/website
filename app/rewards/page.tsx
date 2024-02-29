@@ -47,7 +47,7 @@ export default function Page() {
                         <h3 className='rewards__tiers--percentage'>30<span>% of subscription price</span></h3>
                     </div>
                 </div>
-                <p className='rewards__tiers--disclaimer'><span>Additionally, if anyone you refer to us also refers new clients,</span> you receive 5% from those sales.</p>
+                <p className='rewards__tiers--chain'><span>Additionally, if anyone you refer to us also refers new clients,</span> you receive 5% from those sales.</p>
                 <p className='rewards__tiers--disclaimer'><span>Disclaimer: Payments are not continuous.</span> Affiliates will only receive one payment per successful referral.</p>
             </div>
             <div className='rewards__subcontainer--faq'>
