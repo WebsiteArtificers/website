@@ -1,0 +1,454 @@
+.rewards__container {
+    background: var(--darker-background);
+    color: var(--background);
+    padding-top: 6rem;
+}
+
+.rewards__subheader {
+    font-size: 4vw;
+    width: 90%;
+    margin: auto;
+    font-weight: 200;
+    margin-bottom: -1vw;
+}
+
+.rewards__header {
+   font-size: 8vw;
+   width: 85%;
+   margin: auto;
+   font-weight: 800;
+   color: var(--primary);
+}
+
+.rewards__introduction--header__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: 2vw;
+    align-items: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    width: 90%;
+    margin: auto;
+}
+
+/* This contains the svg */
+.rewards__introduction--svg__subcontainer {
+    width: 10vw;
+}
+
+/* This is the actual svg */
+.rewards__introduction--svg__subcontainer svg {
+    width: 100%;
+    cursor: pointer;
+    fill: var(--tertiary);
+    transition: .5s;
+}
+
+.rewards__introduction--svg__subcontainer svg:hover {
+    fill: var(--secondary);
+}
+
+/* This contains the header next to the svg */
+.rewards__introduction--header__subcontainer h2 {
+    font-size: 4vw;
+    color: var(--tertiary);
+    font-weight: 200;
+}
+
+.rewards__introduction--header__subcontainer h2 span {
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+.rewards__introduction--paragraph__container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 2vw;
+    background: var(--accent-background);
+    padding: 1.5vw;
+    border-radius: .15vw;
+}
+
+.rewards__introduction--paragraph {
+    font-size: 1.75vw;
+    font-weight: 200;
+}
+
+.rewards__introduction--paragraph span {
+    font-weight: 800;
+    color: var(--secondary-accent);
+}
+
+/* Tiers */
+.rewards__subcontainer--tiers {
+    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: var(--tertiary);
+}
+
+.rewards__tiers--header {
+    font-size: 5vw;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3vw;
+    color: var(--darker-background);
+}
+
+.rewards__tiers--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-grow: 1;
+    width: 90%;
+    margin: auto;
+}
+
+.rewards__tiers--subcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 30%;
+    border: .25vw solid var(--darker-background);
+    border-radius: .15vw;
+    padding: 1.5vw;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.rewards__tiers--subcontainer:hover {
+    background: var(--background);
+}
+
+.rewards__tiers--subheader {
+    font-size: 2.5vw;
+    font-weight: 800;
+    text-align: center;
+}
+
+.rewards__starter {
+    color: var(--primary);
+}
+
+.rewards__standard {
+    color: var(--accent);
+}
+
+.rewards__professional {
+    color: var(--quaternary);
+}
+
+
+.rewards__tiers--subheader span {
+    font-weight: 200;
+    color: var(--darker-background);
+}
+
+.rewards__tiers--paragraph {
+   font-size: 2vw;
+   color: var(--text);
+   font-weight: 200;
+   text-align: center;
+}
+
+.rewards__tiers--percentage {
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+    color: var(--darker-background);
+}
+
+.rewards__tiers--percentage span {
+    font-size: 1.5vw;
+    font-weight: 200;
+    color: var(--text);
+}
+
+/* FAQ */ 
+.rewards__subcontainer--faq {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: var(--darker-background);
+}
+
+.rewards__faq--header {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 800;
+    color: var(--background);
+    margin-bottom: 3vw;
+}
+
+.rewards__faq--subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    flex-grow: 1;
+    width: 90%;
+    margin: auto;
+}
+
+.rewards__faq--affiliates__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    flex-grow: 1;
+    padding: 1.5vw;
+    border-radius: .15vw;
+    width: 50%;
+    margin: auto;
+    background: var(--text);
+}
+
+.rewards__faq--affiliates__header {
+    color: var(--primary);
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: left;
+}
+
+.rewards__faq--affiliates__paragraph {
+    color: var(--background);
+    font-size: 1.25vw;
+}
+
+.rewards__faq--affiliates__button {
+    font-size: 1.25vw;
+    width: 100%;
+}
+
+.rewards__faq--contact__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    flex-grow: 1;
+    padding: 1.5vw;
+    border-radius: .15vw;
+    width: 50%;
+    margin: auto;
+    background: var(--text);
+}
+
+.rewards__faq--contact__header {
+    color: var(--tertiary);
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: left;
+}
+
+.rewards__faq--contact__paragraph {
+    color: var(--background);
+    font-size: 1.25vw;
+}
+
+.rewards__faq--contact__button {
+    font-size: 1.25vw;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .rewards__subheader {
+        font-size: 3rem;
+        margin-bottom: -1rem;
+    }
+
+    .rewards__header {
+        font-size: 5rem;
+        width: 85%;
+    }
+
+    .rewards__introduction--header__container {
+        gap: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* This contains the svg */
+    .rewards__introduction--svg__subcontainer {
+        width: 7rem;
+    }
+
+    .rewards__introduction--header__subcontainer h2 {
+        font-size: 2rem;
+    }
+
+    .rewards__introduction--paragraph__container {
+        gap: 2rem;
+        padding: 1.5rem;
+        border-radius: .15rem;
+    }
+
+    .rewards__introduction--paragraph {
+        font-size: 1.75rem;
+    }
+
+    .rewards__tiers--header {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .rewards__tiers--container {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .rewards__tiers--subcontainer {
+        border: .25rem solid var(--darker-background);
+        border-radius: .15rem;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .rewards__tiers--subheader {
+        font-size: 4rem;
+    }
+
+    .rewards__tiers--paragraph {
+        font-size: 2.5rem;
+    }
+
+    .rewards__tiers--percentage {
+        font-size: 6rem;
+    }
+
+    .rewards__tiers--percentage span {
+        font-size: 2rem;
+    }
+
+    .rewards__faq--header {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    .rewards__faq--subcontainer {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .rewards__faq--affiliates__container {
+        gap: 1rem;
+        padding: 1.5rem;
+        border-radius: .15rem;
+        width: 100%;
+    }
+
+    .rewards__faq--affiliates__header {
+        font-size: 2rem;
+    }
+
+    .rewards__faq--affiliates__paragraph {
+        font-size: 1.25rem;
+    }
+
+    .rewards__faq--affiliates__button {
+        font-size: 1.25rem;
+    }
+
+    .rewards__faq--contact__container {
+        gap: 1rem;
+        padding: 1.5rem;
+        border-radius: .15rem;
+        width: 100%;
+    }
+
+    .rewards__faq--contact__header {
+        font-size: 2rem;
+    }
+
+    .rewards__faq--contact__paragraph {
+        font-size: 1.25rem;
+    }
+
+    .rewards__faq--contact__button {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .rewards__subheader {
+        font-size: 2rem;
+        margin-bottom: auto;
+    }
+
+    .rewards__header {
+        font-size: 3rem;
+        width: 90%;
+    }
+    
+    .rewards__tiers--subheader {
+        font-size: 2rem;
+    }
+
+    .rewards__tiers--paragraph {
+        font-size: 1.5rem;
+    }
+
+    .rewards__tiers--percentage {
+        font-size: 4rem;
+    }
+
+    .rewards__tiers--percentage span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .rewards__faq--header {
+        font-size: 5rem;
+    }
+
+    .rewards__introduction--header {
+        font-size: 1rem;
+    }
+
+    .rewards__introduction--header__subcontainer h2 {
+        font-size: 1.5rem;
+        background: var(--accent-background);
+    }
+
+    .rewards__tiers--percentage {
+        font-size: 3rem;
+    }
+
+    .rewards__tiers--percentage span {
+        font-size: .75rem;
+    }
+
+    .rewards__faq--header {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .rewards__container {
+        text-align: left;
+    }
+
+    .rewards__tiers--header {
+        text-align: left;
+        margin: auto;
+        width: 90%;
+    }
+
+    .rewards__tiers--subheader {
+        text-align: left;
+    }
+
+    .rewards__tiers--paragraph {
+        text-align: left;
+    }
+
+    .rewards__tiers--percentage {
+        text-align: left;
+    }
+}

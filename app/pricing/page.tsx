@@ -67,7 +67,7 @@ export default async function Page() {
                 </a>
             </div>
             <div className='pricingButton__subcontainer'>
-                <p className='pricingButton__paragraph'>Want to earn a 5% percent commission on every client you refer to us?</p>
+                <p className='pricingButton__paragraph'>We have a tiered affiliate model. The more people you refer to us, the more money we pay you. Want to learn more?</p>
                 <a href='/contact/affiliates'>
                    <button className='pricingButton__button button__tertiary'>Become an Affiliate</button> 
                 </a> 

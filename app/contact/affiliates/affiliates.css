@@ -23,12 +23,23 @@
 
 .affiliates__paragraph.affiliates__subparagraph {
     color: var(--secondary-accent);
-    font-weight: 800;
+    font-weight: 200;
     font-size: 1vw;
 }
 
-.affiliates__paragraph.affiliates__subparagraph span {
+.affiliates__paragraph.affiliates__subparagraph span{
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.affiliates__paragraph.affiliates__subparagraph a {
     color: var(--tertiary);
+    transition: .5s;
+    font-weight: 800;
+}
+
+.affiliates__paragraph.affiliates__subparagraph a:hover {
+    color: var(--secondary);
 }
 
 .affiliates__form {
