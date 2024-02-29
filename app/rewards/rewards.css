@@ -176,6 +176,13 @@
     font-weight: 200;
     color: var(--text);
     text-align: center;
+}
+
+.rewards__tiers--chain {
+    font-size: 3vw;
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
     margin-top: 3vw;
 }
 
@@ -183,6 +190,12 @@
     font-weight: 800;
     color: var(--darker-background);
 }
+
+.rewards__tiers--chain span {
+    font-weight: 800;
+    color: var(--darker-background);
+}
+
 
 /* FAQ */ 
 .rewards__subcontainer--faq {
@@ -338,6 +351,10 @@
 
     .rewards__tiers--disclaimer {
         font-size: 1rem;
+    }
+
+    .rewards__tiers--chain {
+        font-size: 3rem;
         margin-top: 3rem;
     }
 
