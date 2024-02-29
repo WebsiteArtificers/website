@@ -171,6 +171,19 @@
     color: var(--text);
 }
 
+.rewards__tiers--disclaimer {
+    font-size: 1vw;
+    font-weight: 200;
+    color: var(--text);
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.rewards__tiers--disclaimer span {
+    font-weight: 800;
+    color: var(--darker-background);
+}
+
 /* FAQ */ 
 .rewards__subcontainer--faq {
     padding-top: 6rem;
@@ -321,6 +334,11 @@
 
     .rewards__tiers--percentage span {
         font-size: 2rem;
+    }
+
+    .rewards__tiers--disclaimer {
+        font-size: 1rem;
+        margin-top: 3rem;
     }
 
     .rewards__faq--header {

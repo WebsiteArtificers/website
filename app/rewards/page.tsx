@@ -47,6 +47,7 @@ export default function Page() {
                         <h3 className='rewards__tiers--percentage'>75<span>% of subscription price</span></h3>
                     </div>
                 </div>
+                <p className='rewards__tiers--disclaimer'><span>Disclaimer: Payments are not continuous.</span> Affiliates will only receive one payment per successful referral.</p>
             </div>
             <div className='rewards__subcontainer--faq'>
                 <h2 className='rewards__faq--header'>What's next?</h2>
