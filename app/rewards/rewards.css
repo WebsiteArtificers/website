@@ -175,7 +175,10 @@
     font-size: 1vw;
     font-weight: 200;
     color: var(--text);
-    text-align: center;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    padding-top: 1rem;
 }
 
 .rewards__tiers--chain {
@@ -354,9 +357,6 @@
 
     .rewards__tiers--disclaimer {
         font-size: 1rem;
-        text-align: left;
-        margin: auto;
-        width: 90%;
     }
 
     .rewards__tiers--chain {
