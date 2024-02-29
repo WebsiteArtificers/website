@@ -33,18 +33,18 @@ export default function Page() {
                 <div className='rewards__tiers--container'>
                     <div className='rewards__tiers--subcontainer'>
                         <h4 className='rewards__tiers--subheader rewards__starter'>Starter <span>Affiliate</span></h4>
-                        <p className='rewards__tiers--paragraph'>1-3 clients referred</p>
-                        <h3 className='rewards__tiers--percentage'>30<span>% of subscription price</span></h3>
+                        <p className='rewards__tiers--paragraph'>1-2 clients referred</p>
+                        <h3 className='rewards__tiers--percentage'>20<span>% of subscription price</span></h3>
                     </div>
                     <div className='rewards__tiers--subcontainer'>
                         <h4 className='rewards__tiers--subheader rewards__standard'>Standard <span>Affiliate</span></h4>
                         <p className='rewards__tiers--paragraph'>4-6 clients referred</p>
-                        <h3 className='rewards__tiers--percentage'>50<span>% of subscription price</span></h3>
+                        <h3 className='rewards__tiers--percentage'>25<span>% of subscription price</span></h3>
                     </div>
                     <div className='rewards__tiers--subcontainer'>
                         <h4 className='rewards__tiers--subheader rewards__professional'>Professional <span>Affiliate</span></h4>
                         <p className='rewards__tiers--paragraph'>7+ clients referred</p>
-                        <h3 className='rewards__tiers--percentage'>75<span>% of subscription price</span></h3>
+                        <h3 className='rewards__tiers--percentage'>30<span>% of subscription price</span></h3>
                     </div>
                 </div>
                 <p className='rewards__tiers--disclaimer'><span>Additionally, if anyone you refer to us also refers new clients,</span> you receive 5% from those sales.</p>
