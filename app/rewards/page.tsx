@@ -75,12 +75,12 @@ export default function Page() {
                     </div>
                     <div className='rewards__tiers--subcontainer'>
                         <h4 className='rewards__tiers--subheader rewards__standard'>Standard <span>Affiliate</span></h4>
-                        <p className='rewards__tiers--paragraph'>4-6 clients referred</p>
+                        <p className='rewards__tiers--paragraph'>3-5 clients referred</p>
                         <h3 className='rewards__tiers--percentage'>25<span>% of subscription price</span></h3>
                     </div>
                     <div className='rewards__tiers--subcontainer'>
                         <h4 className='rewards__tiers--subheader rewards__professional'>Professional <span>Affiliate</span></h4>
-                        <p className='rewards__tiers--paragraph'>7+ clients referred</p>
+                        <p className='rewards__tiers--paragraph'>6+ clients referred</p>
                         <h3 className='rewards__tiers--percentage'>30<span>% of subscription price</span></h3>
                     </div>
                 </div>
