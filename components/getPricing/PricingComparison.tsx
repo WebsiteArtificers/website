@@ -3,7 +3,7 @@ import './pricingComparison.css'
 export default function PricingComparison() {
     return (
         <div className='pricingComparison__container'>
-            <h1 className='pricingComparison__header'>Compare Plans</h1>
+            <h2 className='pricingComparison__header'>Compare Plans</h2>
             <div className='pricingComparison__subcontainer'>
                     <h2 className='pricingComparison__plan--header top__row--header' data-left-column>Plans</h2>
                     <h2 className='pricingComparison__plan--header top__row--header'>Starter</h2>

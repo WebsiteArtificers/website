@@ -4,7 +4,7 @@ import {
   getActiveProductsWithPrices
 } from '@/app/supabase-server';
 import { Suspense } from 'react';
-import { LoadingScreen, PricingComparison, GetPricing } from '@/components/components';
+import { LoadingScreen, PricingComparison, GetPricing, PricingFAQ } from '@/components/components';
 import './pricingButton.css';
 
 const meta = {
@@ -59,6 +59,7 @@ export default async function Page() {
             subscription={subscription}
           />
           <PricingComparison />
+          <PricingFAQ />
           <div className='pricingButton__container'>
             <div className='pricingButton__subcontainer'>
                 <p className='pricingButton__paragraph'>Would a custom plan better suit the needs of your company? We'd love to talk.</p>

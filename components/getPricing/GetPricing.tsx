@@ -164,11 +164,14 @@ export default function GetPricing({
     <section className="getPricing__section">
       <div className="getPricing__container">
         <div className="getPricing__subcontainer">
-          <h1 className="getPricing__header">
+          <h2 className="getPricing__header">
             Pricing Plans
-          </h1>
+          </h2>
           <p className="getPricing__paragraph">
-              tailored plans. <span className="getPricing__paragraph--span">built for you.</span>
+            tailored plans. <span className="getPricing__paragraph--span">built for you.</span>
+          </p>
+          <p className="getPricing__subparagraph">
+            If you are unable to subscribe to a plan, click <a href='/sign-in'>Get Started</a> to create an account with us first. <span>You'll be able to subscribe once you have an account.</span>
           </p>
           <div className="getPricing__mainPricing--container">
             {intervals.includes('month') && (

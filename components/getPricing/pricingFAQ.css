@@ -1,0 +1,67 @@
+.pricingFAQ__container {
+    background: var(--darker-background);
+    color: var(--background);
+    padding-bottom: 6vw;
+}
+
+.pricingFAQ__header {
+    text-align: center;
+    padding-bottom: 3vw;
+    color: var(--background);
+    font-size: 4vw;
+    font-weight: 800;
+}
+
+.pricingFAQ__subcontainer {
+    width: 95%;
+    margin: auto;
+    background: var(--text);
+    padding: 1vw;
+    border-radius: .25vw;
+    border: .15vw solid var(--primary);
+}
+
+.pricingFAQ__question--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    padding: 1vw;
+    border-radius: .25vw;
+}
+
+.pricingFAQ__question--container:hover {
+    background: var(--darker-background);
+}
+
+.pricingFAQ__question--container div {
+    width: 1.5vw;
+    height: auto;
+    margin-left: auto;
+    transition: .5s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.pricingFAQ__question {
+    font-size: 2.25vw;
+    font-weight: 800;
+    color: var(--secondary-accent);
+}
+
+.pricingFAQ__answer--container {
+    padding: 1vw;
+}
+
+.pricingFAQ__hidden {
+    display: none;
+}
+
+.pricingFAQ__answer {
+    font-size: 1.75vw;
+    font-weight: 200;
+    line-height: 3.25vw;
+}
