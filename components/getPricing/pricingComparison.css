@@ -1,7 +1,6 @@
 .pricingComparison__container {
     background: var(--darker-background);
     color: var(--background);
-    padding-bottom: 6vw;
 }
 
 .pricingComparison__header {
@@ -54,7 +53,6 @@
 
 @media (max-width: 1000px) {
     .pricingComparison__container {
-        padding-bottom: 3rem;
         overflow-x: scroll;
     }
 
