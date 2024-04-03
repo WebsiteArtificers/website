@@ -36,10 +36,15 @@
 }
 
 .pricingFAQ__question--container div {
-    width: 1.5vw;
+    width: auto;
     height: auto;
     margin-left: auto;
     transition: .5s;
+    padding: .25rem;
+}
+
+.pricingFAQ__question--container div svg {
+    width: 1.75rem;
 }
 
 .rotate {
@@ -87,8 +92,8 @@
         border-radius: .25rem;
     }
     
-    .pricingFAQ__question--container div {
-        width: 1.5rem;
+    .pricingFAQ__question--container div svg {
+        width: 1.75rem;
     }
     
     .pricingFAQ__question {
