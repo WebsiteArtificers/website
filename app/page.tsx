@@ -32,7 +32,6 @@ export default async function Index() {
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Hero />
-      <Definition />
       <GetPricing
         session={session}
         user={session?.user}
@@ -40,6 +39,7 @@ export default async function Index() {
         subscription={subscription}
       />
       <ToPricingComparison />
+      <Definition />
       <Overview />
       <Offering />
       <OfferingDescription />
