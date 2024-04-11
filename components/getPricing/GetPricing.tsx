@@ -5,7 +5,6 @@ import { Database } from '@/types_db';
 import { postData } from '@/utils/helpers';
 import { getStripe } from '@/utils/stripe-clients';
 import { Session, User } from '@supabase/supabase-js';
-import cn from 'classnames';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import './getPricing.css';
@@ -246,15 +245,29 @@ export default function GetPricing({
                       </span>
                     )}
                   </p>
-                  <Button
-                    type="button"
-                    disabled={!session}
-                    loading={priceIdLoading === price.id}
-                    onClick={() => handleCheckout(price)}
-                    className="getPricing__subscription--button"
-                  >
-                    {!billingInterval ? 'Schedule a Call' : subscription ? 'Manage' : 'Subscribe'}
-                  </Button>
+                  {!session ?
+                    (
+                      <a href='/sign-in'>
+                        <Button
+                          type="button"
+                          loading={priceIdLoading === price.id}
+                          className="getPricing__subscription--button"
+                        >
+                          Create an account
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button
+                        type="button"
+                        disabled={!session}
+                        loading={priceIdLoading === price.id}
+                        onClick={() => handleCheckout(price)}
+                        className="getPricing__subscription--button"
+                      >
+                        {!billingInterval ? 'Schedule a Call' : subscription ? 'Manage' : 'Subscribe'}
+                      </Button>
+                    )
+                  }
                 </div>
               </div>
             );
