@@ -30,7 +30,7 @@ export default function PricingComparison() {
                     <h3 className='pricingComparison__plan--subheader'>20 <span>pages</span></h3>
                     <h3 className='pricingComparison__plan--subheader'>Unlimited</h3>
 
-                    <h2 className='pricingComparison__plan--header' data-left-column >Available Services</h2>
+                    <h2 className='pricingComparison__plan--header' data-left-column >Our Available Services</h2>
                     <h3 className='pricingComparison__plan--subheader'>Web Development, SEO</h3>
                     <h3 className='pricingComparison__plan--subheader'>Web Development, Marketing, SEO</h3>
                     <h3 className='pricingComparison__plan--subheader'>Web Development, Design, Marketing, SEO, and more</h3>
