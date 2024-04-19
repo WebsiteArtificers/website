@@ -36,7 +36,7 @@ export default function PricingComparison() {
                     <h3 className='pricingComparison__plan--subheader'>Web Development, Design, Marketing, SEO, and more</h3>
 
                     <h2 className='pricingComparison__plan--header' data-left-column >Pause Feature</h2>
-                    <h3 className='pricingComparison__plan--subheader'>✗</h3>
+                    <h3 className='pricingComparison__plan--subheader'>✓</h3>
                     <h3 className='pricingComparison__plan--subheader'>✓</h3>
                     <h3 className='pricingComparison__plan--subheader'>✓</h3>
 
