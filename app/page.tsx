@@ -9,8 +9,7 @@ import { Suspense } from 'react'
 import 
         { 
           Hero, Definition, Overview,
-          Offering, OfferingDescription, Welcome,
-          Supercharge, Pricing, Community, Magic, LoadingScreen, GetPricing, PricingFAQ, ToPricingComparison
+          Offering, OfferingDescription, Welcome, Pricing, Community, Magic, LoadingScreen, GetPricing, PricingFAQ, ToPricingComparison
         }
 from '../components/components'
 
@@ -45,7 +44,7 @@ export default async function Index() {
       <OfferingDescription />
       <Welcome />
       <PricingFAQ />
-      <Supercharge />
+      
       <Pricing />
       <Community />
       <Magic />
