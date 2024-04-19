@@ -20,17 +20,17 @@ export default function Product() {
             </div>
             <div className='menu__subcontainer'>
                 <h1 className='menu__subcontainer--header'>Features</h1>
-                <a className='menu__subcontainer--link'>
-                    <h2 className='menu__subcontainer--subheader'>Increase Brand Presence</h2>
-                    <p className='menu__subcontainer--description'>Drive customers to your site</p>
+                <a className='menu__subcontainer--link' href='/pause'>
+                    <h2 className='menu__subcontainer--subheader'>Pause Feature</h2>
+                    <p className='menu__subcontainer--description'>Don't need a whole month? Pause your plan!</p>
                 </a>
-                <a className='menu__subcontainer--link'>
-                    <h2 className='menu__subcontainer--subheader'>Capitalize on Opportunity</h2>
-                    <p className='menu__subcontainer--description'>Find areas for growth</p>
+                <a className='menu__subcontainer--link' href='/rewards'>
+                    <h2 className='menu__subcontainer--subheader'>About Our Affiliates</h2>
+                    <p className='menu__subcontainer--description'>Make money as an affiliate!</p>
                 </a>
-                <a className='menu__subcontainer--link'>
-                    <h2 className='menu__subcontainer--subheader'>Manage Your Brand</h2>
-                    <p className='menu__subcontainer--description'>Visualize data and manage your brand</p>
+                <a className='menu__subcontainer--link' href='/account'>
+                    <h2 className='menu__subcontainer--subheader'>Manage Your Account</h2>
+                    <p className='menu__subcontainer--description'>Manage your account here!</p>
                 </a>
             </div>
         </div>

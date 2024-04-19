@@ -20,17 +20,17 @@ export default function Product() {
             </div>
             <div className='hamburgerMenu__subcontainer'>
                 <h1 className='hamburgerMenu__subcontainer--header'>Features</h1>
-                <a className='hamburgerMenu__subcontainer--link'>
-                    <h2 className='hamburgerMenu__subcontainer--subheader'>Increase Brand Presence</h2>
-                    <p className='hamburgerMenu__subcontainer--description'>Drive customers to your site</p>
+                <a className='hamburgerMenu__subcontainer--link' href='/pause'>
+                    <h2 className='hamburgerMenu__subcontainer--subheader'>Pause Feature</h2>
+                    <p className='hamburgerMenu__subcontainer--description'>Don't need a whole month? Pause your plan!</p>
                 </a>
-                <a className='hamburgerMenu__subcontainer--link'>
-                    <h2 className='hamburgerMenu__subcontainer--subheader'>Capitalize on Opportunity</h2>
-                    <p className='hamburgerMenu__subcontainer--description'>Find areas for growth</p>
+                <a className='hamburgerMenu__subcontainer--link' ref='/rewards'>
+                    <h2 className='hamburgerMenu__subcontainer--subheader'>About Our Affiliates</h2>
+                    <p className='hamburgerMenu__subcontainer--description'>Make money as an affiliate!</p>
                 </a>
-                <a className='hamburgerMenu__subcontainer--link'>
-                    <h2 className='hamburgerMenu__subcontainer--subheader'>Manage Your Brand</h2>
-                    <p className='hamburgerMenu__subcontainer--description'>Visualize data and manage your brand</p>
+                <a className='hamburgerMenu__subcontainer--link' href='/account'>
+                    <h2 className='hamburgerMenu__subcontainer--subheader'>Manage Your Account</h2>
+                    <p className='hamburgerMenu__subcontainer--description'>Manage your account here!</p>
                 </a>
             </div>
         </div>
