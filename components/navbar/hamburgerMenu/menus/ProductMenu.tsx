@@ -24,7 +24,7 @@ export default function Product() {
                     <h2 className='hamburgerMenu__subcontainer--subheader'>Pause Feature</h2>
                     <p className='hamburgerMenu__subcontainer--description'>Don't need a whole month? Pause your plan!</p>
                 </a>
-                <a className='hamburgerMenu__subcontainer--link' ref='/rewards'>
+                <a className='hamburgerMenu__subcontainer--link' href='/rewards'>
                     <h2 className='hamburgerMenu__subcontainer--subheader'>About Our Affiliates</h2>
                     <p className='hamburgerMenu__subcontainer--description'>Make money as an affiliate!</p>
                 </a>
