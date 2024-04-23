@@ -6,7 +6,7 @@
 }
 
 .hero__header {
-    margin-top: 8vw;
+    margin-top: 6vw;
     margin-bottom: -2vw;
     font-size: 6vw;
     font-weight: 300;
@@ -34,6 +34,12 @@
     width: 70vw;
     color: var(--text);
     font-weight: 500;
+}
+
+.hero__paragraph span {
+    font-size: 1.5vw;
+    color: var(--darker-background);
+    font-weight: 200;
 }
 
 .hero__button--container {
@@ -67,6 +73,10 @@
         width: 70%;
     }
 
+    .hero__paragraph span {
+        font-size: 1.15rem;
+    }
+
     .hero__button--container {
         gap: 2rem;
         margin-top: 2rem;
@@ -91,6 +101,10 @@
     .hero__paragraph {
         font-size: 1.5rem;
         width: 90%;
+    }
+
+    .hero__paragraph span {
+        font-size: 1rem;
     }
 }
 
