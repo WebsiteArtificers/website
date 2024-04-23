@@ -10,7 +10,7 @@ export default function Hero() {
             </h1>
             <motion.h2 className='hero__subheader' animate={{ opacity: 1 }} initial={{ opacity: 0 }}>your competitive advantage</motion.h2>
             <motion.p className='hero__paragraph' transition={{ delay: 1 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
-                Your online presence is a crucial part of your business. Let us make your virtual real estate functional and scalable. Let yourself have peace of mind.
+                Your online presence is a crucial part of your business. Let us make your online presence functional and scalable. We offer a variety of plans will supercharge your website, without paying the cost of a dedicated, full-time, web developer or designer.
             </motion.p>
             <div className='hero__button--container'>
                 <a href='/contact'>

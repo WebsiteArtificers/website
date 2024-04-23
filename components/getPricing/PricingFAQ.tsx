@@ -63,7 +63,7 @@ export default function PricingFAQ() {
         {
             id: 9,
             question: "What if I only have a single request?",
-            answer: "If you have our Standard or Professional plan, simply pause the plan once the work is done.  Unfortunately, the pause feature is not offered for the Starter plan.",
+            answer: "All of our plans come with the ability to pause the plan.  If you only have one request, you can simply pause the plan once that request has been completed, and then resume once you have more work for us to complete. Each of our plans is 31 days in length.  If you only use 15 days out of the 31 day plan, you can pause and save the remaining 16 days for later use.",
             show: false,
             rotate: false
         },
