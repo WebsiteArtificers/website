@@ -1,0 +1,225 @@
+.pause__container {  
+    background: var(--text);
+    color: var(--background);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.pause__subcontainer {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 3vw;
+}
+
+.pause__subcontainer--left {
+    width: 50%;
+}
+
+.pause__subcontainer--right {
+    width: 50%;
+}
+
+.pause__top--paragraph {
+    font-size: 1.5vw;
+    color: var(--tertiary);
+    font-weight: 200;
+}
+
+.pause__top--paragraph span {
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+.pause__subcontainer--header {
+    font-size: 4vw;
+    font-weight: 200;
+    color: var(--quinary);
+    margin-top: -.5rem;
+}
+
+.pause__subcontainer--subheader {
+    color: var(--tertiary);
+    font-size: 4vw;
+    font-weight: 800;
+    margin-top: -.5rem;
+}
+
+.pause__subcontainer--paragraph--container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 1vw;
+    font-size: 1.75vw;
+    font-weight: 200;
+}
+
+.pause__subcontainer--ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.pause__subcontainer--li {
+    font-size: 1.5vw;
+    font-weight: 200;
+    color: var(--secondary-accent);
+}
+
+.pause__subcontainer--button__container {
+    display: flex;
+    gap: 1vw;
+}
+
+.pause__subcontainer--button {
+    font-size: 1.75vw;
+}
+
+@media (max-width: 1000px) {
+    .pause__container {  
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    
+    .pause__subcontainer {
+        width: 95%;
+        gap: 3rem;
+    }
+    
+    .pause__top--paragraph {
+        font-size: 1.25rem;
+    }
+    
+    .pause__subcontainer--header {
+        font-size: 3rem;
+    }
+    
+    .pause__subcontainer--subheader {
+        font-size: 3rem;
+    }
+    
+    .pause__subcontainer--paragraph--container {
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .pause__subcontainer--ul {
+        gap: 1rem;
+    }
+    
+    .pause__subcontainer--li {
+        font-size: 1.25rem;
+    }
+    
+    .pause__subcontainer--button__container {
+        gap: 1rem;
+    }
+    
+    .pause__subcontainer--button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .pause__subcontainer {
+        gap: 1rem;
+    }
+    
+    .pause__top--paragraph {
+        font-size: 1.15rem;
+    }
+    
+    .pause__subcontainer--header {
+        font-size: 2.5rem;
+    }
+    
+    .pause__subcontainer--subheader {
+        font-size: 2.5rem;
+    }
+    
+    .pause__subcontainer--paragraph--container {
+        gap: .5rem;
+        font-size: 1.25rem;
+    }
+    
+    .pause__subcontainer--ul {
+        gap: .5rem;
+    }
+    
+    .pause__subcontainer--li {
+        font-size: 1.15rem;
+    }
+    
+    .pause__subcontainer--button__container {
+        gap: .5rem;
+    }
+    
+    .pause__subcontainer--button {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .pause__subcontainer {
+        flex-direction: column-reverse;
+    }
+
+    .pause__subcontainer--left {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .pause__subcontainer--right {
+        width: 100%;
+        margin: auto;
+    }
+
+    .pause__subcontainer--button__container {
+        flex-direction: column;
+    }
+
+    .pause__subcontainer--button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .pause__subcontainer {
+        gap: .75rem;
+    }
+    
+    .pause__top--paragraph {
+        font-size: 1.1rem;
+    }
+    
+    .pause__subcontainer--header {
+        font-size: 2rem;
+    }
+    
+    .pause__subcontainer--subheader {
+        font-size: 2rem;
+    }
+    
+    .pause__subcontainer--paragraph--container {
+        gap: .5rem;
+        font-size: 1.15rem;
+    }
+    
+    .pause__subcontainer--ul {
+        gap: .5rem;
+    }
+    
+    .pause__subcontainer--li {
+        font-size: 1.1rem;
+    }
+    
+    .pause__subcontainer--button__container {
+        gap: .5rem;
+    }
+    
+    .pause__subcontainer--button {
+        font-size: 1.15rem;
+    }
+}
