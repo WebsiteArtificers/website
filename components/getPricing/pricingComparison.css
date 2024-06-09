@@ -15,11 +15,7 @@
     width: 95%;
     margin: auto;
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(4, auto);
-=======
     grid-template-columns: repeat(3, auto);
->>>>>>> 5be521a (made some changes to the pricing page)
     text-align: center;
     row-gap: 3vw;
 
