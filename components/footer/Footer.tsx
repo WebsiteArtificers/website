@@ -131,7 +131,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='footer__bottom--container'>
-                <h1 className='footer__bottom--header'>Crafted with passion by <a href='/'>Website Artificers</a> © 2023</h1>
+                <h1 className='footer__bottom--header'>Crafted with passion by <a href='/'>Website Artificers</a> © 2024</h1>
             </div>
         </div>
     )
