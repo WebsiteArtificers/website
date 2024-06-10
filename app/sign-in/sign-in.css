@@ -4,6 +4,38 @@
     padding-bottom: 6vw;
 }
 
+.login__container--paragraph {
+    color: var(--background);
+    text-align: center;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+.login__container--subparagraph {
+    color: var(--background);
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+.login__container--paragraph span {
+    color: var(--tertiary);
+    font-weight: 800;
+}
+
+.login__container--subparagraph span {
+    color: var(--quaternary);
+    font-weight: 800;
+}
+
+.login__container--subparagraph a {
+    color: var(--quinary);
+    font-weight: 800;
+}
+
 .login__container svg {
     width: 4vw;
     margin: auto;

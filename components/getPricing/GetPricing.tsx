@@ -172,6 +172,9 @@ export default function GetPricing({
           <p className="getPricing__subparagraph">
             If you are unable to subscribe to a plan, click <a href='/sign-in'>Get Started</a> to create an account with us first. <span>You'll be able to subscribe once you have an account.</span>
           </p>
+          <p className="getPricing__subparagraph">
+            Get 50% off your first month at checkout with code: <span>50PERCENT</span>
+          </p>
           <div className="getPricing__mainPricing--container">
             {intervals.includes('month') && (
               <button

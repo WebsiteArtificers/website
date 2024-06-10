@@ -54,6 +54,8 @@ export default async function SignIn() {
     <Suspense fallback={<LoadingScreen />}>
       <div className="login__container">
         <Logo />
+        <p className='login__container--paragraph'>If you are creating an account, <span>check your email and spam inbox.</span></p>
+        <p className='login__container--subparagraph'>You should receive an email from <span>noreply@mail.app.supabase.io</span>, <a href="https://www.supabase.com" target="_blank" rel="noopener noreferrer">Supabase</a> is our email provider.</p>
         <div className='authentication__container'>
           <AuthUI />
         </div>
