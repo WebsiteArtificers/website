@@ -10,13 +10,13 @@ export default function SalesLeft() {
                 <li className='salesLeft__list'>✓ Get introduced to our productized services and learn about our unique business model</li>
             </ul>
             <div className='salesLeft__subcontainer'>
-                <a className='salesLeft__link' href='/contact/tech-support'>
-                    <h3 className='salesLeft__link--subheader'>Technical support</h3>
-                    <p className='salesLeft__link--paragraph'>Get help from the nerds on our Artificer team and our dedicated community.</p>
+                <a className='salesLeft__link' href='/pricing'>
+                    <h3 className='salesLeft__link--subheader'>Pricing</h3>
+                    <p className='salesLeft__link--paragraph'>See and compare our list of affordably-priced services. We strive for excellence and value.</p>
                 </a>
-                <a className='salesLeft__link' href='/contact/customer-service'>
-                    <h3 className='salesLeft__link--subheader'>Account support</h3>
-                    <p className='salesLeft__link--paragraph'>Get help with billing, plans, management, and assistance for clients.</p>
+                <a className='salesLeft__link' href='/sign-in'>
+                    <h3 className='salesLeft__link--subheader'>Sign Up</h3>
+                    <p className='salesLeft__link--paragraph'>Interested in working with us? Create an account with us!</p>
                 </a>
             </div>
         </div>
