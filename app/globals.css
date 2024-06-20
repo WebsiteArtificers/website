@@ -154,10 +154,3 @@ button {
     box-shadow: .1rem .1rem 1rem var(--quaternary);
   }
 }
-
-noscript img,
-.facebook-image {
-  height: 1;
-  width: 1;
-  display: none;
-}
